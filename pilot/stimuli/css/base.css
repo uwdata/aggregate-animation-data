@@ -1,0 +1,60 @@
+circle {
+  /*stroke: rgb(228, 87, 86);*/
+  stroke: rgb(76, 120, 168);
+  stroke-width: 0;
+  opacity: 0.7;
+  fill: rgb(76, 120, 168);
+  /*fill: transparent;*/
+}
+
+.point {
+  /*stroke: rgb(228, 87, 86);*/
+  stroke: rgb(76, 120, 168);
+  stroke-width: 0;
+  opacity: 0.7;
+  fill: rgb(76, 120, 168);
+  /*fill: transparent;*/
+}
+line {
+    stroke: #000;
+    stroke-width: 1px;
+    stroke-linecap: round;
+}
+rect {
+  fill: rgb(170, 170, 170);
+  stroke-width: none;
+}
+.vLine line {
+  stroke: #999;
+}
+.yAxis path {
+  stroke: rgb(136, 136, 136);
+}
+.xAxis path {
+  stroke: rgb(136, 136, 136);
+}
+.axis-title {
+  font-weight: bold;
+  font-size: 11px;
+}
+.grid line {
+  stroke: rgb(221, 221, 221);
+  stroke-opacity: 1;
+  shape-rendering: crispEdges;
+}
+.yGrid line {
+  stroke: rgb(221, 221, 221);
+  stroke-opacity: 1;
+  shape-rendering: crispEdges;
+}
+.grid .domain {
+  display: none;
+}
+
+text {
+  font-size: 10px;
+}
+
+.anim-control-btn-group{
+  margin-top: -15px;
+}

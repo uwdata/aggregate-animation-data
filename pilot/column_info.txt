@@ -1,0 +1,61 @@
+For "responses-comprehension.csv"
+--
+id : The order of the question
+agg : Aggregate operation of the question
+correct : Correct answer
+answered : The subject's answer
+answeredDelta : How the chosen answer is different from the correct
+isError : Whether is incorrect (true) or not  (false)
+playCount : Play count of the transition
+resetCount : Reset count of the transition
+compTime : Completion time (s)
+userID
+treatment : The transition style that the subject saw
+(elaborate : staged elaborate, simple : staged basic, baseline : interpolated, static: static)
+
+
+For "responses-identification.csv"
+--
+id : The order of the question
+correctAgg : Aggregate operation in the given transition
+answered : Aggregate operation that the subject chose
+isError : Whether is incorrect (true) or not  (false)
+playCount : Play count of the transition
+resetCount : Reset count of the transition
+compTime : Completion time (s)
+userID
+treatment : The transition style that the subject saw
+(elaborate : staged elaborate, simple : staged basic, baseline : interpolated, static: static)
+
+
+Demographic
+--
+gender
+education
+age
+vision_deficiency
+vision_impairment_description
+
+
+Statistical Background
+--
+familiarity-average : Self reported familiarity of the average (IDK / Know / Know well *)
+familiarity-average-description : Description of the average from the participant
+familiarity-interquartile-range
+familiarity-interquartile-range-description
+familiarity-median
+familiarity-median-description
+familiarity-standard-deviation
+familiarity-standard-deviation-description
+familiarity-agg-score : Quantitized score of the above four by summing each score (Know well : 2, Know : 1, IDK :0)
+familiarity-stat-tool : How often the participant use data tools such as Excel, Tableau, SPSS, R, Jupyter, etc (never, < 1/m, < 1/w, <1/d, >= 1/d **)
+familiarity-view-chart : How often the participant view charts
+familiarity-create-chart : How often the participant create charts
+
+*IDK : "I don't know what that means.", Know : "I have a sense of what that means, but don't ask me to write a mathematical definition.", Know well : "I know what that means, and could give you a mathematical definition."
+**(never : Never, < 1/m: at most once per month, < 1/w : at most once per week, <1/d : multiple times per week, >= 1/d : daily )
+
+
+
+
+

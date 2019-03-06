@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery-3.2.1.slim.min.js"></script>
+  <script src="js/d3.v4.min.js"></script>
+  <script src="js/vega@3.1.0.js"></script>
+  <script src="js/vega-lite@2.2.0.js"></script>
+  <script src="js/vega-embed@3.0.0.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/base.js"></script>
+  <script src="js/animations_extended.js"></script>
+  <script src="js/config.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <style type="text/css">
+    .description {
+      border: #ccc solid 1px;
+      padding: 5px;
+      margin: 10px 0;
+    }
+    .is-final {
+      border: #aaa solid 1px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Candidate Designs</h2>
+    <p>The belows are the candidates for the staged elaborate animation designs. The first of each group is selected as the final designs. The comment at the bottom of each design is about why it is discarded/selected.</p>
+    <p>We note that the designs of <i>max</i> and <i>min</i> operations were straightforward so there were no other candidate designs.</p>
+    <div id="stimuli" class="mt-5">
+    </div>
+  </div>
+  <script>
+
+
+let newpOpt = {};
+let timeStamp;
+let playInterval = 2000;
+
+d3.json("data/cars.json", function(error, loadedData) {
+  if (error) throw error;
+  data = loadedData;
+
+
+  d3.json("data/designs.json", function(error, loadedAnimations) {
+    animations = loadedAnimations;
+
+    let xField = "Origin", yField = "Weight_in_lbs";
+    let q = {};
+    let rowCount = 0;
+    animations.forEach(anim =>{
+      anim.fn = anim.fn.indexOf(".") >= 0 ? aggregations_old[anim.fn.split(".")[1]] : window[anim.fn];
+      if (anim.row !== rowCount) {
+        rowCount = anim.row;
+        $('.container').append(`
+          <div class='row mb-5'>
+            <div class="col col-12"><h3>${anim.aggFunction}</h3></div>
+          </div>`);
+      }
+      let row = $('.row:last');
+      let newDiv = `
+      <div class="col col-6 col-lg-3 ${anim.final? "is-final" : ""}">
+        <div id="${anim.name}"></div>
+        <div class="description">
+          <p>${anim.description}</p>
+        </div>
+      </div>`;
+      row.append(newDiv);
+      q.referenceData = copy(data.slice(0,anim.N));
+      newpOpt.gooey = anim.name === "avg-gooey" ? "gooey" : false;
+      installAnim(`${anim.name}`, q, anim, newpOpt, xField, yField);
+    });
+
+  });
+});
+
+
+
+
+function installAnim(targetId, q, agg, plotOpt, xField, yField){
+  $(`#${targetId}`).append(`
+    <div class="visDiv"></div>
+    <div class="form-inline justify-content-center anim-control-btn-group">
+      <button class="play form-control btn btn-success btn-sm" data-interval="${playInterval}">Play</button>
+      <button class="reset form-control btn btn-secondary btn-sm d-none" >Reset</button>
+    </div>
+  `);
+  let opt = {
+    width: 200, height: 250,
+    margin: {top: 20, right: 20, bottom: 40, left: 20},
+    gooey: plotOpt.gooey
+  };
+
+  agg.svg = draw(`#${targetId} .visDiv`, copy(q.referenceData), xField, yField, opt);
+  agg.fn = typeof(agg.fn) === "string" ? (agg.fn.indexOf(".") >= 0 ? aggregations_old[agg.fn.split(".")[1]] : window[agg.fn]) : agg.fn;
+
+  $(`#${targetId} .play`).on("click", function(e){
+    let jqThis = $(this);
+    let interval = Number(jqThis.data("interval"));
+    $(`#${targetId} .play`).addClass("disabled");
+    let start = Date.now();
+    let end = () => {
+
+      $(`#${targetId} .play`).removeClass("disabled");
+      $(`#${targetId} .play`).addClass("d-none");
+      $(`#${targetId} .reset`).removeClass("d-none");
+    };
+
+    agg.opt.interval = interval;
+    agg.opt.gooey = opt.gooey;
+    agg.fn(agg.svg, agg.opt, end);
+
+  });
+
+  $(`#${targetId} .reset`).on("click", function(e){
+    $(`#${targetId} .play`).removeClass("d-none");
+    $(`#${targetId} .reset`).addClass("d-none");
+    $(`#${targetId} .visDiv`).children("svg").remove();
+    agg.svg = draw(`#${targetId} .visDiv`, copy(q.referenceData), xField, yField, opt);
+
+  });
+}
+
+
+
+  </script>
+</body>

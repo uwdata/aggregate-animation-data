@@ -1,0 +1,7608 @@
+{
+  "C": [
+    [
+      {
+        "textAgg": "count",
+        "animAgg": "count",
+        "id": 0,
+        "referenceData": [
+          {
+            "value": 2.257291668831528,
+            "label": "Set 1"
+          },
+          {
+            "value": 7.072430767741339,
+            "label": "Set 1"
+          },
+          {
+            "value": 18.830585050527606,
+            "label": "Set 1"
+          },
+          {
+            "value": 45.43776602307869,
+            "label": "Set 1"
+          },
+          {
+            "value": 57.639639080689186,
+            "label": "Set 1"
+          },
+          {
+            "value": 73.30597704450689,
+            "label": "Set 1"
+          },
+          {
+            "value": 90.06506976760542,
+            "label": "Set 1"
+          },
+          {
+            "value": 105.69287145806727,
+            "label": "Set 1"
+          },
+          {
+            "value": 112.60600758232715,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.205032823844411,
+            "label": "Set 2"
+          },
+          {
+            "value": 5.133869366701827,
+            "label": "Set 2"
+          },
+          {
+            "value": 9.07586599196844,
+            "label": "Set 2"
+          },
+          {
+            "value": 12.849594846762585,
+            "label": "Set 2"
+          },
+          {
+            "value": 19.877491770088632,
+            "label": "Set 2"
+          },
+          {
+            "value": 27.13450344117217,
+            "label": "Set 2"
+          },
+          {
+            "value": 33.30019438909424,
+            "label": "Set 2"
+          },
+          {
+            "value": 41.35328415661022,
+            "label": "Set 2"
+          },
+          {
+            "value": 56.474754638285035,
+            "label": "Set 2"
+          },
+          {
+            "value": 71.53796603509696,
+            "label": "Set 2"
+          },
+          {
+            "value": 96.90681821792515,
+            "label": "Set 2"
+          },
+          {
+            "value": 103.64010406031866,
+            "label": "Set 2"
+          },
+          {
+            "value": 110.8294686201784,
+            "label": "Set 2"
+          },
+          {
+            "value": 125.28839631580352,
+            "label": "Set 2"
+          },
+          {
+            "value": 132.66654770385838,
+            "label": "Set 2"
+          },
+          {
+            "value": 182.85589211868012,
+            "label": "Set 2"
+          },
+          {
+            "value": 187.96123029603663,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          20
+        ]
+      },
+      {
+        "textAgg": "count",
+        "animAgg": "max",
+        "id": 1,
+        "referenceData": [
+          {
+            "value": 4.3518274407309345,
+            "label": "Set 1"
+          },
+          {
+            "value": 31.09560843095435,
+            "label": "Set 1"
+          },
+          {
+            "value": 42.28420848703446,
+            "label": "Set 1"
+          },
+          {
+            "value": 50.77297351941892,
+            "label": "Set 1"
+          },
+          {
+            "value": 59.354455779336234,
+            "label": "Set 1"
+          },
+          {
+            "value": 90.18205836748359,
+            "label": "Set 1"
+          },
+          {
+            "value": 103.13914962345642,
+            "label": "Set 1"
+          },
+          {
+            "value": 107.18998156114141,
+            "label": "Set 1"
+          },
+          {
+            "value": 161.67204820903032,
+            "label": "Set 1"
+          },
+          {
+            "value": 3.952804966362575,
+            "label": "Set 2"
+          },
+          {
+            "value": 9.58129577592022,
+            "label": "Set 2"
+          },
+          {
+            "value": 23.508173787727664,
+            "label": "Set 2"
+          },
+          {
+            "value": 29.902010170092616,
+            "label": "Set 2"
+          },
+          {
+            "value": 38.790030766969,
+            "label": "Set 2"
+          },
+          {
+            "value": 44.275354051989616,
+            "label": "Set 2"
+          },
+          {
+            "value": 49.70722587689001,
+            "label": "Set 2"
+          },
+          {
+            "value": 72.06702372323637,
+            "label": "Set 2"
+          },
+          {
+            "value": 75.97297810501212,
+            "label": "Set 2"
+          },
+          {
+            "value": 86.58284060956794,
+            "label": "Set 2"
+          },
+          {
+            "value": 95.40532754424248,
+            "label": "Set 2"
+          },
+          {
+            "value": 118.00642236018751,
+            "label": "Set 2"
+          },
+          {
+            "value": 123.30315405597925,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "count",
+        "animAgg": "sum",
+        "id": 2,
+        "referenceData": [
+          {
+            "value": 4.670792821727023,
+            "label": "Set 1"
+          },
+          {
+            "value": 83.19631942038201,
+            "label": "Set 1"
+          },
+          {
+            "value": 136.01570017371034,
+            "label": "Set 1"
+          },
+          {
+            "value": 166.05112853837622,
+            "label": "Set 1"
+          },
+          {
+            "value": 176.60424473239152,
+            "label": "Set 1"
+          },
+          {
+            "value": 199.64559364684618,
+            "label": "Set 1"
+          },
+          {
+            "value": 18.928239293672117,
+            "label": "Set 2"
+          },
+          {
+            "value": 24.390179883373595,
+            "label": "Set 2"
+          },
+          {
+            "value": 33.5142137755227,
+            "label": "Set 2"
+          },
+          {
+            "value": 42.95553119426894,
+            "label": "Set 2"
+          },
+          {
+            "value": 52.58325352408963,
+            "label": "Set 2"
+          },
+          {
+            "value": 59.970573045525285,
+            "label": "Set 2"
+          },
+          {
+            "value": 71.2724993948535,
+            "label": "Set 2"
+          },
+          {
+            "value": 80.48207080734527,
+            "label": "Set 2"
+          },
+          {
+            "value": 99.02601256883486,
+            "label": "Set 2"
+          },
+          {
+            "value": 126.91509738990716,
+            "label": "Set 2"
+          },
+          {
+            "value": 150.53689294604916,
+            "label": "Set 2"
+          },
+          {
+            "value": 174.39552302778992,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          1000
+        ]
+      },
+      {
+        "textAgg": "max",
+        "animAgg": "count",
+        "id": 3,
+        "referenceData": [
+          {
+            "value": 1.1415401793184827,
+            "label": "Set 1"
+          },
+          {
+            "value": 8.067535157487795,
+            "label": "Set 1"
+          },
+          {
+            "value": 21.097796299160652,
+            "label": "Set 1"
+          },
+          {
+            "value": 68.97942065202994,
+            "label": "Set 1"
+          },
+          {
+            "value": 109.28478518925984,
+            "label": "Set 1"
+          },
+          {
+            "value": 155.98057541263535,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.8267356044255894,
+            "label": "Set 2"
+          },
+          {
+            "value": 6.365155164573248,
+            "label": "Set 2"
+          },
+          {
+            "value": 10.70142118968582,
+            "label": "Set 2"
+          },
+          {
+            "value": 18.621245423899893,
+            "label": "Set 2"
+          },
+          {
+            "value": 23.729336980055848,
+            "label": "Set 2"
+          },
+          {
+            "value": 37.63450990782293,
+            "label": "Set 2"
+          },
+          {
+            "value": 47.29428617945323,
+            "label": "Set 2"
+          },
+          {
+            "value": 55.39001968854126,
+            "label": "Set 2"
+          },
+          {
+            "value": 62.026272697184154,
+            "label": "Set 2"
+          },
+          {
+            "value": 73.26698853371087,
+            "label": "Set 2"
+          },
+          {
+            "value": 84.50563746900757,
+            "label": "Set 2"
+          },
+          {
+            "value": 116.48960041313886,
+            "label": "Set 2"
+          },
+          {
+            "value": 161.35522827524852,
+            "label": "Set 2"
+          },
+          {
+            "value": 174.59251592767936,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          14
+        ]
+      },
+      {
+        "textAgg": "max",
+        "animAgg": "max",
+        "id": 4,
+        "referenceData": [
+          {
+            "value": 3.317365345252502,
+            "label": "Set 1"
+          },
+          {
+            "value": 28.41766270265342,
+            "label": "Set 1"
+          },
+          {
+            "value": 42.41271880615007,
+            "label": "Set 1"
+          },
+          {
+            "value": 59.47437093320335,
+            "label": "Set 1"
+          },
+          {
+            "value": 89.63084848709158,
+            "label": "Set 1"
+          },
+          {
+            "value": 149.16934907049162,
+            "label": "Set 1"
+          },
+          {
+            "value": 194.02633174307675,
+            "label": "Set 1"
+          },
+          {
+            "value": 3.681882818587232,
+            "label": "Set 2"
+          },
+          {
+            "value": 13.696531674149309,
+            "label": "Set 2"
+          },
+          {
+            "value": 25.208111297540924,
+            "label": "Set 2"
+          },
+          {
+            "value": 35.909248828811485,
+            "label": "Set 2"
+          },
+          {
+            "value": 50.587503124606314,
+            "label": "Set 2"
+          },
+          {
+            "value": 57.8030448142903,
+            "label": "Set 2"
+          },
+          {
+            "value": 69.6245652681638,
+            "label": "Set 2"
+          },
+          {
+            "value": 74.34482010374893,
+            "label": "Set 2"
+          },
+          {
+            "value": 91.25077664269979,
+            "label": "Set 2"
+          },
+          {
+            "value": 107.35583443314049,
+            "label": "Set 2"
+          },
+          {
+            "value": 149.482015045078,
+            "label": "Set 2"
+          },
+          {
+            "value": 160.40426114158726,
+            "label": "Set 2"
+          },
+          {
+            "value": 171.02093758273202,
+            "label": "Set 2"
+          },
+          {
+            "value": 196.6972156932525,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "max",
+        "animAgg": "sum",
+        "id": 5,
+        "referenceData": [
+          {
+            "value": 4.753983462444953,
+            "label": "Set 1"
+          },
+          {
+            "value": 9.105131238332662,
+            "label": "Set 1"
+          },
+          {
+            "value": 89.0270093897994,
+            "label": "Set 1"
+          },
+          {
+            "value": 166.87700682353204,
+            "label": "Set 1"
+          },
+          {
+            "value": 183.9815434546782,
+            "label": "Set 1"
+          },
+          {
+            "value": 190.6793302660042,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.744909416922384,
+            "label": "Set 2"
+          },
+          {
+            "value": 6.501424678953258,
+            "label": "Set 2"
+          },
+          {
+            "value": 12.03256837195901,
+            "label": "Set 2"
+          },
+          {
+            "value": 16.454677084529116,
+            "label": "Set 2"
+          },
+          {
+            "value": 29.105846897635143,
+            "label": "Set 2"
+          },
+          {
+            "value": 38.100047263855224,
+            "label": "Set 2"
+          },
+          {
+            "value": 41.92658506394255,
+            "label": "Set 2"
+          },
+          {
+            "value": 53.84115031628879,
+            "label": "Set 2"
+          },
+          {
+            "value": 62.44010563015515,
+            "label": "Set 2"
+          },
+          {
+            "value": 67.174295377289,
+            "label": "Set 2"
+          },
+          {
+            "value": 71.00208720253458,
+            "label": "Set 2"
+          },
+          {
+            "value": 79.67060022577665,
+            "label": "Set 2"
+          },
+          {
+            "value": 88.17125633959226,
+            "label": "Set 2"
+          },
+          {
+            "value": 126.80771072181776,
+            "label": "Set 2"
+          },
+          {
+            "value": 161.097117157079,
+            "label": "Set 2"
+          },
+          {
+            "value": 183.7965534773757,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          1200
+        ]
+      },
+      {
+        "textAgg": "sum",
+        "animAgg": "count",
+        "id": 6,
+        "referenceData": [
+          {
+            "value": 13.980934564304473,
+            "label": "Set 1"
+          },
+          {
+            "value": 26.254145411787757,
+            "label": "Set 1"
+          },
+          {
+            "value": 35.246283360563346,
+            "label": "Set 1"
+          },
+          {
+            "value": 54.95040641559953,
+            "label": "Set 1"
+          },
+          {
+            "value": 165.6004922857804,
+            "label": "Set 1"
+          },
+          {
+            "value": 195.65451245630857,
+            "label": "Set 1"
+          },
+          {
+            "value": 3.5263007998537823,
+            "label": "Set 2"
+          },
+          {
+            "value": 9.168889988029218,
+            "label": "Set 2"
+          },
+          {
+            "value": 22.417493852296676,
+            "label": "Set 2"
+          },
+          {
+            "value": 28.630827549527666,
+            "label": "Set 2"
+          },
+          {
+            "value": 37.89101692741649,
+            "label": "Set 2"
+          },
+          {
+            "value": 42.854525748216304,
+            "label": "Set 2"
+          },
+          {
+            "value": 46.89295591497001,
+            "label": "Set 2"
+          },
+          {
+            "value": 61.89128496131228,
+            "label": "Set 2"
+          },
+          {
+            "value": 78.94502513773907,
+            "label": "Set 2"
+          },
+          {
+            "value": 86.87968033142472,
+            "label": "Set 2"
+          },
+          {
+            "value": 130.35145881966275,
+            "label": "Set 2"
+          },
+          {
+            "value": 166.1181143442884,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          12
+        ]
+      },
+      {
+        "textAgg": "sum",
+        "animAgg": "max",
+        "id": 7,
+        "referenceData": [
+          {
+            "value": 2.2354179112901678,
+            "label": "Set 1"
+          },
+          {
+            "value": 15.075222737868787,
+            "label": "Set 1"
+          },
+          {
+            "value": 21.90606269420939,
+            "label": "Set 1"
+          },
+          {
+            "value": 27.19736437274727,
+            "label": "Set 1"
+          },
+          {
+            "value": 44.26602925451759,
+            "label": "Set 1"
+          },
+          {
+            "value": 73.93733719689641,
+            "label": "Set 1"
+          },
+          {
+            "value": 106.28992615045495,
+            "label": "Set 1"
+          },
+          {
+            "value": 178.51596248363467,
+            "label": "Set 1"
+          },
+          {
+            "value": 198.42697221056048,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.231323355518197,
+            "label": "Set 2"
+          },
+          {
+            "value": 5.531970054384125,
+            "label": "Set 2"
+          },
+          {
+            "value": 17.19685766151158,
+            "label": "Set 2"
+          },
+          {
+            "value": 24.25487087057302,
+            "label": "Set 2"
+          },
+          {
+            "value": 28.64758511059599,
+            "label": "Set 2"
+          },
+          {
+            "value": 34.68513785711876,
+            "label": "Set 2"
+          },
+          {
+            "value": 42.534020931056844,
+            "label": "Set 2"
+          },
+          {
+            "value": 49.94149611799885,
+            "label": "Set 2"
+          },
+          {
+            "value": 69.41560244251667,
+            "label": "Set 2"
+          },
+          {
+            "value": 75.73059692228273,
+            "label": "Set 2"
+          },
+          {
+            "value": 93.34092681896223,
+            "label": "Set 2"
+          },
+          {
+            "value": 116.99208568458633,
+            "label": "Set 2"
+          },
+          {
+            "value": 121.04687681934378,
+            "label": "Set 2"
+          },
+          {
+            "value": 125.45925009228888,
+            "label": "Set 2"
+          },
+          {
+            "value": 156.29655177375446,
+            "label": "Set 2"
+          },
+          {
+            "value": 183.7607435125745,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "sum",
+        "animAgg": "sum",
+        "id": 8,
+        "referenceData": [
+          {
+            "value": 1.6484320544661657,
+            "label": "Set 1"
+          },
+          {
+            "value": 7.738769582700885,
+            "label": "Set 1"
+          },
+          {
+            "value": 15.903905503457626,
+            "label": "Set 1"
+          },
+          {
+            "value": 22.062978477454887,
+            "label": "Set 1"
+          },
+          {
+            "value": 31.202104296388622,
+            "label": "Set 1"
+          },
+          {
+            "value": 64.42947503502677,
+            "label": "Set 1"
+          },
+          {
+            "value": 127.19614624297498,
+            "label": "Set 1"
+          },
+          {
+            "value": 136.0354487206132,
+            "label": "Set 1"
+          },
+          {
+            "value": 157.22083935511412,
+            "label": "Set 1"
+          },
+          {
+            "value": 3.146065922883459,
+            "label": "Set 2"
+          },
+          {
+            "value": 10.060422285649064,
+            "label": "Set 2"
+          },
+          {
+            "value": 14.576698635210203,
+            "label": "Set 2"
+          },
+          {
+            "value": 19.581513285011166,
+            "label": "Set 2"
+          },
+          {
+            "value": 25.675277882045343,
+            "label": "Set 2"
+          },
+          {
+            "value": 38.89389325589052,
+            "label": "Set 2"
+          },
+          {
+            "value": 46.88619846150054,
+            "label": "Set 2"
+          },
+          {
+            "value": 57.15855400033946,
+            "label": "Set 2"
+          },
+          {
+            "value": 75.11500343458287,
+            "label": "Set 2"
+          },
+          {
+            "value": 83.5777202646026,
+            "label": "Set 2"
+          },
+          {
+            "value": 87.8952213739675,
+            "label": "Set 2"
+          },
+          {
+            "value": 99.89503407583462,
+            "label": "Set 2"
+          },
+          {
+            "value": 143.56276288612418,
+            "label": "Set 2"
+          },
+          {
+            "value": 147.74079785934845,
+            "label": "Set 2"
+          },
+          {
+            "value": 153.5299808115258,
+            "label": "Set 2"
+          },
+          {
+            "value": 189.6394780123282,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          1200
+        ]
+      },
+      {
+        "textAgg": "median",
+        "animAgg": "median",
+        "id": 9,
+        "referenceData": [
+          {
+            "value": 10.657514043808975,
+            "label": "Set 1"
+          },
+          {
+            "value": 35.84052944047669,
+            "label": "Set 1"
+          },
+          {
+            "value": 54.297452491084584,
+            "label": "Set 1"
+          },
+          {
+            "value": 112.38057181599146,
+            "label": "Set 1"
+          },
+          {
+            "value": 117.24057551453879,
+            "label": "Set 1"
+          },
+          {
+            "value": 121.27947270304873,
+            "label": "Set 1"
+          },
+          {
+            "value": 176.08100935410445,
+            "label": "Set 1"
+          },
+          {
+            "value": 2.828680942399342,
+            "label": "Set 2"
+          },
+          {
+            "value": 9.672637212986253,
+            "label": "Set 2"
+          },
+          {
+            "value": 16.97347416155778,
+            "label": "Set 2"
+          },
+          {
+            "value": 27.924484161483726,
+            "label": "Set 2"
+          },
+          {
+            "value": 32.934240768021716,
+            "label": "Set 2"
+          },
+          {
+            "value": 40.169260601171736,
+            "label": "Set 2"
+          },
+          {
+            "value": 45.361715756536036,
+            "label": "Set 2"
+          },
+          {
+            "value": 66.94464144946714,
+            "label": "Set 2"
+          },
+          {
+            "value": 72.64628958543877,
+            "label": "Set 2"
+          },
+          {
+            "value": 79.27361344440826,
+            "label": "Set 2"
+          },
+          {
+            "value": 100.92880727398395,
+            "label": "Set 2"
+          },
+          {
+            "value": 121.8973172011179,
+            "label": "Set 2"
+          },
+          {
+            "value": 134.99131508258927,
+            "label": "Set 2"
+          },
+          {
+            "value": 157.99135481092515,
+            "label": "Set 2"
+          },
+          {
+            "value": 166.22998064780072,
+            "label": "Set 2"
+          },
+          {
+            "value": 197.63691741949302,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "median",
+        "animAgg": "avg",
+        "id": 10,
+        "referenceData": [
+          {
+            "value": 1.0412270446247582,
+            "label": "Set 1"
+          },
+          {
+            "value": 11.919543070675532,
+            "label": "Set 1"
+          },
+          {
+            "value": 23.763370151353595,
+            "label": "Set 1"
+          },
+          {
+            "value": 54.814836220198,
+            "label": "Set 1"
+          },
+          {
+            "value": 63.56598206730968,
+            "label": "Set 1"
+          },
+          {
+            "value": 71.79587960900925,
+            "label": "Set 1"
+          },
+          {
+            "value": 81.91757441654362,
+            "label": "Set 1"
+          },
+          {
+            "value": 85.5871450806429,
+            "label": "Set 1"
+          },
+          {
+            "value": 3.679241309968279,
+            "label": "Set 2"
+          },
+          {
+            "value": 11.83136054560893,
+            "label": "Set 2"
+          },
+          {
+            "value": 20.215501180703228,
+            "label": "Set 2"
+          },
+          {
+            "value": 32.651927621609616,
+            "label": "Set 2"
+          },
+          {
+            "value": 37.79447352261498,
+            "label": "Set 2"
+          },
+          {
+            "value": 46.89220434885726,
+            "label": "Set 2"
+          },
+          {
+            "value": 56.333994029810924,
+            "label": "Set 2"
+          },
+          {
+            "value": 67.38139099688141,
+            "label": "Set 2"
+          },
+          {
+            "value": 73.51257775913368,
+            "label": "Set 2"
+          },
+          {
+            "value": 79.04881159634705,
+            "label": "Set 2"
+          },
+          {
+            "value": 89.62823715713779,
+            "label": "Set 2"
+          },
+          {
+            "value": 97.24953457617781,
+            "label": "Set 2"
+          },
+          {
+            "value": 107.53435120445093,
+            "label": "Set 2"
+          },
+          {
+            "value": 120.01106066429456,
+            "label": "Set 2"
+          },
+          {
+            "value": 134.52273081725943,
+            "label": "Set 2"
+          },
+          {
+            "value": 138.52291866627758,
+            "label": "Set 2"
+          },
+          {
+            "value": 183.50503181306757,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "avg",
+        "animAgg": "median",
+        "id": 11,
+        "referenceData": [
+          {
+            "value": 4.609793155082909,
+            "label": "Set 1"
+          },
+          {
+            "value": 8.44297493518918,
+            "label": "Set 1"
+          },
+          {
+            "value": 23.276188606223105,
+            "label": "Set 1"
+          },
+          {
+            "value": 37.19424884360477,
+            "label": "Set 1"
+          },
+          {
+            "value": 52.77474204004359,
+            "label": "Set 1"
+          },
+          {
+            "value": 107.47205898428831,
+            "label": "Set 1"
+          },
+          {
+            "value": 179.33895821838576,
+            "label": "Set 1"
+          },
+          {
+            "value": 2.6265987046571873,
+            "label": "Set 2"
+          },
+          {
+            "value": 7.135535063171426,
+            "label": "Set 2"
+          },
+          {
+            "value": 11.037310698724276,
+            "label": "Set 2"
+          },
+          {
+            "value": 16.458760320886448,
+            "label": "Set 2"
+          },
+          {
+            "value": 22.31453048556199,
+            "label": "Set 2"
+          },
+          {
+            "value": 28.416287949032125,
+            "label": "Set 2"
+          },
+          {
+            "value": 36.37245496022959,
+            "label": "Set 2"
+          },
+          {
+            "value": 47.33629431079409,
+            "label": "Set 2"
+          },
+          {
+            "value": 51.064969956348854,
+            "label": "Set 2"
+          },
+          {
+            "value": 66.78734273789541,
+            "label": "Set 2"
+          },
+          {
+            "value": 121.60364932967889,
+            "label": "Set 2"
+          },
+          {
+            "value": 136.2098874702223,
+            "label": "Set 2"
+          },
+          {
+            "value": 167.3393821055917,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "avg",
+        "animAgg": "avg",
+        "id": 12,
+        "referenceData": [
+          {
+            "value": 4.637521884051528,
+            "label": "Set 1"
+          },
+          {
+            "value": 13.057581253225887,
+            "label": "Set 1"
+          },
+          {
+            "value": 25.245935852600784,
+            "label": "Set 1"
+          },
+          {
+            "value": 56.513781485988986,
+            "label": "Set 1"
+          },
+          {
+            "value": 73.31832138672056,
+            "label": "Set 1"
+          },
+          {
+            "value": 81.12653350790411,
+            "label": "Set 1"
+          },
+          {
+            "value": 101.74446236325988,
+            "label": "Set 1"
+          },
+          {
+            "value": 170.26618346456084,
+            "label": "Set 1"
+          },
+          {
+            "value": 2.6800674097524837,
+            "label": "Set 2"
+          },
+          {
+            "value": 6.533064119012309,
+            "label": "Set 2"
+          },
+          {
+            "value": 17.768561685186455,
+            "label": "Set 2"
+          },
+          {
+            "value": 23.873300349556484,
+            "label": "Set 2"
+          },
+          {
+            "value": 30.819237223182196,
+            "label": "Set 2"
+          },
+          {
+            "value": 35.15155354541365,
+            "label": "Set 2"
+          },
+          {
+            "value": 46.025319924827144,
+            "label": "Set 2"
+          },
+          {
+            "value": 55.40601037759434,
+            "label": "Set 2"
+          },
+          {
+            "value": 67.14854857293506,
+            "label": "Set 2"
+          },
+          {
+            "value": 76.54888640233642,
+            "label": "Set 2"
+          },
+          {
+            "value": 80.31602850132846,
+            "label": "Set 2"
+          },
+          {
+            "value": 104.37327595571936,
+            "label": "Set 2"
+          },
+          {
+            "value": 110.69521396919012,
+            "label": "Set 2"
+          },
+          {
+            "value": 146.35594546259145,
+            "label": "Set 2"
+          },
+          {
+            "value": 160.7102952833204,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "iqr",
+        "animAgg": "iqr",
+        "id": 13,
+        "referenceData": [
+          {
+            "value": 4.6980734850225065,
+            "label": "Set 1"
+          },
+          {
+            "value": 10.48715254773103,
+            "label": "Set 1"
+          },
+          {
+            "value": 22.679312210703877,
+            "label": "Set 1"
+          },
+          {
+            "value": 56.05393129393605,
+            "label": "Set 1"
+          },
+          {
+            "value": 131.59353243045126,
+            "label": "Set 1"
+          },
+          {
+            "value": 165.50506257570134,
+            "label": "Set 1"
+          },
+          {
+            "value": 4.748053772318337,
+            "label": "Set 2"
+          },
+          {
+            "value": 10.814650750353707,
+            "label": "Set 2"
+          },
+          {
+            "value": 15.816556315663611,
+            "label": "Set 2"
+          },
+          {
+            "value": 22.354612634702928,
+            "label": "Set 2"
+          },
+          {
+            "value": 26.281181724289073,
+            "label": "Set 2"
+          },
+          {
+            "value": 45.73065033536457,
+            "label": "Set 2"
+          },
+          {
+            "value": 51.55164641474453,
+            "label": "Set 2"
+          },
+          {
+            "value": 60.019571924434864,
+            "label": "Set 2"
+          },
+          {
+            "value": 69.4385377517387,
+            "label": "Set 2"
+          },
+          {
+            "value": 118.5268535224429,
+            "label": "Set 2"
+          },
+          {
+            "value": 127.10329268742254,
+            "label": "Set 2"
+          },
+          {
+            "value": 140.4172331232112,
+            "label": "Set 2"
+          },
+          {
+            "value": 159.54365297787905,
+            "label": "Set 2"
+          },
+          {
+            "value": 195.0557750687352,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "iqr",
+        "animAgg": "stdev",
+        "id": 14,
+        "referenceData": [
+          {
+            "value": 3.4741162592056183,
+            "label": "Set 1"
+          },
+          {
+            "value": 9.959478930075186,
+            "label": "Set 1"
+          },
+          {
+            "value": 13.625905860396482,
+            "label": "Set 1"
+          },
+          {
+            "value": 27.18473999231545,
+            "label": "Set 1"
+          },
+          {
+            "value": 64.14553914599176,
+            "label": "Set 1"
+          },
+          {
+            "value": 78.47376715744905,
+            "label": "Set 1"
+          },
+          {
+            "value": 85.59905752928297,
+            "label": "Set 1"
+          },
+          {
+            "value": 154.95483286175636,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.6654116257382072,
+            "label": "Set 2"
+          },
+          {
+            "value": 6.2662242274693085,
+            "label": "Set 2"
+          },
+          {
+            "value": 11.55905422703248,
+            "label": "Set 2"
+          },
+          {
+            "value": 18.893316816223567,
+            "label": "Set 2"
+          },
+          {
+            "value": 25.60496292172519,
+            "label": "Set 2"
+          },
+          {
+            "value": 29.323682492944837,
+            "label": "Set 2"
+          },
+          {
+            "value": 39.19556989526762,
+            "label": "Set 2"
+          },
+          {
+            "value": 45.469054107217175,
+            "label": "Set 2"
+          },
+          {
+            "value": 60.14687792053661,
+            "label": "Set 2"
+          },
+          {
+            "value": 68.16143408932626,
+            "label": "Set 2"
+          },
+          {
+            "value": 78.53598362994174,
+            "label": "Set 2"
+          },
+          {
+            "value": 88.51127353819001,
+            "label": "Set 2"
+          },
+          {
+            "value": 105.35555634291644,
+            "label": "Set 2"
+          },
+          {
+            "value": 137.25422147848744,
+            "label": "Set 2"
+          },
+          {
+            "value": 167.71788321419007,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "stdev",
+        "animAgg": "iqr",
+        "id": 15,
+        "referenceData": [
+          {
+            "value": 4.458816359764262,
+            "label": "Set 1"
+          },
+          {
+            "value": 14.811904656276692,
+            "label": "Set 1"
+          },
+          {
+            "value": 23.108424201548146,
+            "label": "Set 1"
+          },
+          {
+            "value": 33.99746333601697,
+            "label": "Set 1"
+          },
+          {
+            "value": 86.98356205527604,
+            "label": "Set 1"
+          },
+          {
+            "value": 116.62798602414867,
+            "label": "Set 1"
+          },
+          {
+            "value": 3.4091712466526576,
+            "label": "Set 2"
+          },
+          {
+            "value": 13.998379271939328,
+            "label": "Set 2"
+          },
+          {
+            "value": 19.519050115590577,
+            "label": "Set 2"
+          },
+          {
+            "value": 25.34580280367672,
+            "label": "Set 2"
+          },
+          {
+            "value": 32.3851492957724,
+            "label": "Set 2"
+          },
+          {
+            "value": 47.01600183423809,
+            "label": "Set 2"
+          },
+          {
+            "value": 57.801283974831435,
+            "label": "Set 2"
+          },
+          {
+            "value": 76.16195912952563,
+            "label": "Set 2"
+          },
+          {
+            "value": 90.2698137849726,
+            "label": "Set 2"
+          },
+          {
+            "value": 114.91791302301739,
+            "label": "Set 2"
+          },
+          {
+            "value": 154.58793692527155,
+            "label": "Set 2"
+          },
+          {
+            "value": 165.29538148734895,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "stdev",
+        "animAgg": "stdev",
+        "id": 16,
+        "referenceData": [
+          {
+            "value": 3.118414568048787,
+            "label": "Set 1"
+          },
+          {
+            "value": 13.397756080177912,
+            "label": "Set 1"
+          },
+          {
+            "value": 17.513054632332892,
+            "label": "Set 1"
+          },
+          {
+            "value": 22.229511908596514,
+            "label": "Set 1"
+          },
+          {
+            "value": 51.275311013846434,
+            "label": "Set 1"
+          },
+          {
+            "value": 85.13264756412306,
+            "label": "Set 1"
+          },
+          {
+            "value": 106.01478344555957,
+            "label": "Set 1"
+          },
+          {
+            "value": 173.69793244938316,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.8077281475931757,
+            "label": "Set 2"
+          },
+          {
+            "value": 5.7558410612037765,
+            "label": "Set 2"
+          },
+          {
+            "value": 10.322295352247055,
+            "label": "Set 2"
+          },
+          {
+            "value": 19.52087920692661,
+            "label": "Set 2"
+          },
+          {
+            "value": 37.99755061321503,
+            "label": "Set 2"
+          },
+          {
+            "value": 44.001405776263475,
+            "label": "Set 2"
+          },
+          {
+            "value": 58.59436112100797,
+            "label": "Set 2"
+          },
+          {
+            "value": 63.17054482656535,
+            "label": "Set 2"
+          },
+          {
+            "value": 74.99418623208457,
+            "label": "Set 2"
+          },
+          {
+            "value": 79.6177699676183,
+            "label": "Set 2"
+          },
+          {
+            "value": 104.17414653466523,
+            "label": "Set 2"
+          },
+          {
+            "value": 118.84638805987325,
+            "label": "Set 2"
+          },
+          {
+            "value": 152.2218837360594,
+            "label": "Set 2"
+          },
+          {
+            "value": 169.33880502959306,
+            "label": "Set 2"
+          },
+          {
+            "value": 199.6594325636529,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "min",
+        "animAgg": "min",
+        "id": 17,
+        "referenceData": [
+          {
+            "value": 1.1834245601113573,
+            "label": "Set 1"
+          },
+          {
+            "value": 5.5563148668099265,
+            "label": "Set 1"
+          },
+          {
+            "value": 10.232782319752042,
+            "label": "Set 1"
+          },
+          {
+            "value": 16.724464229338615,
+            "label": "Set 1"
+          },
+          {
+            "value": 22.157082320017246,
+            "label": "Set 1"
+          },
+          {
+            "value": 28.693786061923085,
+            "label": "Set 1"
+          },
+          {
+            "value": 54.57703020708692,
+            "label": "Set 1"
+          },
+          {
+            "value": 83.88453909967001,
+            "label": "Set 1"
+          },
+          {
+            "value": 197.4460379190123,
+            "label": "Set 1"
+          },
+          {
+            "value": 3.6679942896894357,
+            "label": "Set 2"
+          },
+          {
+            "value": 9.948766873466358,
+            "label": "Set 2"
+          },
+          {
+            "value": 14.238178098507444,
+            "label": "Set 2"
+          },
+          {
+            "value": 27.015779784751498,
+            "label": "Set 2"
+          },
+          {
+            "value": 31.995915780532496,
+            "label": "Set 2"
+          },
+          {
+            "value": 49.758253008095416,
+            "label": "Set 2"
+          },
+          {
+            "value": 54.113953078646304,
+            "label": "Set 2"
+          },
+          {
+            "value": 59.55569920340507,
+            "label": "Set 2"
+          },
+          {
+            "value": 113.04431162252905,
+            "label": "Set 2"
+          },
+          {
+            "value": 116.7890520665162,
+            "label": "Set 2"
+          },
+          {
+            "value": 122.72419010507333,
+            "label": "Set 2"
+          },
+          {
+            "value": 132.45637752039715,
+            "label": "Set 2"
+          },
+          {
+            "value": 138.50752276125482,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      }
+    ],
+    [
+      {
+        "textAgg": "count",
+        "animAgg": "count",
+        "id": 0,
+        "referenceData": [
+          {
+            "value": 2.601333836954937,
+            "label": "Set 1"
+          },
+          {
+            "value": 7.469019201670094,
+            "label": "Set 1"
+          },
+          {
+            "value": 16.24433269667934,
+            "label": "Set 1"
+          },
+          {
+            "value": 67.01565032302103,
+            "label": "Set 1"
+          },
+          {
+            "value": 104.44203436481651,
+            "label": "Set 1"
+          },
+          {
+            "value": 110.01037444141167,
+            "label": "Set 1"
+          },
+          {
+            "value": 155.06890813161942,
+            "label": "Set 1"
+          },
+          {
+            "value": 187.77861136423365,
+            "label": "Set 1"
+          },
+          {
+            "value": 4.526246792992728,
+            "label": "Set 2"
+          },
+          {
+            "value": 8.80783627922585,
+            "label": "Set 2"
+          },
+          {
+            "value": 13.393573955591775,
+            "label": "Set 2"
+          },
+          {
+            "value": 20.640736943221736,
+            "label": "Set 2"
+          },
+          {
+            "value": 24.977992677485428,
+            "label": "Set 2"
+          },
+          {
+            "value": 39.22082435113523,
+            "label": "Set 2"
+          },
+          {
+            "value": 46.8071043396867,
+            "label": "Set 2"
+          },
+          {
+            "value": 51.48841281393198,
+            "label": "Set 2"
+          },
+          {
+            "value": 57.244335191489995,
+            "label": "Set 2"
+          },
+          {
+            "value": 71.65705208736803,
+            "label": "Set 2"
+          },
+          {
+            "value": 76.93560312699353,
+            "label": "Set 2"
+          },
+          {
+            "value": 83.29944046114367,
+            "label": "Set 2"
+          },
+          {
+            "value": 103.7114191403182,
+            "label": "Set 2"
+          },
+          {
+            "value": 142.2961846242033,
+            "label": "Set 2"
+          },
+          {
+            "value": 161.33832711815407,
+            "label": "Set 2"
+          },
+          {
+            "value": 176.10466904843827,
+            "label": "Set 2"
+          },
+          {
+            "value": 187.24182649528728,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          20
+        ]
+      },
+      {
+        "textAgg": "count",
+        "animAgg": "max",
+        "id": 1,
+        "referenceData": [
+          {
+            "value": 2.377528301664064,
+            "label": "Set 1"
+          },
+          {
+            "value": 9.197448711782007,
+            "label": "Set 1"
+          },
+          {
+            "value": 29.955884746556478,
+            "label": "Set 1"
+          },
+          {
+            "value": 45.41036420108879,
+            "label": "Set 1"
+          },
+          {
+            "value": 74.88663029611453,
+            "label": "Set 1"
+          },
+          {
+            "value": 101.01090761045087,
+            "label": "Set 1"
+          },
+          {
+            "value": 4.913733776420152,
+            "label": "Set 2"
+          },
+          {
+            "value": 12.742054376479953,
+            "label": "Set 2"
+          },
+          {
+            "value": 16.664124846017597,
+            "label": "Set 2"
+          },
+          {
+            "value": 25.84178078483989,
+            "label": "Set 2"
+          },
+          {
+            "value": 29.798837155838907,
+            "label": "Set 2"
+          },
+          {
+            "value": 35.64100878601326,
+            "label": "Set 2"
+          },
+          {
+            "value": 57.52504517239505,
+            "label": "Set 2"
+          },
+          {
+            "value": 67.26819030374327,
+            "label": "Set 2"
+          },
+          {
+            "value": 79.37659161825873,
+            "label": "Set 2"
+          },
+          {
+            "value": 91.24690858638118,
+            "label": "Set 2"
+          },
+          {
+            "value": 127.54516975479923,
+            "label": "Set 2"
+          },
+          {
+            "value": 140.11297047855274,
+            "label": "Set 2"
+          },
+          {
+            "value": 189.9954067605449,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "count",
+        "animAgg": "sum",
+        "id": 2,
+        "referenceData": [
+          {
+            "value": 4.2067334196521,
+            "label": "Set 1"
+          },
+          {
+            "value": 8.080375784369505,
+            "label": "Set 1"
+          },
+          {
+            "value": 17.206769373694158,
+            "label": "Set 1"
+          },
+          {
+            "value": 28.15172260126707,
+            "label": "Set 1"
+          },
+          {
+            "value": 32.94773822443439,
+            "label": "Set 1"
+          },
+          {
+            "value": 71.53633026529964,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.6180509226027302,
+            "label": "Set 2"
+          },
+          {
+            "value": 9.289649469113506,
+            "label": "Set 2"
+          },
+          {
+            "value": 15.077002503184852,
+            "label": "Set 2"
+          },
+          {
+            "value": 22.481527597878586,
+            "label": "Set 2"
+          },
+          {
+            "value": 40.222137689699586,
+            "label": "Set 2"
+          },
+          {
+            "value": 50.20667575201656,
+            "label": "Set 2"
+          },
+          {
+            "value": 58.11384811003174,
+            "label": "Set 2"
+          },
+          {
+            "value": 77.80051757649456,
+            "label": "Set 2"
+          },
+          {
+            "value": 91.70209853985136,
+            "label": "Set 2"
+          },
+          {
+            "value": 101.54393456956282,
+            "label": "Set 2"
+          },
+          {
+            "value": 107.36262097552549,
+            "label": "Set 2"
+          },
+          {
+            "value": 111.35421328010712,
+            "label": "Set 2"
+          },
+          {
+            "value": 123.87720086329658,
+            "label": "Set 2"
+          },
+          {
+            "value": 134.36942996088723,
+            "label": "Set 2"
+          },
+          {
+            "value": 151.91950583926567,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          1200
+        ]
+      },
+      {
+        "textAgg": "max",
+        "animAgg": "count",
+        "id": 3,
+        "referenceData": [
+          {
+            "value": 1.508387030621014,
+            "label": "Set 1"
+          },
+          {
+            "value": 11.94134256011043,
+            "label": "Set 1"
+          },
+          {
+            "value": 33.60663024942541,
+            "label": "Set 1"
+          },
+          {
+            "value": 56.101714911065265,
+            "label": "Set 1"
+          },
+          {
+            "value": 77.36864527848718,
+            "label": "Set 1"
+          },
+          {
+            "value": 95.39555048988123,
+            "label": "Set 1"
+          },
+          {
+            "value": 129.8035878081267,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.1414421126645138,
+            "label": "Set 2"
+          },
+          {
+            "value": 4.770237387778606,
+            "label": "Set 2"
+          },
+          {
+            "value": 10.248327417769417,
+            "label": "Set 2"
+          },
+          {
+            "value": 16.849853187786522,
+            "label": "Set 2"
+          },
+          {
+            "value": 35.71178226776743,
+            "label": "Set 2"
+          },
+          {
+            "value": 42.054338628216584,
+            "label": "Set 2"
+          },
+          {
+            "value": 53.94954032333405,
+            "label": "Set 2"
+          },
+          {
+            "value": 61.70839219197823,
+            "label": "Set 2"
+          },
+          {
+            "value": 72.07529188485327,
+            "label": "Set 2"
+          },
+          {
+            "value": 82.76650885455552,
+            "label": "Set 2"
+          },
+          {
+            "value": 93.19909236198441,
+            "label": "Set 2"
+          },
+          {
+            "value": 99.68590883109545,
+            "label": "Set 2"
+          },
+          {
+            "value": 124.45615631121748,
+            "label": "Set 2"
+          },
+          {
+            "value": 134.04349714024755,
+            "label": "Set 2"
+          },
+          {
+            "value": 154.05034790665206,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          20
+        ]
+      },
+      {
+        "textAgg": "max",
+        "animAgg": "max",
+        "id": 4,
+        "referenceData": [
+          {
+            "value": 2.8202750842183266,
+            "label": "Set 1"
+          },
+          {
+            "value": 8.61449098913057,
+            "label": "Set 1"
+          },
+          {
+            "value": 22.976275258547087,
+            "label": "Set 1"
+          },
+          {
+            "value": 34.20428550722777,
+            "label": "Set 1"
+          },
+          {
+            "value": 41.729400071348834,
+            "label": "Set 1"
+          },
+          {
+            "value": 45.66479982212162,
+            "label": "Set 1"
+          },
+          {
+            "value": 75.88534007603424,
+            "label": "Set 1"
+          },
+          {
+            "value": 94.35143559163237,
+            "label": "Set 1"
+          },
+          {
+            "value": 4.406111938857002,
+            "label": "Set 2"
+          },
+          {
+            "value": 8.967507213838262,
+            "label": "Set 2"
+          },
+          {
+            "value": 17.978188591306665,
+            "label": "Set 2"
+          },
+          {
+            "value": 24.355345425897664,
+            "label": "Set 2"
+          },
+          {
+            "value": 35.977803647506065,
+            "label": "Set 2"
+          },
+          {
+            "value": 50.776793707616214,
+            "label": "Set 2"
+          },
+          {
+            "value": 73.40160982602637,
+            "label": "Set 2"
+          },
+          {
+            "value": 103.13934880164135,
+            "label": "Set 2"
+          },
+          {
+            "value": 112.6197631380022,
+            "label": "Set 2"
+          },
+          {
+            "value": 143.79389064500248,
+            "label": "Set 2"
+          },
+          {
+            "value": 150.06578671873064,
+            "label": "Set 2"
+          },
+          {
+            "value": 159.55290260782934,
+            "label": "Set 2"
+          },
+          {
+            "value": 178.37771552791122,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "max",
+        "animAgg": "sum",
+        "id": 5,
+        "referenceData": [
+          {
+            "value": 13.577572345726605,
+            "label": "Set 1"
+          },
+          {
+            "value": 23.196780702544537,
+            "label": "Set 1"
+          },
+          {
+            "value": 59.49685729615042,
+            "label": "Set 1"
+          },
+          {
+            "value": 74.21312462228833,
+            "label": "Set 1"
+          },
+          {
+            "value": 120.26644191893439,
+            "label": "Set 1"
+          },
+          {
+            "value": 136.45387742055732,
+            "label": "Set 1"
+          },
+          {
+            "value": 179.30663262556268,
+            "label": "Set 1"
+          },
+          {
+            "value": 6.158373369546098,
+            "label": "Set 2"
+          },
+          {
+            "value": 11.382414513711783,
+            "label": "Set 2"
+          },
+          {
+            "value": 17.307814673066915,
+            "label": "Set 2"
+          },
+          {
+            "value": 26.064188655406994,
+            "label": "Set 2"
+          },
+          {
+            "value": 30.65526461259299,
+            "label": "Set 2"
+          },
+          {
+            "value": 44.714299033926636,
+            "label": "Set 2"
+          },
+          {
+            "value": 51.14119387711516,
+            "label": "Set 2"
+          },
+          {
+            "value": 66.16714662057846,
+            "label": "Set 2"
+          },
+          {
+            "value": 86.74633516879965,
+            "label": "Set 2"
+          },
+          {
+            "value": 112.87074947696132,
+            "label": "Set 2"
+          },
+          {
+            "value": 120.5993827282046,
+            "label": "Set 2"
+          },
+          {
+            "value": 132.00565892916296,
+            "label": "Set 2"
+          },
+          {
+            "value": 160.25401638103062,
+            "label": "Set 2"
+          },
+          {
+            "value": 172.25830288117348,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          1200
+        ]
+      },
+      {
+        "textAgg": "sum",
+        "animAgg": "count",
+        "id": 6,
+        "referenceData": [
+          {
+            "value": 4.659096586092412,
+            "label": "Set 1"
+          },
+          {
+            "value": 11.16163325596077,
+            "label": "Set 1"
+          },
+          {
+            "value": 16.5414677085165,
+            "label": "Set 1"
+          },
+          {
+            "value": 50.375185833403336,
+            "label": "Set 1"
+          },
+          {
+            "value": 100.66311023642139,
+            "label": "Set 1"
+          },
+          {
+            "value": 123.14833872086496,
+            "label": "Set 1"
+          },
+          {
+            "value": 181.79960876046684,
+            "label": "Set 1"
+          },
+          {
+            "value": 3.5993842532235663,
+            "label": "Set 2"
+          },
+          {
+            "value": 11.273660257574818,
+            "label": "Set 2"
+          },
+          {
+            "value": 17.674514785340055,
+            "label": "Set 2"
+          },
+          {
+            "value": 25.3272074256927,
+            "label": "Set 2"
+          },
+          {
+            "value": 30.871089893408396,
+            "label": "Set 2"
+          },
+          {
+            "value": 36.86686512455689,
+            "label": "Set 2"
+          },
+          {
+            "value": 45.447828999423265,
+            "label": "Set 2"
+          },
+          {
+            "value": 56.352426567666015,
+            "label": "Set 2"
+          },
+          {
+            "value": 70.39586977770905,
+            "label": "Set 2"
+          },
+          {
+            "value": 78.48567658772107,
+            "label": "Set 2"
+          },
+          {
+            "value": 97.32286770218128,
+            "label": "Set 2"
+          },
+          {
+            "value": 122.0520287968823,
+            "label": "Set 2"
+          },
+          {
+            "value": 188.7822310206551,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          14
+        ]
+      },
+      {
+        "textAgg": "sum",
+        "animAgg": "max",
+        "id": 7,
+        "referenceData": [
+          {
+            "value": 4.601361371909005,
+            "label": "Set 1"
+          },
+          {
+            "value": 8.575995469165612,
+            "label": "Set 1"
+          },
+          {
+            "value": 24.622006876427847,
+            "label": "Set 1"
+          },
+          {
+            "value": 28.90322669091012,
+            "label": "Set 1"
+          },
+          {
+            "value": 32.69120887597684,
+            "label": "Set 1"
+          },
+          {
+            "value": 111.88028004543321,
+            "label": "Set 1"
+          },
+          {
+            "value": 181.22879703481033,
+            "label": "Set 1"
+          },
+          {
+            "value": 194.1520943911484,
+            "label": "Set 1"
+          },
+          {
+            "value": 2.561659014306745,
+            "label": "Set 2"
+          },
+          {
+            "value": 6.883554626834759,
+            "label": "Set 2"
+          },
+          {
+            "value": 12.203193147422546,
+            "label": "Set 2"
+          },
+          {
+            "value": 22.254331180037607,
+            "label": "Set 2"
+          },
+          {
+            "value": 30.1086723340702,
+            "label": "Set 2"
+          },
+          {
+            "value": 42.92956224537258,
+            "label": "Set 2"
+          },
+          {
+            "value": 51.61617392185447,
+            "label": "Set 2"
+          },
+          {
+            "value": 64.43204736019511,
+            "label": "Set 2"
+          },
+          {
+            "value": 71.07382187532988,
+            "label": "Set 2"
+          },
+          {
+            "value": 79.33983615006167,
+            "label": "Set 2"
+          },
+          {
+            "value": 99.52168711026275,
+            "label": "Set 2"
+          },
+          {
+            "value": 103.40014337433652,
+            "label": "Set 2"
+          },
+          {
+            "value": 123.23325945535176,
+            "label": "Set 2"
+          },
+          {
+            "value": 128.6088105574604,
+            "label": "Set 2"
+          },
+          {
+            "value": 178.06353449205142,
+            "label": "Set 2"
+          },
+          {
+            "value": 186.0721598451885,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "sum",
+        "animAgg": "sum",
+        "id": 8,
+        "referenceData": [
+          {
+            "value": 2.2792965265955747,
+            "label": "Set 1"
+          },
+          {
+            "value": 10.812754862103565,
+            "label": "Set 1"
+          },
+          {
+            "value": 24.705044265354783,
+            "label": "Set 1"
+          },
+          {
+            "value": 50.691011318143566,
+            "label": "Set 1"
+          },
+          {
+            "value": 65.50546763165602,
+            "label": "Set 1"
+          },
+          {
+            "value": 87.7992677234891,
+            "label": "Set 1"
+          },
+          {
+            "value": 106.70982268863031,
+            "label": "Set 1"
+          },
+          {
+            "value": 4.608802784052168,
+            "label": "Set 2"
+          },
+          {
+            "value": 11.78606241329924,
+            "label": "Set 2"
+          },
+          {
+            "value": 18.729390444009375,
+            "label": "Set 2"
+          },
+          {
+            "value": 23.35049862538025,
+            "label": "Set 2"
+          },
+          {
+            "value": 31.90498256711101,
+            "label": "Set 2"
+          },
+          {
+            "value": 38.55861129253208,
+            "label": "Set 2"
+          },
+          {
+            "value": 50.91763877569168,
+            "label": "Set 2"
+          },
+          {
+            "value": 61.61867291182673,
+            "label": "Set 2"
+          },
+          {
+            "value": 65.96685946254624,
+            "label": "Set 2"
+          },
+          {
+            "value": 76.15699238707633,
+            "label": "Set 2"
+          },
+          {
+            "value": 84.22263369366375,
+            "label": "Set 2"
+          },
+          {
+            "value": 90.55769772943452,
+            "label": "Set 2"
+          },
+          {
+            "value": 110.56076311833553,
+            "label": "Set 2"
+          },
+          {
+            "value": 168.97804301451106,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          1000
+        ]
+      },
+      {
+        "textAgg": "median",
+        "animAgg": "median",
+        "id": 9,
+        "referenceData": [
+          {
+            "value": 4.54872693171221,
+            "label": "Set 1"
+          },
+          {
+            "value": 10.121403420524477,
+            "label": "Set 1"
+          },
+          {
+            "value": 16.843152926663752,
+            "label": "Set 1"
+          },
+          {
+            "value": 26.55798407632821,
+            "label": "Set 1"
+          },
+          {
+            "value": 38.0240988518066,
+            "label": "Set 1"
+          },
+          {
+            "value": 62.10143387986492,
+            "label": "Set 1"
+          },
+          {
+            "value": 69.33554024636977,
+            "label": "Set 1"
+          },
+          {
+            "value": 83.11135641395776,
+            "label": "Set 1"
+          },
+          {
+            "value": 195.38941060917614,
+            "label": "Set 1"
+          },
+          {
+            "value": 2.1454155340004437,
+            "label": "Set 2"
+          },
+          {
+            "value": 6.86479447850172,
+            "label": "Set 2"
+          },
+          {
+            "value": 12.505535869422854,
+            "label": "Set 2"
+          },
+          {
+            "value": 16.832793043410966,
+            "label": "Set 2"
+          },
+          {
+            "value": 23.547211773817313,
+            "label": "Set 2"
+          },
+          {
+            "value": 32.37590669967777,
+            "label": "Set 2"
+          },
+          {
+            "value": 39.05492487501368,
+            "label": "Set 2"
+          },
+          {
+            "value": 44.564675394895644,
+            "label": "Set 2"
+          },
+          {
+            "value": 52.88590737586691,
+            "label": "Set 2"
+          },
+          {
+            "value": 59.49065101374798,
+            "label": "Set 2"
+          },
+          {
+            "value": 66.41749680502592,
+            "label": "Set 2"
+          },
+          {
+            "value": 75.79821389175612,
+            "label": "Set 2"
+          },
+          {
+            "value": 128.75487158955258,
+            "label": "Set 2"
+          },
+          {
+            "value": 135.33198352598538,
+            "label": "Set 2"
+          },
+          {
+            "value": 139.60706615179228,
+            "label": "Set 2"
+          },
+          {
+            "value": 186.3123516299479,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "median",
+        "animAgg": "avg",
+        "id": 10,
+        "referenceData": [
+          {
+            "value": 4.3641456932715315,
+            "label": "Set 1"
+          },
+          {
+            "value": 8.09772080676147,
+            "label": "Set 1"
+          },
+          {
+            "value": 24.90259524653291,
+            "label": "Set 1"
+          },
+          {
+            "value": 33.83056816072456,
+            "label": "Set 1"
+          },
+          {
+            "value": 52.891211884117325,
+            "label": "Set 1"
+          },
+          {
+            "value": 63.11699979002722,
+            "label": "Set 1"
+          },
+          {
+            "value": 76.97952097879097,
+            "label": "Set 1"
+          },
+          {
+            "value": 164.91015573635246,
+            "label": "Set 1"
+          },
+          {
+            "value": 5.0104367493147475,
+            "label": "Set 2"
+          },
+          {
+            "value": 10.712231527579979,
+            "label": "Set 2"
+          },
+          {
+            "value": 19.40315873812175,
+            "label": "Set 2"
+          },
+          {
+            "value": 30.549689121673353,
+            "label": "Set 2"
+          },
+          {
+            "value": 41.30981054060755,
+            "label": "Set 2"
+          },
+          {
+            "value": 49.50030512922698,
+            "label": "Set 2"
+          },
+          {
+            "value": 54.31345220887218,
+            "label": "Set 2"
+          },
+          {
+            "value": 58.80673316800156,
+            "label": "Set 2"
+          },
+          {
+            "value": 78.23391864957688,
+            "label": "Set 2"
+          },
+          {
+            "value": 85.09788670138443,
+            "label": "Set 2"
+          },
+          {
+            "value": 143.19944159263963,
+            "label": "Set 2"
+          },
+          {
+            "value": 166.40876024871383,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "avg",
+        "animAgg": "median",
+        "id": 11,
+        "referenceData": [
+          {
+            "value": 1.7506197445556442,
+            "label": "Set 1"
+          },
+          {
+            "value": 6.334586136056574,
+            "label": "Set 1"
+          },
+          {
+            "value": 14.720573733025125,
+            "label": "Set 1"
+          },
+          {
+            "value": 26.508335379384377,
+            "label": "Set 1"
+          },
+          {
+            "value": 40.52697040588443,
+            "label": "Set 1"
+          },
+          {
+            "value": 47.81753219777853,
+            "label": "Set 1"
+          },
+          {
+            "value": 70.56987691725669,
+            "label": "Set 1"
+          },
+          {
+            "value": 119.69671097830937,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.7944278550672788,
+            "label": "Set 2"
+          },
+          {
+            "value": 6.28751212966314,
+            "label": "Set 2"
+          },
+          {
+            "value": 10.30602629822365,
+            "label": "Set 2"
+          },
+          {
+            "value": 16.253767184814237,
+            "label": "Set 2"
+          },
+          {
+            "value": 21.032077278560447,
+            "label": "Set 2"
+          },
+          {
+            "value": 26.408711238550303,
+            "label": "Set 2"
+          },
+          {
+            "value": 32.36093953153383,
+            "label": "Set 2"
+          },
+          {
+            "value": 37.56287329803768,
+            "label": "Set 2"
+          },
+          {
+            "value": 48.368437676197026,
+            "label": "Set 2"
+          },
+          {
+            "value": 66.82949898447943,
+            "label": "Set 2"
+          },
+          {
+            "value": 83.6791685802406,
+            "label": "Set 2"
+          },
+          {
+            "value": 92.24129914331557,
+            "label": "Set 2"
+          },
+          {
+            "value": 146.2688456606198,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "avg",
+        "animAgg": "avg",
+        "id": 12,
+        "referenceData": [
+          {
+            "value": 1.9653025916820275,
+            "label": "Set 1"
+          },
+          {
+            "value": 7.6822648748215965,
+            "label": "Set 1"
+          },
+          {
+            "value": 18.24628829548346,
+            "label": "Set 1"
+          },
+          {
+            "value": 23.628284200373294,
+            "label": "Set 1"
+          },
+          {
+            "value": 32.79617658519317,
+            "label": "Set 1"
+          },
+          {
+            "value": 41.62046065077011,
+            "label": "Set 1"
+          },
+          {
+            "value": 80.58520527841083,
+            "label": "Set 1"
+          },
+          {
+            "value": 138.49925967491373,
+            "label": "Set 1"
+          },
+          {
+            "value": 193.60808131606115,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.2071512961063016,
+            "label": "Set 2"
+          },
+          {
+            "value": 5.102270481058124,
+            "label": "Set 2"
+          },
+          {
+            "value": 11.447651132593535,
+            "label": "Set 2"
+          },
+          {
+            "value": 15.321443790456923,
+            "label": "Set 2"
+          },
+          {
+            "value": 21.13689757359113,
+            "label": "Set 2"
+          },
+          {
+            "value": 36.153252717761994,
+            "label": "Set 2"
+          },
+          {
+            "value": 44.06338059963366,
+            "label": "Set 2"
+          },
+          {
+            "value": 49.32807781295278,
+            "label": "Set 2"
+          },
+          {
+            "value": 67.4685931251198,
+            "label": "Set 2"
+          },
+          {
+            "value": 79.3619334879171,
+            "label": "Set 2"
+          },
+          {
+            "value": 92.32717987347849,
+            "label": "Set 2"
+          },
+          {
+            "value": 122.02457131766842,
+            "label": "Set 2"
+          },
+          {
+            "value": 139.08262072356484,
+            "label": "Set 2"
+          },
+          {
+            "value": 192.76071849468468,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "iqr",
+        "animAgg": "iqr",
+        "id": 13,
+        "referenceData": [
+          {
+            "value": 2.1616649913974366,
+            "label": "Set 1"
+          },
+          {
+            "value": 10.530479892978304,
+            "label": "Set 1"
+          },
+          {
+            "value": 30.402858087940103,
+            "label": "Set 1"
+          },
+          {
+            "value": 43.8299683558989,
+            "label": "Set 1"
+          },
+          {
+            "value": 97.43345127146782,
+            "label": "Set 1"
+          },
+          {
+            "value": 154.55624268895812,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.0061273255441243,
+            "label": "Set 2"
+          },
+          {
+            "value": 4.852787047753997,
+            "label": "Set 2"
+          },
+          {
+            "value": 9.649375274732005,
+            "label": "Set 2"
+          },
+          {
+            "value": 19.361243262475796,
+            "label": "Set 2"
+          },
+          {
+            "value": 26.375465618428258,
+            "label": "Set 2"
+          },
+          {
+            "value": 32.749115160829795,
+            "label": "Set 2"
+          },
+          {
+            "value": 38.63972443222364,
+            "label": "Set 2"
+          },
+          {
+            "value": 44.64982970519126,
+            "label": "Set 2"
+          },
+          {
+            "value": 58.57597492134152,
+            "label": "Set 2"
+          },
+          {
+            "value": 81.33002458062577,
+            "label": "Set 2"
+          },
+          {
+            "value": 98.5280667192423,
+            "label": "Set 2"
+          },
+          {
+            "value": 108.22830643063675,
+            "label": "Set 2"
+          },
+          {
+            "value": 124.79983043705664,
+            "label": "Set 2"
+          },
+          {
+            "value": 145.7393687902997,
+            "label": "Set 2"
+          },
+          {
+            "value": 149.89471078832702,
+            "label": "Set 2"
+          },
+          {
+            "value": 197.6485220845659,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "iqr",
+        "animAgg": "stdev",
+        "id": 14,
+        "referenceData": [
+          {
+            "value": 1.7284523918428742,
+            "label": "Set 1"
+          },
+          {
+            "value": 7.798740358494068,
+            "label": "Set 1"
+          },
+          {
+            "value": 25.565329262210547,
+            "label": "Set 1"
+          },
+          {
+            "value": 56.02459753260189,
+            "label": "Set 1"
+          },
+          {
+            "value": 67.4764837726568,
+            "label": "Set 1"
+          },
+          {
+            "value": 71.28187712171454,
+            "label": "Set 1"
+          },
+          {
+            "value": 89.06665914473925,
+            "label": "Set 1"
+          },
+          {
+            "value": 187.45070364159454,
+            "label": "Set 1"
+          },
+          {
+            "value": 2.695432288933653,
+            "label": "Set 2"
+          },
+          {
+            "value": 7.02068300466185,
+            "label": "Set 2"
+          },
+          {
+            "value": 14.287304148352298,
+            "label": "Set 2"
+          },
+          {
+            "value": 18.010145910167992,
+            "label": "Set 2"
+          },
+          {
+            "value": 28.79896794774932,
+            "label": "Set 2"
+          },
+          {
+            "value": 33.337681261948006,
+            "label": "Set 2"
+          },
+          {
+            "value": 42.72416608868109,
+            "label": "Set 2"
+          },
+          {
+            "value": 73.75605462108899,
+            "label": "Set 2"
+          },
+          {
+            "value": 80.56591624583231,
+            "label": "Set 2"
+          },
+          {
+            "value": 90.0428969843561,
+            "label": "Set 2"
+          },
+          {
+            "value": 97.82116387160877,
+            "label": "Set 2"
+          },
+          {
+            "value": 113.0737414549264,
+            "label": "Set 2"
+          },
+          {
+            "value": 118.81996899255968,
+            "label": "Set 2"
+          },
+          {
+            "value": 143.95717816279037,
+            "label": "Set 2"
+          },
+          {
+            "value": 154.65789521693736,
+            "label": "Set 2"
+          },
+          {
+            "value": 158.61351146688293,
+            "label": "Set 2"
+          },
+          {
+            "value": 185.90224747098998,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "stdev",
+        "animAgg": "iqr",
+        "id": 15,
+        "referenceData": [
+          {
+            "value": 2.449243659255105,
+            "label": "Set 1"
+          },
+          {
+            "value": 10.127958459794455,
+            "label": "Set 1"
+          },
+          {
+            "value": 13.878753214500424,
+            "label": "Set 1"
+          },
+          {
+            "value": 24.330870176476218,
+            "label": "Set 1"
+          },
+          {
+            "value": 36.36155256629261,
+            "label": "Set 1"
+          },
+          {
+            "value": 48.82401787341147,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.1448619086260252,
+            "label": "Set 2"
+          },
+          {
+            "value": 14.394564632730939,
+            "label": "Set 2"
+          },
+          {
+            "value": 19.855358833506372,
+            "label": "Set 2"
+          },
+          {
+            "value": 28.066288846152695,
+            "label": "Set 2"
+          },
+          {
+            "value": 33.60712709160943,
+            "label": "Set 2"
+          },
+          {
+            "value": 37.88768273081242,
+            "label": "Set 2"
+          },
+          {
+            "value": 54.05909632786025,
+            "label": "Set 2"
+          },
+          {
+            "value": 64.58516120001698,
+            "label": "Set 2"
+          },
+          {
+            "value": 70.81068793986151,
+            "label": "Set 2"
+          },
+          {
+            "value": 78.59901002829126,
+            "label": "Set 2"
+          },
+          {
+            "value": 91.97507609944037,
+            "label": "Set 2"
+          },
+          {
+            "value": 108.43317686087299,
+            "label": "Set 2"
+          },
+          {
+            "value": 116.57553791977494,
+            "label": "Set 2"
+          },
+          {
+            "value": 151.81547673068894,
+            "label": "Set 2"
+          },
+          {
+            "value": 155.5017805043358,
+            "label": "Set 2"
+          },
+          {
+            "value": 181.2307918164276,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "stdev",
+        "animAgg": "stdev",
+        "id": 16,
+        "referenceData": [
+          {
+            "value": 2.6746062884308093,
+            "label": "Set 1"
+          },
+          {
+            "value": 7.43461458743987,
+            "label": "Set 1"
+          },
+          {
+            "value": 14.25180981703146,
+            "label": "Set 1"
+          },
+          {
+            "value": 63.805235022652866,
+            "label": "Set 1"
+          },
+          {
+            "value": 77.88066321399698,
+            "label": "Set 1"
+          },
+          {
+            "value": 95.67941347004661,
+            "label": "Set 1"
+          },
+          {
+            "value": 101.4952474722302,
+            "label": "Set 1"
+          },
+          {
+            "value": 113.17976537541635,
+            "label": "Set 1"
+          },
+          {
+            "value": 142.96319753692157,
+            "label": "Set 1"
+          },
+          {
+            "value": 2.652754624386802,
+            "label": "Set 2"
+          },
+          {
+            "value": 7.982650966384264,
+            "label": "Set 2"
+          },
+          {
+            "value": 20.709812031128195,
+            "label": "Set 2"
+          },
+          {
+            "value": 25.18452511673454,
+            "label": "Set 2"
+          },
+          {
+            "value": 30.550802831399466,
+            "label": "Set 2"
+          },
+          {
+            "value": 36.091174233187154,
+            "label": "Set 2"
+          },
+          {
+            "value": 40.120393287203086,
+            "label": "Set 2"
+          },
+          {
+            "value": 45.4169097625397,
+            "label": "Set 2"
+          },
+          {
+            "value": 49.84470763700617,
+            "label": "Set 2"
+          },
+          {
+            "value": 59.09647590328692,
+            "label": "Set 2"
+          },
+          {
+            "value": 67.12210849119079,
+            "label": "Set 2"
+          },
+          {
+            "value": 84.14062697326776,
+            "label": "Set 2"
+          },
+          {
+            "value": 106.64131362329807,
+            "label": "Set 2"
+          },
+          {
+            "value": 153.54871331943139,
+            "label": "Set 2"
+          },
+          {
+            "value": 159.95986902931136,
+            "label": "Set 2"
+          },
+          {
+            "value": 197.09798777630732,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "min",
+        "animAgg": "min",
+        "id": 17,
+        "referenceData": [
+          {
+            "value": 14.277455509642023,
+            "label": "Set 1"
+          },
+          {
+            "value": 25.608095803326137,
+            "label": "Set 1"
+          },
+          {
+            "value": 36.350942812662076,
+            "label": "Set 1"
+          },
+          {
+            "value": 102.5389097882054,
+            "label": "Set 1"
+          },
+          {
+            "value": 156.14931727719693,
+            "label": "Set 1"
+          },
+          {
+            "value": 181.58981463881682,
+            "label": "Set 1"
+          },
+          {
+            "value": 3.2526946381265476,
+            "label": "Set 2"
+          },
+          {
+            "value": 7.251992260554323,
+            "label": "Set 2"
+          },
+          {
+            "value": 14.196205918122219,
+            "label": "Set 2"
+          },
+          {
+            "value": 18.694200818009126,
+            "label": "Set 2"
+          },
+          {
+            "value": 25.409774391656445,
+            "label": "Set 2"
+          },
+          {
+            "value": 29.029595157557033,
+            "label": "Set 2"
+          },
+          {
+            "value": 37.5296191290009,
+            "label": "Set 2"
+          },
+          {
+            "value": 42.930347284626706,
+            "label": "Set 2"
+          },
+          {
+            "value": 56.7084516124771,
+            "label": "Set 2"
+          },
+          {
+            "value": 87.37752928611837,
+            "label": "Set 2"
+          },
+          {
+            "value": 103.83227776056178,
+            "label": "Set 2"
+          },
+          {
+            "value": 119.45633301203407,
+            "label": "Set 2"
+          },
+          {
+            "value": 125.84015823210432,
+            "label": "Set 2"
+          },
+          {
+            "value": 167.07546154243389,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      }
+    ],
+    [
+      {
+        "textAgg": "count",
+        "animAgg": "count",
+        "id": 0,
+        "referenceData": [
+          {
+            "value": 1.8510241611500096,
+            "label": "Set 1"
+          },
+          {
+            "value": 5.74111064672271,
+            "label": "Set 1"
+          },
+          {
+            "value": 18.538911452126854,
+            "label": "Set 1"
+          },
+          {
+            "value": 35.16654445989585,
+            "label": "Set 1"
+          },
+          {
+            "value": 69.5413234955709,
+            "label": "Set 1"
+          },
+          {
+            "value": 73.27618928394999,
+            "label": "Set 1"
+          },
+          {
+            "value": 85.55429828534646,
+            "label": "Set 1"
+          },
+          {
+            "value": 168.16009958891766,
+            "label": "Set 1"
+          },
+          {
+            "value": 3.737293268112209,
+            "label": "Set 2"
+          },
+          {
+            "value": 8.553256928816483,
+            "label": "Set 2"
+          },
+          {
+            "value": 18.609982848423336,
+            "label": "Set 2"
+          },
+          {
+            "value": 23.24002188097915,
+            "label": "Set 2"
+          },
+          {
+            "value": 35.312349400730774,
+            "label": "Set 2"
+          },
+          {
+            "value": 46.60455496384536,
+            "label": "Set 2"
+          },
+          {
+            "value": 50.40568398640682,
+            "label": "Set 2"
+          },
+          {
+            "value": 59.84721582897306,
+            "label": "Set 2"
+          },
+          {
+            "value": 67.7245350041476,
+            "label": "Set 2"
+          },
+          {
+            "value": 75.62219205485086,
+            "label": "Set 2"
+          },
+          {
+            "value": 85.65792382150936,
+            "label": "Set 2"
+          },
+          {
+            "value": 96.84017047718768,
+            "label": "Set 2"
+          },
+          {
+            "value": 111.85589718535246,
+            "label": "Set 2"
+          },
+          {
+            "value": 139.0452391376974,
+            "label": "Set 2"
+          },
+          {
+            "value": 157.86216073452292,
+            "label": "Set 2"
+          },
+          {
+            "value": 165.75056480055878,
+            "label": "Set 2"
+          },
+          {
+            "value": 188.4242331513801,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          20
+        ]
+      },
+      {
+        "textAgg": "count",
+        "animAgg": "max",
+        "id": 1,
+        "referenceData": [
+          {
+            "value": 2.704755981938865,
+            "label": "Set 1"
+          },
+          {
+            "value": 17.694022041130996,
+            "label": "Set 1"
+          },
+          {
+            "value": 56.82245436964426,
+            "label": "Set 1"
+          },
+          {
+            "value": 78.84219772804428,
+            "label": "Set 1"
+          },
+          {
+            "value": 139.95371481148194,
+            "label": "Set 1"
+          },
+          {
+            "value": 157.4783811914542,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.559243908562385,
+            "label": "Set 2"
+          },
+          {
+            "value": 5.575067276065351,
+            "label": "Set 2"
+          },
+          {
+            "value": 11.736801423413182,
+            "label": "Set 2"
+          },
+          {
+            "value": 17.050962824554873,
+            "label": "Set 2"
+          },
+          {
+            "value": 21.683767701847188,
+            "label": "Set 2"
+          },
+          {
+            "value": 30.948419430926354,
+            "label": "Set 2"
+          },
+          {
+            "value": 42.78705302701138,
+            "label": "Set 2"
+          },
+          {
+            "value": 70.70171562941836,
+            "label": "Set 2"
+          },
+          {
+            "value": 76.96608543451167,
+            "label": "Set 2"
+          },
+          {
+            "value": 102.07536883318559,
+            "label": "Set 2"
+          },
+          {
+            "value": 130.26352190004718,
+            "label": "Set 2"
+          },
+          {
+            "value": 188.46088329514356,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "count",
+        "animAgg": "sum",
+        "id": 2,
+        "referenceData": [
+          {
+            "value": 1.6745406035188597,
+            "label": "Set 1"
+          },
+          {
+            "value": 8.892738907422935,
+            "label": "Set 1"
+          },
+          {
+            "value": 16.456911262599235,
+            "label": "Set 1"
+          },
+          {
+            "value": 30.14939865571423,
+            "label": "Set 1"
+          },
+          {
+            "value": 33.99373187101031,
+            "label": "Set 1"
+          },
+          {
+            "value": 42.69247559284909,
+            "label": "Set 1"
+          },
+          {
+            "value": 64.25468953820977,
+            "label": "Set 1"
+          },
+          {
+            "value": 92.01192007321825,
+            "label": "Set 1"
+          },
+          {
+            "value": 193.1278903092583,
+            "label": "Set 1"
+          },
+          {
+            "value": 3.7440250882900603,
+            "label": "Set 2"
+          },
+          {
+            "value": 10.335024854954302,
+            "label": "Set 2"
+          },
+          {
+            "value": 14.610356927917397,
+            "label": "Set 2"
+          },
+          {
+            "value": 22.92579686629586,
+            "label": "Set 2"
+          },
+          {
+            "value": 27.586551082045112,
+            "label": "Set 2"
+          },
+          {
+            "value": 41.36184165069651,
+            "label": "Set 2"
+          },
+          {
+            "value": 51.57815782105067,
+            "label": "Set 2"
+          },
+          {
+            "value": 64.68155472408166,
+            "label": "Set 2"
+          },
+          {
+            "value": 71.04768199972574,
+            "label": "Set 2"
+          },
+          {
+            "value": 75.4559885775449,
+            "label": "Set 2"
+          },
+          {
+            "value": 157.0118691812072,
+            "label": "Set 2"
+          },
+          {
+            "value": 163.41297063743593,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          800
+        ]
+      },
+      {
+        "textAgg": "max",
+        "animAgg": "count",
+        "id": 3,
+        "referenceData": [
+          {
+            "value": 1.1634456273017109,
+            "label": "Set 1"
+          },
+          {
+            "value": 4.89845617289275,
+            "label": "Set 1"
+          },
+          {
+            "value": 13.362816357252035,
+            "label": "Set 1"
+          },
+          {
+            "value": 35.04439168045062,
+            "label": "Set 1"
+          },
+          {
+            "value": 40.11163873246243,
+            "label": "Set 1"
+          },
+          {
+            "value": 73.13300986118168,
+            "label": "Set 1"
+          },
+          {
+            "value": 129.74845817929418,
+            "label": "Set 1"
+          },
+          {
+            "value": 160.42574031462127,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.0971571570338696,
+            "label": "Set 2"
+          },
+          {
+            "value": 5.003805967387502,
+            "label": "Set 2"
+          },
+          {
+            "value": 10.973335931674626,
+            "label": "Set 2"
+          },
+          {
+            "value": 15.269209016439135,
+            "label": "Set 2"
+          },
+          {
+            "value": 42.26120960227319,
+            "label": "Set 2"
+          },
+          {
+            "value": 50.48861479710582,
+            "label": "Set 2"
+          },
+          {
+            "value": 82.11247958856615,
+            "label": "Set 2"
+          },
+          {
+            "value": 86.57151457046719,
+            "label": "Set 2"
+          },
+          {
+            "value": 168.91724282342057,
+            "label": "Set 2"
+          },
+          {
+            "value": 182.27073142445022,
+            "label": "Set 2"
+          },
+          {
+            "value": 192.4415377503297,
+            "label": "Set 2"
+          },
+          {
+            "value": 199.0857438864782,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          12
+        ]
+      },
+      {
+        "textAgg": "max",
+        "animAgg": "max",
+        "id": 4,
+        "referenceData": [
+          {
+            "value": 3.1784238435177814,
+            "label": "Set 1"
+          },
+          {
+            "value": 10.307644038698143,
+            "label": "Set 1"
+          },
+          {
+            "value": 34.656707547139206,
+            "label": "Set 1"
+          },
+          {
+            "value": 105.99251527217798,
+            "label": "Set 1"
+          },
+          {
+            "value": 114.56845962108082,
+            "label": "Set 1"
+          },
+          {
+            "value": 157.02331079171344,
+            "label": "Set 1"
+          },
+          {
+            "value": 2.9822915343714733,
+            "label": "Set 2"
+          },
+          {
+            "value": 7.35112624713469,
+            "label": "Set 2"
+          },
+          {
+            "value": 11.66358657489819,
+            "label": "Set 2"
+          },
+          {
+            "value": 21.59752980864276,
+            "label": "Set 2"
+          },
+          {
+            "value": 33.856551219800956,
+            "label": "Set 2"
+          },
+          {
+            "value": 38.44942894653027,
+            "label": "Set 2"
+          },
+          {
+            "value": 47.86753873814264,
+            "label": "Set 2"
+          },
+          {
+            "value": 51.872017048850324,
+            "label": "Set 2"
+          },
+          {
+            "value": 67.75183148015499,
+            "label": "Set 2"
+          },
+          {
+            "value": 78.35826332259542,
+            "label": "Set 2"
+          },
+          {
+            "value": 87.74593652503422,
+            "label": "Set 2"
+          },
+          {
+            "value": 101.091159337667,
+            "label": "Set 2"
+          },
+          {
+            "value": 118.59838220243843,
+            "label": "Set 2"
+          },
+          {
+            "value": 134.45165542659447,
+            "label": "Set 2"
+          },
+          {
+            "value": 180.08429114535124,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "max",
+        "animAgg": "sum",
+        "id": 5,
+        "referenceData": [
+          {
+            "value": 1.2775860531053034,
+            "label": "Set 1"
+          },
+          {
+            "value": 11.276846672009304,
+            "label": "Set 1"
+          },
+          {
+            "value": 18.16176975904137,
+            "label": "Set 1"
+          },
+          {
+            "value": 25.235689696204236,
+            "label": "Set 1"
+          },
+          {
+            "value": 84.84574139213268,
+            "label": "Set 1"
+          },
+          {
+            "value": 100.43447746128982,
+            "label": "Set 1"
+          },
+          {
+            "value": 114.73515878346002,
+            "label": "Set 1"
+          },
+          {
+            "value": 177.0623750168358,
+            "label": "Set 1"
+          },
+          {
+            "value": 2.1680035558415374,
+            "label": "Set 2"
+          },
+          {
+            "value": 6.724024242070291,
+            "label": "Set 2"
+          },
+          {
+            "value": 12.171474263348683,
+            "label": "Set 2"
+          },
+          {
+            "value": 17.849956406330495,
+            "label": "Set 2"
+          },
+          {
+            "value": 22.157940833079707,
+            "label": "Set 2"
+          },
+          {
+            "value": 29.9195154208405,
+            "label": "Set 2"
+          },
+          {
+            "value": 33.789638717116105,
+            "label": "Set 2"
+          },
+          {
+            "value": 41.689592004467755,
+            "label": "Set 2"
+          },
+          {
+            "value": 54.65821009806568,
+            "label": "Set 2"
+          },
+          {
+            "value": 70.40005611975195,
+            "label": "Set 2"
+          },
+          {
+            "value": 75.38949313682772,
+            "label": "Set 2"
+          },
+          {
+            "value": 88.46745697721107,
+            "label": "Set 2"
+          },
+          {
+            "value": 123.8847761088792,
+            "label": "Set 2"
+          },
+          {
+            "value": 133.299540330839,
+            "label": "Set 2"
+          },
+          {
+            "value": 137.203894484114,
+            "label": "Set 2"
+          },
+          {
+            "value": 144.50660306261057,
+            "label": "Set 2"
+          },
+          {
+            "value": 160.62929537505977,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          1200
+        ]
+      },
+      {
+        "textAgg": "sum",
+        "animAgg": "count",
+        "id": 6,
+        "referenceData": [
+          {
+            "value": 2.267458801280251,
+            "label": "Set 1"
+          },
+          {
+            "value": 12.423351979982385,
+            "label": "Set 1"
+          },
+          {
+            "value": 25.014117016876707,
+            "label": "Set 1"
+          },
+          {
+            "value": 34.34450390165167,
+            "label": "Set 1"
+          },
+          {
+            "value": 39.59149776255898,
+            "label": "Set 1"
+          },
+          {
+            "value": 50.457537625079155,
+            "label": "Set 1"
+          },
+          {
+            "value": 128.85035088815312,
+            "label": "Set 1"
+          },
+          {
+            "value": 139.61606537260204,
+            "label": "Set 1"
+          },
+          {
+            "value": 168.32197872986933,
+            "label": "Set 1"
+          },
+          {
+            "value": 3.1896352819109968,
+            "label": "Set 2"
+          },
+          {
+            "value": 8.945506743050153,
+            "label": "Set 2"
+          },
+          {
+            "value": 15.30251197537303,
+            "label": "Set 2"
+          },
+          {
+            "value": 21.32493039973114,
+            "label": "Set 2"
+          },
+          {
+            "value": 27.874728044562502,
+            "label": "Set 2"
+          },
+          {
+            "value": 41.333774306087015,
+            "label": "Set 2"
+          },
+          {
+            "value": 54.76491654657339,
+            "label": "Set 2"
+          },
+          {
+            "value": 71.37718638427052,
+            "label": "Set 2"
+          },
+          {
+            "value": 85.81824535850734,
+            "label": "Set 2"
+          },
+          {
+            "value": 105.272738975317,
+            "label": "Set 2"
+          },
+          {
+            "value": 109.29594066325113,
+            "label": "Set 2"
+          },
+          {
+            "value": 126.92720773778468,
+            "label": "Set 2"
+          },
+          {
+            "value": 153.32760758911664,
+            "label": "Set 2"
+          },
+          {
+            "value": 182.83471301434645,
+            "label": "Set 2"
+          },
+          {
+            "value": 187.0672122985232,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          20
+        ]
+      },
+      {
+        "textAgg": "sum",
+        "animAgg": "max",
+        "id": 7,
+        "referenceData": [
+          {
+            "value": 6.840376599912739,
+            "label": "Set 1"
+          },
+          {
+            "value": 14.437119093680277,
+            "label": "Set 1"
+          },
+          {
+            "value": 19.650852103896273,
+            "label": "Set 1"
+          },
+          {
+            "value": 63.17028863986796,
+            "label": "Set 1"
+          },
+          {
+            "value": 67.45966855103985,
+            "label": "Set 1"
+          },
+          {
+            "value": 134.3090994433908,
+            "label": "Set 1"
+          },
+          {
+            "value": 150.54917197246488,
+            "label": "Set 1"
+          },
+          {
+            "value": 154.42164602912382,
+            "label": "Set 1"
+          },
+          {
+            "value": 2.8731038088240295,
+            "label": "Set 2"
+          },
+          {
+            "value": 10.353302095634627,
+            "label": "Set 2"
+          },
+          {
+            "value": 18.617318581791597,
+            "label": "Set 2"
+          },
+          {
+            "value": 22.695767479330385,
+            "label": "Set 2"
+          },
+          {
+            "value": 36.57174147665625,
+            "label": "Set 2"
+          },
+          {
+            "value": 41.13009846217457,
+            "label": "Set 2"
+          },
+          {
+            "value": 58.702611928795164,
+            "label": "Set 2"
+          },
+          {
+            "value": 68.1710818009471,
+            "label": "Set 2"
+          },
+          {
+            "value": 72.94139783522601,
+            "label": "Set 2"
+          },
+          {
+            "value": 76.806258677626,
+            "label": "Set 2"
+          },
+          {
+            "value": 82.33506330974322,
+            "label": "Set 2"
+          },
+          {
+            "value": 88.17870165407903,
+            "label": "Set 2"
+          },
+          {
+            "value": 132.90369705799228,
+            "label": "Set 2"
+          },
+          {
+            "value": 165.49185036619647,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "sum",
+        "animAgg": "sum",
+        "id": 8,
+        "referenceData": [
+          {
+            "value": 4.1651780299803,
+            "label": "Set 1"
+          },
+          {
+            "value": 8.962658971728182,
+            "label": "Set 1"
+          },
+          {
+            "value": 18.113542877764907,
+            "label": "Set 1"
+          },
+          {
+            "value": 22.15232276347965,
+            "label": "Set 1"
+          },
+          {
+            "value": 27.315195479373447,
+            "label": "Set 1"
+          },
+          {
+            "value": 42.17981970024317,
+            "label": "Set 1"
+          },
+          {
+            "value": 57.48663872594879,
+            "label": "Set 1"
+          },
+          {
+            "value": 67.14931199354069,
+            "label": "Set 1"
+          },
+          {
+            "value": 127.07167826308904,
+            "label": "Set 1"
+          },
+          {
+            "value": 3.893574553906377,
+            "label": "Set 2"
+          },
+          {
+            "value": 15.033595095330725,
+            "label": "Set 2"
+          },
+          {
+            "value": 22.78477460738496,
+            "label": "Set 2"
+          },
+          {
+            "value": 30.35137251799944,
+            "label": "Set 2"
+          },
+          {
+            "value": 38.43115321370904,
+            "label": "Set 2"
+          },
+          {
+            "value": 45.81223530993964,
+            "label": "Set 2"
+          },
+          {
+            "value": 53.373971605791354,
+            "label": "Set 2"
+          },
+          {
+            "value": 59.33817438787745,
+            "label": "Set 2"
+          },
+          {
+            "value": 63.13827145719923,
+            "label": "Set 2"
+          },
+          {
+            "value": 67.25009572318434,
+            "label": "Set 2"
+          },
+          {
+            "value": 71.28842159769968,
+            "label": "Set 2"
+          },
+          {
+            "value": 86.17468773127833,
+            "label": "Set 2"
+          },
+          {
+            "value": 150.12467459910948,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          800
+        ]
+      },
+      {
+        "textAgg": "median",
+        "animAgg": "median",
+        "id": 9,
+        "referenceData": [
+          {
+            "value": 4.6666312640297445,
+            "label": "Set 1"
+          },
+          {
+            "value": 12.815336255732923,
+            "label": "Set 1"
+          },
+          {
+            "value": 22.085070753184638,
+            "label": "Set 1"
+          },
+          {
+            "value": 35.98223541811314,
+            "label": "Set 1"
+          },
+          {
+            "value": 44.40522010732094,
+            "label": "Set 1"
+          },
+          {
+            "value": 50.25973673744293,
+            "label": "Set 1"
+          },
+          {
+            "value": 107.91682270524164,
+            "label": "Set 1"
+          },
+          {
+            "value": 124.20504685095923,
+            "label": "Set 1"
+          },
+          {
+            "value": 166.39229278376672,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.2031093818518142,
+            "label": "Set 2"
+          },
+          {
+            "value": 7.581034284102399,
+            "label": "Set 2"
+          },
+          {
+            "value": 14.244749258033202,
+            "label": "Set 2"
+          },
+          {
+            "value": 32.18622007626618,
+            "label": "Set 2"
+          },
+          {
+            "value": 39.7302279719512,
+            "label": "Set 2"
+          },
+          {
+            "value": 55.64418562819972,
+            "label": "Set 2"
+          },
+          {
+            "value": 65.10749673457163,
+            "label": "Set 2"
+          },
+          {
+            "value": 69.95569986694997,
+            "label": "Set 2"
+          },
+          {
+            "value": 98.11298581075829,
+            "label": "Set 2"
+          },
+          {
+            "value": 124.63564192848754,
+            "label": "Set 2"
+          },
+          {
+            "value": 137.9694014608346,
+            "label": "Set 2"
+          },
+          {
+            "value": 148.09353210254037,
+            "label": "Set 2"
+          },
+          {
+            "value": 158.60682946450444,
+            "label": "Set 2"
+          },
+          {
+            "value": 168.5305766082237,
+            "label": "Set 2"
+          },
+          {
+            "value": 181.0035568360494,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "median",
+        "animAgg": "avg",
+        "id": 10,
+        "referenceData": [
+          {
+            "value": 9.16752961477621,
+            "label": "Set 1"
+          },
+          {
+            "value": 13.240854706546402,
+            "label": "Set 1"
+          },
+          {
+            "value": 17.810980920824864,
+            "label": "Set 1"
+          },
+          {
+            "value": 23.686916273707794,
+            "label": "Set 1"
+          },
+          {
+            "value": 30.09656757490414,
+            "label": "Set 1"
+          },
+          {
+            "value": 62.556133953306244,
+            "label": "Set 1"
+          },
+          {
+            "value": 78.34250969648167,
+            "label": "Set 1"
+          },
+          {
+            "value": 169.38549094310713,
+            "label": "Set 1"
+          },
+          {
+            "value": 4.160361266987814,
+            "label": "Set 2"
+          },
+          {
+            "value": 8.35634966033806,
+            "label": "Set 2"
+          },
+          {
+            "value": 12.212038740531607,
+            "label": "Set 2"
+          },
+          {
+            "value": 24.07367594566663,
+            "label": "Set 2"
+          },
+          {
+            "value": 30.258763975971657,
+            "label": "Set 2"
+          },
+          {
+            "value": 41.199266041493175,
+            "label": "Set 2"
+          },
+          {
+            "value": 57.81721947043254,
+            "label": "Set 2"
+          },
+          {
+            "value": 64.54551598002116,
+            "label": "Set 2"
+          },
+          {
+            "value": 72.17054013574266,
+            "label": "Set 2"
+          },
+          {
+            "value": 94.42246731205543,
+            "label": "Set 2"
+          },
+          {
+            "value": 119.78530322070702,
+            "label": "Set 2"
+          },
+          {
+            "value": 148.504807980939,
+            "label": "Set 2"
+          },
+          {
+            "value": 153.04867629136743,
+            "label": "Set 2"
+          },
+          {
+            "value": 177.95481944713887,
+            "label": "Set 2"
+          },
+          {
+            "value": 182.30366691913724,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "avg",
+        "animAgg": "median",
+        "id": 11,
+        "referenceData": [
+          {
+            "value": 1.4863423848206918,
+            "label": "Set 1"
+          },
+          {
+            "value": 6.239778617450474,
+            "label": "Set 1"
+          },
+          {
+            "value": 12.861916382479137,
+            "label": "Set 1"
+          },
+          {
+            "value": 43.9025362229014,
+            "label": "Set 1"
+          },
+          {
+            "value": 75.65408799081875,
+            "label": "Set 1"
+          },
+          {
+            "value": 148.33321160752732,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.1597066226199502,
+            "label": "Set 2"
+          },
+          {
+            "value": 5.86922856766739,
+            "label": "Set 2"
+          },
+          {
+            "value": 10.240155263029648,
+            "label": "Set 2"
+          },
+          {
+            "value": 16.869003617026614,
+            "label": "Set 2"
+          },
+          {
+            "value": 26.03433084961175,
+            "label": "Set 2"
+          },
+          {
+            "value": 40.3015129500636,
+            "label": "Set 2"
+          },
+          {
+            "value": 51.26567028567983,
+            "label": "Set 2"
+          },
+          {
+            "value": 70.35479044562439,
+            "label": "Set 2"
+          },
+          {
+            "value": 110.9603180360377,
+            "label": "Set 2"
+          },
+          {
+            "value": 154.54967689436205,
+            "label": "Set 2"
+          },
+          {
+            "value": 160.08039601890243,
+            "label": "Set 2"
+          },
+          {
+            "value": 185.47806224158774,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "avg",
+        "animAgg": "avg",
+        "id": 12,
+        "referenceData": [
+          {
+            "value": 4.3048604768190755,
+            "label": "Set 1"
+          },
+          {
+            "value": 10.98436983260413,
+            "label": "Set 1"
+          },
+          {
+            "value": 18.070195755383093,
+            "label": "Set 1"
+          },
+          {
+            "value": 23.50071151848014,
+            "label": "Set 1"
+          },
+          {
+            "value": 58.92700879630617,
+            "label": "Set 1"
+          },
+          {
+            "value": 74.24234596422394,
+            "label": "Set 1"
+          },
+          {
+            "value": 101.42960126138945,
+            "label": "Set 1"
+          },
+          {
+            "value": 130.143333246019,
+            "label": "Set 1"
+          },
+          {
+            "value": 167.0649478400916,
+            "label": "Set 1"
+          },
+          {
+            "value": 2.4894435781754196,
+            "label": "Set 2"
+          },
+          {
+            "value": 15.31889938081753,
+            "label": "Set 2"
+          },
+          {
+            "value": 20.726054374863136,
+            "label": "Set 2"
+          },
+          {
+            "value": 26.901988717085008,
+            "label": "Set 2"
+          },
+          {
+            "value": 32.49560321397267,
+            "label": "Set 2"
+          },
+          {
+            "value": 36.46216778069082,
+            "label": "Set 2"
+          },
+          {
+            "value": 48.90473973999466,
+            "label": "Set 2"
+          },
+          {
+            "value": 52.9142903712152,
+            "label": "Set 2"
+          },
+          {
+            "value": 59.66619687206001,
+            "label": "Set 2"
+          },
+          {
+            "value": 82.02484633199882,
+            "label": "Set 2"
+          },
+          {
+            "value": 87.78952633816147,
+            "label": "Set 2"
+          },
+          {
+            "value": 98.08714118302197,
+            "label": "Set 2"
+          },
+          {
+            "value": 145.78867641024212,
+            "label": "Set 2"
+          },
+          {
+            "value": 156.5604962758977,
+            "label": "Set 2"
+          },
+          {
+            "value": 160.87824735591988,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "iqr",
+        "animAgg": "iqr",
+        "id": 13,
+        "referenceData": [
+          {
+            "value": 4.072939251477409,
+            "label": "Set 1"
+          },
+          {
+            "value": 9.83139243673086,
+            "label": "Set 1"
+          },
+          {
+            "value": 16.976662743637554,
+            "label": "Set 1"
+          },
+          {
+            "value": 88.78715848073716,
+            "label": "Set 1"
+          },
+          {
+            "value": 131.10173352512803,
+            "label": "Set 1"
+          },
+          {
+            "value": 138.94764356977558,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.314261369893092,
+            "label": "Set 2"
+          },
+          {
+            "value": 7.272134428910107,
+            "label": "Set 2"
+          },
+          {
+            "value": 14.935709987321639,
+            "label": "Set 2"
+          },
+          {
+            "value": 20.279516975996696,
+            "label": "Set 2"
+          },
+          {
+            "value": 24.292250380576608,
+            "label": "Set 2"
+          },
+          {
+            "value": 28.85642632518705,
+            "label": "Set 2"
+          },
+          {
+            "value": 50.90093872951589,
+            "label": "Set 2"
+          },
+          {
+            "value": 72.20201935670596,
+            "label": "Set 2"
+          },
+          {
+            "value": 82.1765989529936,
+            "label": "Set 2"
+          },
+          {
+            "value": 130.4580698545594,
+            "label": "Set 2"
+          },
+          {
+            "value": 135.56663292190842,
+            "label": "Set 2"
+          },
+          {
+            "value": 157.7389963542607,
+            "label": "Set 2"
+          },
+          {
+            "value": 167.6053971881962,
+            "label": "Set 2"
+          },
+          {
+            "value": 182.44678628572598,
+            "label": "Set 2"
+          },
+          {
+            "value": 193.5917576692704,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "iqr",
+        "animAgg": "stdev",
+        "id": 14,
+        "referenceData": [
+          {
+            "value": 1.0516362313677763,
+            "label": "Set 1"
+          },
+          {
+            "value": 10.61305995529051,
+            "label": "Set 1"
+          },
+          {
+            "value": 43.34931239319054,
+            "label": "Set 1"
+          },
+          {
+            "value": 47.42505867921593,
+            "label": "Set 1"
+          },
+          {
+            "value": 96.56419533766936,
+            "label": "Set 1"
+          },
+          {
+            "value": 105.22157332897895,
+            "label": "Set 1"
+          },
+          {
+            "value": 109.1814088807487,
+            "label": "Set 1"
+          },
+          {
+            "value": 154.73158165790542,
+            "label": "Set 1"
+          },
+          {
+            "value": 2.630938062245273,
+            "label": "Set 2"
+          },
+          {
+            "value": 7.847301902382443,
+            "label": "Set 2"
+          },
+          {
+            "value": 13.732366369068794,
+            "label": "Set 2"
+          },
+          {
+            "value": 20.920381959144922,
+            "label": "Set 2"
+          },
+          {
+            "value": 49.289205601667845,
+            "label": "Set 2"
+          },
+          {
+            "value": 56.801084965085025,
+            "label": "Set 2"
+          },
+          {
+            "value": 61.02027049755218,
+            "label": "Set 2"
+          },
+          {
+            "value": 66.56843911647563,
+            "label": "Set 2"
+          },
+          {
+            "value": 81.0099747671596,
+            "label": "Set 2"
+          },
+          {
+            "value": 88.72895178561538,
+            "label": "Set 2"
+          },
+          {
+            "value": 109.10050872768804,
+            "label": "Set 2"
+          },
+          {
+            "value": 119.00718532879071,
+            "label": "Set 2"
+          },
+          {
+            "value": 129.2994067069694,
+            "label": "Set 2"
+          },
+          {
+            "value": 156.8957190704482,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "stdev",
+        "animAgg": "iqr",
+        "id": 15,
+        "referenceData": [
+          {
+            "value": 1.6295673828763582,
+            "label": "Set 1"
+          },
+          {
+            "value": 9.991840517721302,
+            "label": "Set 1"
+          },
+          {
+            "value": 14.861828762924238,
+            "label": "Set 1"
+          },
+          {
+            "value": 23.569194031401302,
+            "label": "Set 1"
+          },
+          {
+            "value": 33.44652582514699,
+            "label": "Set 1"
+          },
+          {
+            "value": 68.00162315880797,
+            "label": "Set 1"
+          },
+          {
+            "value": 138.0813613260786,
+            "label": "Set 1"
+          },
+          {
+            "value": 2.9617614390597864,
+            "label": "Set 2"
+          },
+          {
+            "value": 11.689531238540916,
+            "label": "Set 2"
+          },
+          {
+            "value": 16.250139609677067,
+            "label": "Set 2"
+          },
+          {
+            "value": 22.354346399831186,
+            "label": "Set 2"
+          },
+          {
+            "value": 48.7712689237429,
+            "label": "Set 2"
+          },
+          {
+            "value": 65.21284750704552,
+            "label": "Set 2"
+          },
+          {
+            "value": 69.27379417602397,
+            "label": "Set 2"
+          },
+          {
+            "value": 76.02050635642894,
+            "label": "Set 2"
+          },
+          {
+            "value": 94.22352045266629,
+            "label": "Set 2"
+          },
+          {
+            "value": 106.37782694370351,
+            "label": "Set 2"
+          },
+          {
+            "value": 124.02560387183595,
+            "label": "Set 2"
+          },
+          {
+            "value": 142.76096074713513,
+            "label": "Set 2"
+          },
+          {
+            "value": 148.49885498025543,
+            "label": "Set 2"
+          },
+          {
+            "value": 163.60843537239222,
+            "label": "Set 2"
+          },
+          {
+            "value": 191.2761636138398,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "stdev",
+        "animAgg": "stdev",
+        "id": 16,
+        "referenceData": [
+          {
+            "value": 1.1300471019717115,
+            "label": "Set 1"
+          },
+          {
+            "value": 10.651144748161256,
+            "label": "Set 1"
+          },
+          {
+            "value": 26.00485206281818,
+            "label": "Set 1"
+          },
+          {
+            "value": 32.42847225670666,
+            "label": "Set 1"
+          },
+          {
+            "value": 90.53059691236473,
+            "label": "Set 1"
+          },
+          {
+            "value": 102.2433793512733,
+            "label": "Set 1"
+          },
+          {
+            "value": 2.724730435084851,
+            "label": "Set 2"
+          },
+          {
+            "value": 8.816128186599082,
+            "label": "Set 2"
+          },
+          {
+            "value": 15.774620749814712,
+            "label": "Set 2"
+          },
+          {
+            "value": 31.185415974709148,
+            "label": "Set 2"
+          },
+          {
+            "value": 42.731011859749785,
+            "label": "Set 2"
+          },
+          {
+            "value": 47.743929685997756,
+            "label": "Set 2"
+          },
+          {
+            "value": 54.1028637303543,
+            "label": "Set 2"
+          },
+          {
+            "value": 58.4797011952109,
+            "label": "Set 2"
+          },
+          {
+            "value": 75.6636016797899,
+            "label": "Set 2"
+          },
+          {
+            "value": 84.85759568522853,
+            "label": "Set 2"
+          },
+          {
+            "value": 93.64059547265856,
+            "label": "Set 2"
+          },
+          {
+            "value": 101.07122261750976,
+            "label": "Set 2"
+          },
+          {
+            "value": 114.3453839195146,
+            "label": "Set 2"
+          },
+          {
+            "value": 127.04364043864145,
+            "label": "Set 2"
+          },
+          {
+            "value": 132.09193107467857,
+            "label": "Set 2"
+          },
+          {
+            "value": 163.44144641142125,
+            "label": "Set 2"
+          },
+          {
+            "value": 186.29092471614408,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "min",
+        "animAgg": "min",
+        "id": 17,
+        "referenceData": [
+          {
+            "value": 2.3130145384063234,
+            "label": "Set 1"
+          },
+          {
+            "value": 6.093279173409661,
+            "label": "Set 1"
+          },
+          {
+            "value": 17.57992068220691,
+            "label": "Set 1"
+          },
+          {
+            "value": 31.50520449596782,
+            "label": "Set 1"
+          },
+          {
+            "value": 50.99159436273397,
+            "label": "Set 1"
+          },
+          {
+            "value": 65.22686031775179,
+            "label": "Set 1"
+          },
+          {
+            "value": 78.21904934606584,
+            "label": "Set 1"
+          },
+          {
+            "value": 138.8554557228408,
+            "label": "Set 1"
+          },
+          {
+            "value": 171.06575291324057,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.7260425098732,
+            "label": "Set 2"
+          },
+          {
+            "value": 6.653495802752066,
+            "label": "Set 2"
+          },
+          {
+            "value": 13.221744116475167,
+            "label": "Set 2"
+          },
+          {
+            "value": 18.586243022855484,
+            "label": "Set 2"
+          },
+          {
+            "value": 22.690420333356247,
+            "label": "Set 2"
+          },
+          {
+            "value": 26.558574910224547,
+            "label": "Set 2"
+          },
+          {
+            "value": 47.36852203874346,
+            "label": "Set 2"
+          },
+          {
+            "value": 54.0857460064021,
+            "label": "Set 2"
+          },
+          {
+            "value": 64.29988990599752,
+            "label": "Set 2"
+          },
+          {
+            "value": 71.13113323185715,
+            "label": "Set 2"
+          },
+          {
+            "value": 80.22884236000353,
+            "label": "Set 2"
+          },
+          {
+            "value": 103.39043439156669,
+            "label": "Set 2"
+          },
+          {
+            "value": 124.58397016472752,
+            "label": "Set 2"
+          },
+          {
+            "value": 130.97453055188674,
+            "label": "Set 2"
+          },
+          {
+            "value": 146.27149055488775,
+            "label": "Set 2"
+          },
+          {
+            "value": 166.6865246557341,
+            "label": "Set 2"
+          },
+          {
+            "value": 173.56750536218962,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      }
+    ],
+    [
+      {
+        "textAgg": "count",
+        "animAgg": "count",
+        "id": 0,
+        "referenceData": [
+          {
+            "value": 1.6165385440844404,
+            "label": "Set 1"
+          },
+          {
+            "value": 8.00618584212181,
+            "label": "Set 1"
+          },
+          {
+            "value": 13.303294369815745,
+            "label": "Set 1"
+          },
+          {
+            "value": 30.023747062097794,
+            "label": "Set 1"
+          },
+          {
+            "value": 43.46757171906849,
+            "label": "Set 1"
+          },
+          {
+            "value": 63.29987185884811,
+            "label": "Set 1"
+          },
+          {
+            "value": 86.7654144228229,
+            "label": "Set 1"
+          },
+          {
+            "value": 107.14112517493271,
+            "label": "Set 1"
+          },
+          {
+            "value": 150.71026065161877,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.872143262491929,
+            "label": "Set 2"
+          },
+          {
+            "value": 6.850039319574492,
+            "label": "Set 2"
+          },
+          {
+            "value": 15.804544633664388,
+            "label": "Set 2"
+          },
+          {
+            "value": 24.841049382680925,
+            "label": "Set 2"
+          },
+          {
+            "value": 39.03761778206481,
+            "label": "Set 2"
+          },
+          {
+            "value": 46.388411813670956,
+            "label": "Set 2"
+          },
+          {
+            "value": 56.67517530599406,
+            "label": "Set 2"
+          },
+          {
+            "value": 69.68944050852359,
+            "label": "Set 2"
+          },
+          {
+            "value": 117.903339142506,
+            "label": "Set 2"
+          },
+          {
+            "value": 129.1210726047452,
+            "label": "Set 2"
+          },
+          {
+            "value": 135.77974324103658,
+            "label": "Set 2"
+          },
+          {
+            "value": 173.46533799516618,
+            "label": "Set 2"
+          },
+          {
+            "value": 186.32890411036533,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          14
+        ]
+      },
+      {
+        "textAgg": "count",
+        "animAgg": "max",
+        "id": 1,
+        "referenceData": [
+          {
+            "value": 2.122087816672007,
+            "label": "Set 1"
+          },
+          {
+            "value": 7.708561192955473,
+            "label": "Set 1"
+          },
+          {
+            "value": 14.640565977858941,
+            "label": "Set 1"
+          },
+          {
+            "value": 21.965782193805033,
+            "label": "Set 1"
+          },
+          {
+            "value": 29.30160524645012,
+            "label": "Set 1"
+          },
+          {
+            "value": 35.65280422068161,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.4895423641296928,
+            "label": "Set 2"
+          },
+          {
+            "value": 6.939614645968442,
+            "label": "Set 2"
+          },
+          {
+            "value": 14.6558482431348,
+            "label": "Set 2"
+          },
+          {
+            "value": 27.460599731947916,
+            "label": "Set 2"
+          },
+          {
+            "value": 31.55240955882102,
+            "label": "Set 2"
+          },
+          {
+            "value": 35.72569737775256,
+            "label": "Set 2"
+          },
+          {
+            "value": 44.76507465174714,
+            "label": "Set 2"
+          },
+          {
+            "value": 50.366581324206706,
+            "label": "Set 2"
+          },
+          {
+            "value": 54.72531539691005,
+            "label": "Set 2"
+          },
+          {
+            "value": 61.45399539344497,
+            "label": "Set 2"
+          },
+          {
+            "value": 77.5932622638963,
+            "label": "Set 2"
+          },
+          {
+            "value": 85.94667531897723,
+            "label": "Set 2"
+          },
+          {
+            "value": 92.10543078184021,
+            "label": "Set 2"
+          },
+          {
+            "value": 97.18275174811158,
+            "label": "Set 2"
+          },
+          {
+            "value": 102.96700585953778,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "count",
+        "animAgg": "sum",
+        "id": 2,
+        "referenceData": [
+          {
+            "value": 1.1524204108091252,
+            "label": "Set 1"
+          },
+          {
+            "value": 6.794609029247857,
+            "label": "Set 1"
+          },
+          {
+            "value": 13.395251777961109,
+            "label": "Set 1"
+          },
+          {
+            "value": 21.342298406412734,
+            "label": "Set 1"
+          },
+          {
+            "value": 25.531702086970462,
+            "label": "Set 1"
+          },
+          {
+            "value": 35.27588104122155,
+            "label": "Set 1"
+          },
+          {
+            "value": 56.296908694044056,
+            "label": "Set 1"
+          },
+          {
+            "value": 104.12431096876557,
+            "label": "Set 1"
+          },
+          {
+            "value": 111.57376582382761,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.418088429400584,
+            "label": "Set 2"
+          },
+          {
+            "value": 7.0444396603281465,
+            "label": "Set 2"
+          },
+          {
+            "value": 10.959070802624973,
+            "label": "Set 2"
+          },
+          {
+            "value": 20.625903736739005,
+            "label": "Set 2"
+          },
+          {
+            "value": 28.123972243014606,
+            "label": "Set 2"
+          },
+          {
+            "value": 32.98713573580261,
+            "label": "Set 2"
+          },
+          {
+            "value": 47.50740412581466,
+            "label": "Set 2"
+          },
+          {
+            "value": 54.769764426974874,
+            "label": "Set 2"
+          },
+          {
+            "value": 62.00903675567387,
+            "label": "Set 2"
+          },
+          {
+            "value": 65.70624198943204,
+            "label": "Set 2"
+          },
+          {
+            "value": 71.88567152870814,
+            "label": "Set 2"
+          },
+          {
+            "value": 83.34991326826963,
+            "label": "Set 2"
+          },
+          {
+            "value": 97.26484603388363,
+            "label": "Set 2"
+          },
+          {
+            "value": 109.07923442330639,
+            "label": "Set 2"
+          },
+          {
+            "value": 117.90730237988232,
+            "label": "Set 2"
+          },
+          {
+            "value": 151.87993330134208,
+            "label": "Set 2"
+          },
+          {
+            "value": 191.95477799171584,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          1200
+        ]
+      },
+      {
+        "textAgg": "max",
+        "animAgg": "count",
+        "id": 3,
+        "referenceData": [
+          {
+            "value": 4.432044128945119,
+            "label": "Set 1"
+          },
+          {
+            "value": 14.496136101918832,
+            "label": "Set 1"
+          },
+          {
+            "value": 32.4206831026902,
+            "label": "Set 1"
+          },
+          {
+            "value": 63.04042378068481,
+            "label": "Set 1"
+          },
+          {
+            "value": 119.11906249543064,
+            "label": "Set 1"
+          },
+          {
+            "value": 177.57622738755316,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.0753929676920875,
+            "label": "Set 2"
+          },
+          {
+            "value": 7.658140377407808,
+            "label": "Set 2"
+          },
+          {
+            "value": 11.515478429178994,
+            "label": "Set 2"
+          },
+          {
+            "value": 18.46863952861429,
+            "label": "Set 2"
+          },
+          {
+            "value": 27.395410490681186,
+            "label": "Set 2"
+          },
+          {
+            "value": 31.644239813459706,
+            "label": "Set 2"
+          },
+          {
+            "value": 35.32504256192916,
+            "label": "Set 2"
+          },
+          {
+            "value": 39.47419886296112,
+            "label": "Set 2"
+          },
+          {
+            "value": 47.40196194183122,
+            "label": "Set 2"
+          },
+          {
+            "value": 60.14065499309711,
+            "label": "Set 2"
+          },
+          {
+            "value": 64.27818983911251,
+            "label": "Set 2"
+          },
+          {
+            "value": 117.49004768710991,
+            "label": "Set 2"
+          },
+          {
+            "value": 124.44171239436517,
+            "label": "Set 2"
+          },
+          {
+            "value": 131.29040699415143,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          14
+        ]
+      },
+      {
+        "textAgg": "max",
+        "animAgg": "max",
+        "id": 4,
+        "referenceData": [
+          {
+            "value": 2.945298547629879,
+            "label": "Set 1"
+          },
+          {
+            "value": 24.356785291639646,
+            "label": "Set 1"
+          },
+          {
+            "value": 30.606309655156473,
+            "label": "Set 1"
+          },
+          {
+            "value": 37.12253222357225,
+            "label": "Set 1"
+          },
+          {
+            "value": 73.87885975280511,
+            "label": "Set 1"
+          },
+          {
+            "value": 99.9492871195518,
+            "label": "Set 1"
+          },
+          {
+            "value": 4.629300998131194,
+            "label": "Set 2"
+          },
+          {
+            "value": 11.522287755160043,
+            "label": "Set 2"
+          },
+          {
+            "value": 18.930195110090743,
+            "label": "Set 2"
+          },
+          {
+            "value": 26.251746739780586,
+            "label": "Set 2"
+          },
+          {
+            "value": 33.613025284756006,
+            "label": "Set 2"
+          },
+          {
+            "value": 37.562864797085474,
+            "label": "Set 2"
+          },
+          {
+            "value": 48.277318403077224,
+            "label": "Set 2"
+          },
+          {
+            "value": 52.48759315758147,
+            "label": "Set 2"
+          },
+          {
+            "value": 61.547092871539604,
+            "label": "Set 2"
+          },
+          {
+            "value": 68.26628642590923,
+            "label": "Set 2"
+          },
+          {
+            "value": 74.11372566687572,
+            "label": "Set 2"
+          },
+          {
+            "value": 80.51719949563702,
+            "label": "Set 2"
+          },
+          {
+            "value": 93.99971609137178,
+            "label": "Set 2"
+          },
+          {
+            "value": 114.4491832736883,
+            "label": "Set 2"
+          },
+          {
+            "value": 132.97780732487502,
+            "label": "Set 2"
+          },
+          {
+            "value": 195.09999422400222,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "max",
+        "animAgg": "sum",
+        "id": 5,
+        "referenceData": [
+          {
+            "value": 4.78758379064166,
+            "label": "Set 1"
+          },
+          {
+            "value": 15.066019375682398,
+            "label": "Set 1"
+          },
+          {
+            "value": 21.18226490465497,
+            "label": "Set 1"
+          },
+          {
+            "value": 32.03273075567511,
+            "label": "Set 1"
+          },
+          {
+            "value": 37.45536648078342,
+            "label": "Set 1"
+          },
+          {
+            "value": 49.552300146559055,
+            "label": "Set 1"
+          },
+          {
+            "value": 63.29351676487888,
+            "label": "Set 1"
+          },
+          {
+            "value": 93.94469916793399,
+            "label": "Set 1"
+          },
+          {
+            "value": 191.70448552008855,
+            "label": "Set 1"
+          },
+          {
+            "value": 3.4085931323099765,
+            "label": "Set 2"
+          },
+          {
+            "value": 8.122971977271142,
+            "label": "Set 2"
+          },
+          {
+            "value": 11.997578578124534,
+            "label": "Set 2"
+          },
+          {
+            "value": 20.51111811316307,
+            "label": "Set 2"
+          },
+          {
+            "value": 27.354986977268492,
+            "label": "Set 2"
+          },
+          {
+            "value": 31.906902080674882,
+            "label": "Set 2"
+          },
+          {
+            "value": 40.884471267815144,
+            "label": "Set 2"
+          },
+          {
+            "value": 50.26796426303807,
+            "label": "Set 2"
+          },
+          {
+            "value": 57.50630105113246,
+            "label": "Set 2"
+          },
+          {
+            "value": 66.67836404883138,
+            "label": "Set 2"
+          },
+          {
+            "value": 81.01554191349382,
+            "label": "Set 2"
+          },
+          {
+            "value": 88.85478341842148,
+            "label": "Set 2"
+          },
+          {
+            "value": 101.00720750888192,
+            "label": "Set 2"
+          },
+          {
+            "value": 151.7341816792416,
+            "label": "Set 2"
+          },
+          {
+            "value": 155.531200963344,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          1000
+        ]
+      },
+      {
+        "textAgg": "sum",
+        "animAgg": "count",
+        "id": 6,
+        "referenceData": [
+          {
+            "value": 5.5657917140352495,
+            "label": "Set 1"
+          },
+          {
+            "value": 28.73947203520102,
+            "label": "Set 1"
+          },
+          {
+            "value": 38.20466079148999,
+            "label": "Set 1"
+          },
+          {
+            "value": 77.85144708511409,
+            "label": "Set 1"
+          },
+          {
+            "value": 117.26146738017168,
+            "label": "Set 1"
+          },
+          {
+            "value": 121.16497581763223,
+            "label": "Set 1"
+          },
+          {
+            "value": 187.4990792249248,
+            "label": "Set 1"
+          },
+          {
+            "value": 193.61798028626148,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.8630889716324177,
+            "label": "Set 2"
+          },
+          {
+            "value": 8.772346858041338,
+            "label": "Set 2"
+          },
+          {
+            "value": 15.43162531152235,
+            "label": "Set 2"
+          },
+          {
+            "value": 30.354561531835614,
+            "label": "Set 2"
+          },
+          {
+            "value": 35.548729787595306,
+            "label": "Set 2"
+          },
+          {
+            "value": 39.7032570572861,
+            "label": "Set 2"
+          },
+          {
+            "value": 49.34165107569683,
+            "label": "Set 2"
+          },
+          {
+            "value": 60.87186401732252,
+            "label": "Set 2"
+          },
+          {
+            "value": 66.85044599865144,
+            "label": "Set 2"
+          },
+          {
+            "value": 75.64020650068498,
+            "label": "Set 2"
+          },
+          {
+            "value": 90.25992276245267,
+            "label": "Set 2"
+          },
+          {
+            "value": 123.76307826450153,
+            "label": "Set 2"
+          },
+          {
+            "value": 143.49461427281886,
+            "label": "Set 2"
+          },
+          {
+            "value": 189.67096074009214,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          14
+        ]
+      },
+      {
+        "textAgg": "sum",
+        "animAgg": "max",
+        "id": 7,
+        "referenceData": [
+          {
+            "value": 1.074610055902445,
+            "label": "Set 1"
+          },
+          {
+            "value": 10.539353045049866,
+            "label": "Set 1"
+          },
+          {
+            "value": 17.466890319755468,
+            "label": "Set 1"
+          },
+          {
+            "value": 29.78666710178352,
+            "label": "Set 1"
+          },
+          {
+            "value": 35.357773126243856,
+            "label": "Set 1"
+          },
+          {
+            "value": 52.26986312489447,
+            "label": "Set 1"
+          },
+          {
+            "value": 85.930869052003,
+            "label": "Set 1"
+          },
+          {
+            "value": 115.78543108478391,
+            "label": "Set 1"
+          },
+          {
+            "value": 121.48219011661325,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.556014064409821,
+            "label": "Set 2"
+          },
+          {
+            "value": 10.428637085729214,
+            "label": "Set 2"
+          },
+          {
+            "value": 15.099508041434389,
+            "label": "Set 2"
+          },
+          {
+            "value": 25.12390687942992,
+            "label": "Set 2"
+          },
+          {
+            "value": 29.121188523129977,
+            "label": "Set 2"
+          },
+          {
+            "value": 32.83003787700119,
+            "label": "Set 2"
+          },
+          {
+            "value": 37.26670905507435,
+            "label": "Set 2"
+          },
+          {
+            "value": 61.13831304995337,
+            "label": "Set 2"
+          },
+          {
+            "value": 64.8394572360951,
+            "label": "Set 2"
+          },
+          {
+            "value": 72.18704944762383,
+            "label": "Set 2"
+          },
+          {
+            "value": 109.30589769980978,
+            "label": "Set 2"
+          },
+          {
+            "value": 121.19540757439822,
+            "label": "Set 2"
+          },
+          {
+            "value": 130.190920007654,
+            "label": "Set 2"
+          },
+          {
+            "value": 146.99714139709508,
+            "label": "Set 2"
+          },
+          {
+            "value": 177.4389312777376,
+            "label": "Set 2"
+          },
+          {
+            "value": 186.95812123214063,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "sum",
+        "animAgg": "sum",
+        "id": 8,
+        "referenceData": [
+          {
+            "value": 6.7715877456815985,
+            "label": "Set 1"
+          },
+          {
+            "value": 19.367440052510897,
+            "label": "Set 1"
+          },
+          {
+            "value": 39.411486519326644,
+            "label": "Set 1"
+          },
+          {
+            "value": 54.316319807712986,
+            "label": "Set 1"
+          },
+          {
+            "value": 58.507930935934354,
+            "label": "Set 1"
+          },
+          {
+            "value": 78.64171102591564,
+            "label": "Set 1"
+          },
+          {
+            "value": 152.0266666360904,
+            "label": "Set 1"
+          },
+          {
+            "value": 172.85216747733818,
+            "label": "Set 1"
+          },
+          {
+            "value": 4.8770957415925995,
+            "label": "Set 2"
+          },
+          {
+            "value": 8.921572269173378,
+            "label": "Set 2"
+          },
+          {
+            "value": 17.160720887661007,
+            "label": "Set 2"
+          },
+          {
+            "value": 21.209952734327963,
+            "label": "Set 2"
+          },
+          {
+            "value": 32.741167280173045,
+            "label": "Set 2"
+          },
+          {
+            "value": 46.80752749953,
+            "label": "Set 2"
+          },
+          {
+            "value": 51.14873649069005,
+            "label": "Set 2"
+          },
+          {
+            "value": 56.556738776737475,
+            "label": "Set 2"
+          },
+          {
+            "value": 62.72021790224876,
+            "label": "Set 2"
+          },
+          {
+            "value": 67.21210959680137,
+            "label": "Set 2"
+          },
+          {
+            "value": 74.00876407002325,
+            "label": "Set 2"
+          },
+          {
+            "value": 132.49941283054923,
+            "label": "Set 2"
+          },
+          {
+            "value": 160.4351788332797,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          800
+        ]
+      },
+      {
+        "textAgg": "median",
+        "animAgg": "median",
+        "id": 9,
+        "referenceData": [
+          {
+            "value": 6.958868100780028,
+            "label": "Set 1"
+          },
+          {
+            "value": 13.169357938176056,
+            "label": "Set 1"
+          },
+          {
+            "value": 24.69141795826407,
+            "label": "Set 1"
+          },
+          {
+            "value": 51.865498891695886,
+            "label": "Set 1"
+          },
+          {
+            "value": 69.95767931970444,
+            "label": "Set 1"
+          },
+          {
+            "value": 102.03302930490638,
+            "label": "Set 1"
+          },
+          {
+            "value": 112.01545708414744,
+            "label": "Set 1"
+          },
+          {
+            "value": 4.239693998270051,
+            "label": "Set 2"
+          },
+          {
+            "value": 8.203463776699556,
+            "label": "Set 2"
+          },
+          {
+            "value": 14.470341980030877,
+            "label": "Set 2"
+          },
+          {
+            "value": 23.46603364488579,
+            "label": "Set 2"
+          },
+          {
+            "value": 36.543566499190845,
+            "label": "Set 2"
+          },
+          {
+            "value": 51.781628298716655,
+            "label": "Set 2"
+          },
+          {
+            "value": 56.121617664493094,
+            "label": "Set 2"
+          },
+          {
+            "value": 64.57687278846235,
+            "label": "Set 2"
+          },
+          {
+            "value": 85.57963391604177,
+            "label": "Set 2"
+          },
+          {
+            "value": 93.20404006515145,
+            "label": "Set 2"
+          },
+          {
+            "value": 99.15400227916564,
+            "label": "Set 2"
+          },
+          {
+            "value": 111.88067637246363,
+            "label": "Set 2"
+          },
+          {
+            "value": 149.19142331597956,
+            "label": "Set 2"
+          },
+          {
+            "value": 160.42280213514235,
+            "label": "Set 2"
+          },
+          {
+            "value": 169.92101059724197,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "median",
+        "animAgg": "avg",
+        "id": 10,
+        "referenceData": [
+          {
+            "value": 5.7666012080992495,
+            "label": "Set 1"
+          },
+          {
+            "value": 10.732857726340665,
+            "label": "Set 1"
+          },
+          {
+            "value": 19.020762412323748,
+            "label": "Set 1"
+          },
+          {
+            "value": 30.814340990574873,
+            "label": "Set 1"
+          },
+          {
+            "value": 41.759728557396905,
+            "label": "Set 1"
+          },
+          {
+            "value": 60.6611243552514,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.9324322210124931,
+            "label": "Set 2"
+          },
+          {
+            "value": 7.894224446172141,
+            "label": "Set 2"
+          },
+          {
+            "value": 15.311712010972773,
+            "label": "Set 2"
+          },
+          {
+            "value": 19.636532502050063,
+            "label": "Set 2"
+          },
+          {
+            "value": 23.30341497815664,
+            "label": "Set 2"
+          },
+          {
+            "value": 36.096167169433016,
+            "label": "Set 2"
+          },
+          {
+            "value": 47.930466491812226,
+            "label": "Set 2"
+          },
+          {
+            "value": 51.538299952127986,
+            "label": "Set 2"
+          },
+          {
+            "value": 71.35829607324304,
+            "label": "Set 2"
+          },
+          {
+            "value": 96.83057624153459,
+            "label": "Set 2"
+          },
+          {
+            "value": 100.5243952013052,
+            "label": "Set 2"
+          },
+          {
+            "value": 179.61551122591973,
+            "label": "Set 2"
+          },
+          {
+            "value": 184.6871077128692,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "avg",
+        "animAgg": "median",
+        "id": 11,
+        "referenceData": [
+          {
+            "value": 2.1288903731633733,
+            "label": "Set 1"
+          },
+          {
+            "value": 7.512136740535928,
+            "label": "Set 1"
+          },
+          {
+            "value": 12.481572837115111,
+            "label": "Set 1"
+          },
+          {
+            "value": 17.067857977324742,
+            "label": "Set 1"
+          },
+          {
+            "value": 41.845608365389715,
+            "label": "Set 1"
+          },
+          {
+            "value": 59.31582746150068,
+            "label": "Set 1"
+          },
+          {
+            "value": 77.19785004694,
+            "label": "Set 1"
+          },
+          {
+            "value": 149.36316135927143,
+            "label": "Set 1"
+          },
+          {
+            "value": 161.6275512898177,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.7775533952773541,
+            "label": "Set 2"
+          },
+          {
+            "value": 7.5307835090382405,
+            "label": "Set 2"
+          },
+          {
+            "value": 14.280446898188101,
+            "label": "Set 2"
+          },
+          {
+            "value": 18.247885032983582,
+            "label": "Set 2"
+          },
+          {
+            "value": 26.368637732465317,
+            "label": "Set 2"
+          },
+          {
+            "value": 33.35094044697398,
+            "label": "Set 2"
+          },
+          {
+            "value": 40.50270903143077,
+            "label": "Set 2"
+          },
+          {
+            "value": 59.526906586735606,
+            "label": "Set 2"
+          },
+          {
+            "value": 66.89084220415877,
+            "label": "Set 2"
+          },
+          {
+            "value": 76.31673539254331,
+            "label": "Set 2"
+          },
+          {
+            "value": 83.56746664727021,
+            "label": "Set 2"
+          },
+          {
+            "value": 100.23398546031191,
+            "label": "Set 2"
+          },
+          {
+            "value": 123.32705405534226,
+            "label": "Set 2"
+          },
+          {
+            "value": 130.39459191123214,
+            "label": "Set 2"
+          },
+          {
+            "value": 138.41785091128793,
+            "label": "Set 2"
+          },
+          {
+            "value": 199.48252526560947,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "avg",
+        "animAgg": "avg",
+        "id": 12,
+        "referenceData": [
+          {
+            "value": 5.831246740921848,
+            "label": "Set 1"
+          },
+          {
+            "value": 17.20541511569763,
+            "label": "Set 1"
+          },
+          {
+            "value": 21.338609846522168,
+            "label": "Set 1"
+          },
+          {
+            "value": 47.628004286976164,
+            "label": "Set 1"
+          },
+          {
+            "value": 103.12915903162958,
+            "label": "Set 1"
+          },
+          {
+            "value": 186.85205916132398,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.446758835769223,
+            "label": "Set 2"
+          },
+          {
+            "value": 5.1185802362119315,
+            "label": "Set 2"
+          },
+          {
+            "value": 9.791892699973602,
+            "label": "Set 2"
+          },
+          {
+            "value": 24.4186881028872,
+            "label": "Set 2"
+          },
+          {
+            "value": 34.89599645183169,
+            "label": "Set 2"
+          },
+          {
+            "value": 42.68861358274716,
+            "label": "Set 2"
+          },
+          {
+            "value": 46.38566322034516,
+            "label": "Set 2"
+          },
+          {
+            "value": 60.213858196567564,
+            "label": "Set 2"
+          },
+          {
+            "value": 63.94926991981172,
+            "label": "Set 2"
+          },
+          {
+            "value": 125.68221414114899,
+            "label": "Set 2"
+          },
+          {
+            "value": 133.17762383826036,
+            "label": "Set 2"
+          },
+          {
+            "value": 165.73061766013183,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "iqr",
+        "animAgg": "iqr",
+        "id": 13,
+        "referenceData": [
+          {
+            "value": 3.323604764741094,
+            "label": "Set 1"
+          },
+          {
+            "value": 47.24558204751975,
+            "label": "Set 1"
+          },
+          {
+            "value": 67.65005705270941,
+            "label": "Set 1"
+          },
+          {
+            "value": 84.48615005010049,
+            "label": "Set 1"
+          },
+          {
+            "value": 102.9184317999651,
+            "label": "Set 1"
+          },
+          {
+            "value": 116.63987620552402,
+            "label": "Set 1"
+          },
+          {
+            "value": 3.184207724046409,
+            "label": "Set 2"
+          },
+          {
+            "value": 9.75252439112458,
+            "label": "Set 2"
+          },
+          {
+            "value": 22.988181606380877,
+            "label": "Set 2"
+          },
+          {
+            "value": 26.906437667024488,
+            "label": "Set 2"
+          },
+          {
+            "value": 44.76712676606803,
+            "label": "Set 2"
+          },
+          {
+            "value": 57.04834141906716,
+            "label": "Set 2"
+          },
+          {
+            "value": 62.92253158026289,
+            "label": "Set 2"
+          },
+          {
+            "value": 70.84475475286958,
+            "label": "Set 2"
+          },
+          {
+            "value": 78.05770039316889,
+            "label": "Set 2"
+          },
+          {
+            "value": 86.38215872823368,
+            "label": "Set 2"
+          },
+          {
+            "value": 169.90138345527407,
+            "label": "Set 2"
+          },
+          {
+            "value": 194.71955251515726,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "iqr",
+        "animAgg": "stdev",
+        "id": 14,
+        "referenceData": [
+          {
+            "value": 1.2301597797252448,
+            "label": "Set 1"
+          },
+          {
+            "value": 9.193089817676569,
+            "label": "Set 1"
+          },
+          {
+            "value": 21.020555729503506,
+            "label": "Set 1"
+          },
+          {
+            "value": 26.73458505450808,
+            "label": "Set 1"
+          },
+          {
+            "value": 36.4453784063809,
+            "label": "Set 1"
+          },
+          {
+            "value": 59.034687064753165,
+            "label": "Set 1"
+          },
+          {
+            "value": 73.89056352020043,
+            "label": "Set 1"
+          },
+          {
+            "value": 3.4139089843176587,
+            "label": "Set 2"
+          },
+          {
+            "value": 7.393503645970409,
+            "label": "Set 2"
+          },
+          {
+            "value": 14.165752626877532,
+            "label": "Set 2"
+          },
+          {
+            "value": 25.170477457963038,
+            "label": "Set 2"
+          },
+          {
+            "value": 28.902122158732187,
+            "label": "Set 2"
+          },
+          {
+            "value": 39.01156755425638,
+            "label": "Set 2"
+          },
+          {
+            "value": 44.14345224231518,
+            "label": "Set 2"
+          },
+          {
+            "value": 47.91305082686225,
+            "label": "Set 2"
+          },
+          {
+            "value": 61.438733429952926,
+            "label": "Set 2"
+          },
+          {
+            "value": 65.08034551454251,
+            "label": "Set 2"
+          },
+          {
+            "value": 76.47189460950189,
+            "label": "Set 2"
+          },
+          {
+            "value": 86.02835305297161,
+            "label": "Set 2"
+          },
+          {
+            "value": 99.34637694664899,
+            "label": "Set 2"
+          },
+          {
+            "value": 114.65739707837737,
+            "label": "Set 2"
+          },
+          {
+            "value": 133.20753980054218,
+            "label": "Set 2"
+          },
+          {
+            "value": 140.70251067684302,
+            "label": "Set 2"
+          },
+          {
+            "value": 196.60535161667536,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "stdev",
+        "animAgg": "iqr",
+        "id": 15,
+        "referenceData": [
+          {
+            "value": 6.080236895785461,
+            "label": "Set 1"
+          },
+          {
+            "value": 11.52162204737559,
+            "label": "Set 1"
+          },
+          {
+            "value": 25.19638637400859,
+            "label": "Set 1"
+          },
+          {
+            "value": 31.536261680987764,
+            "label": "Set 1"
+          },
+          {
+            "value": 54.06781161893532,
+            "label": "Set 1"
+          },
+          {
+            "value": 57.839059329574965,
+            "label": "Set 1"
+          },
+          {
+            "value": 64.32517990112616,
+            "label": "Set 1"
+          },
+          {
+            "value": 100.96521424461226,
+            "label": "Set 1"
+          },
+          {
+            "value": 164.56786162134648,
+            "label": "Set 1"
+          },
+          {
+            "value": 2.8328043944270203,
+            "label": "Set 2"
+          },
+          {
+            "value": 10.078710422989277,
+            "label": "Set 2"
+          },
+          {
+            "value": 15.811391632158848,
+            "label": "Set 2"
+          },
+          {
+            "value": 25.30994940463929,
+            "label": "Set 2"
+          },
+          {
+            "value": 29.638054637526157,
+            "label": "Set 2"
+          },
+          {
+            "value": 33.523177510648964,
+            "label": "Set 2"
+          },
+          {
+            "value": 38.589883717726394,
+            "label": "Set 2"
+          },
+          {
+            "value": 45.873374533529585,
+            "label": "Set 2"
+          },
+          {
+            "value": 60.74689100380236,
+            "label": "Set 2"
+          },
+          {
+            "value": 65.45701860259,
+            "label": "Set 2"
+          },
+          {
+            "value": 83.13321245392339,
+            "label": "Set 2"
+          },
+          {
+            "value": 120.19607882144489,
+            "label": "Set 2"
+          },
+          {
+            "value": 134.63842144591192,
+            "label": "Set 2"
+          },
+          {
+            "value": 139.9417908666572,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "stdev",
+        "animAgg": "stdev",
+        "id": 16,
+        "referenceData": [
+          {
+            "value": 4.853443375819524,
+            "label": "Set 1"
+          },
+          {
+            "value": 25.424243786070434,
+            "label": "Set 1"
+          },
+          {
+            "value": 35.81231606630075,
+            "label": "Set 1"
+          },
+          {
+            "value": 39.4960798350799,
+            "label": "Set 1"
+          },
+          {
+            "value": 60.175936355718015,
+            "label": "Set 1"
+          },
+          {
+            "value": 100.76845795443661,
+            "label": "Set 1"
+          },
+          {
+            "value": 104.92970806993013,
+            "label": "Set 1"
+          },
+          {
+            "value": 126.26043970882691,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.028010853479503,
+            "label": "Set 2"
+          },
+          {
+            "value": 6.251029800391963,
+            "label": "Set 2"
+          },
+          {
+            "value": 13.166709993227288,
+            "label": "Set 2"
+          },
+          {
+            "value": 19.605066457551644,
+            "label": "Set 2"
+          },
+          {
+            "value": 24.71361775591142,
+            "label": "Set 2"
+          },
+          {
+            "value": 39.332714191259385,
+            "label": "Set 2"
+          },
+          {
+            "value": 46.70294414605054,
+            "label": "Set 2"
+          },
+          {
+            "value": 71.4680201930707,
+            "label": "Set 2"
+          },
+          {
+            "value": 76.26686060816111,
+            "label": "Set 2"
+          },
+          {
+            "value": 81.45145049558079,
+            "label": "Set 2"
+          },
+          {
+            "value": 94.40429222938825,
+            "label": "Set 2"
+          },
+          {
+            "value": 123.75249232794783,
+            "label": "Set 2"
+          },
+          {
+            "value": 146.5007690465072,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      },
+      {
+        "textAgg": "min",
+        "animAgg": "min",
+        "id": 17,
+        "referenceData": [
+          {
+            "value": 1.7856670659362852,
+            "label": "Set 1"
+          },
+          {
+            "value": 8.632105311612015,
+            "label": "Set 1"
+          },
+          {
+            "value": 37.46299300871466,
+            "label": "Set 1"
+          },
+          {
+            "value": 79.52574684405374,
+            "label": "Set 1"
+          },
+          {
+            "value": 116.89530571247317,
+            "label": "Set 1"
+          },
+          {
+            "value": 144.89430829146445,
+            "label": "Set 1"
+          },
+          {
+            "value": 1.2261627619021847,
+            "label": "Set 2"
+          },
+          {
+            "value": 8.933868090291675,
+            "label": "Set 2"
+          },
+          {
+            "value": 13.743712837522065,
+            "label": "Set 2"
+          },
+          {
+            "value": 24.8711629567131,
+            "label": "Set 2"
+          },
+          {
+            "value": 33.229234888227275,
+            "label": "Set 2"
+          },
+          {
+            "value": 41.18533748379261,
+            "label": "Set 2"
+          },
+          {
+            "value": 51.0150664147439,
+            "label": "Set 2"
+          },
+          {
+            "value": 60.005229993565216,
+            "label": "Set 2"
+          },
+          {
+            "value": 67.97741445401464,
+            "label": "Set 2"
+          },
+          {
+            "value": 89.19749983758,
+            "label": "Set 2"
+          },
+          {
+            "value": 104.85335837036051,
+            "label": "Set 2"
+          },
+          {
+            "value": 115.84044594764987,
+            "label": "Set 2"
+          },
+          {
+            "value": 123.1202404597484,
+            "label": "Set 2"
+          },
+          {
+            "value": 157.29444891071722,
+            "label": "Set 2"
+          },
+          {
+            "value": 163.40094844838472,
+            "label": "Set 2"
+          },
+          {
+            "value": 193.143022153558,
+            "label": "Set 2"
+          }
+        ],
+        "referenceDataScale": [
+          0,
+          200
+        ],
+        "choiceDataScale": [
+          0,
+          200
+        ]
+      }
+    ]
+  ],
+  "practice": {
+    "id": 2,
+    "name": "max",
+    "fullname": "maximum",
+    "question": "Which option visualizes the maximum of the data points?",
+    "referenceData": [
+      {
+        "value": 47.69571191799656,
+        "label": "Set 1"
+      },
+      {
+        "value": 70.41609444438024,
+        "label": "Set 1"
+      },
+      {
+        "value": 114.60633024564672,
+        "label": "Set 1"
+      },
+      {
+        "value": 171.9842952445979,
+        "label": "Set 1"
+      },
+      {
+        "value": 195.35252617084325,
+        "label": "Set 1"
+      },
+      {
+        "value": 22.33978976967351,
+        "label": "Set 2"
+      },
+      {
+        "value": 26.71005393566098,
+        "label": "Set 2"
+      },
+      {
+        "value": 33.400589394730844,
+        "label": "Set 2"
+      },
+      {
+        "value": 40.39154683826902,
+        "label": "Set 2"
+      },
+      {
+        "value": 44.48996986852206,
+        "label": "Set 2"
+      },
+      {
+        "value": 52.15663752849318,
+        "label": "Set 2"
+      },
+      {
+        "value": 62.087525975007395,
+        "label": "Set 2"
+      },
+      {
+        "value": 70.8531523224063,
+        "label": "Set 2"
+      },
+      {
+        "value": 74.78677187759422,
+        "label": "Set 2"
+      },
+      {
+        "value": 78.94841569479931,
+        "label": "Set 2"
+      },
+      {
+        "value": 90.56035379933815,
+        "label": "Set 2"
+      },
+      {
+        "value": 95.24438097702274,
+        "label": "Set 2"
+      },
+      {
+        "value": 107.9460708683965,
+        "label": "Set 2"
+      },
+      {
+        "value": 128.00384958397566,
+        "label": "Set 2"
+      },
+      {
+        "value": 164.7897831982586,
+        "label": "Set 2"
+      }
+    ],
+    "referenceDataScale": [
+      0,
+      200
+    ],
+    "problemData": [
+      {
+        "value": 36.62772085356275
+      },
+      {
+        "value": 45.033733632861804
+      },
+      {
+        "value": 50.52525763940722
+      },
+      {
+        "value": 68.6409575843521
+      },
+      {
+        "value": 99.41584847887785
+      },
+      {
+        "value": 117.60289854822723
+      },
+      {
+        "value": 127.42410564281715
+      },
+      {
+        "value": 138.71837913301567
+      },
+      {
+        "value": 143.47081000045117
+      },
+      {
+        "value": 163.49214060068735
+      }
+    ],
+    "problemDataScale": [
+      0,
+      200
+    ],
+    "choiceData": [
+      {
+        "label": "C",
+        "value": 163.49214060068735,
+        "upper": null,
+        "middle": null,
+        "lower": null,
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "value": 183.49214060068735,
+        "upper": null,
+        "middle": null,
+        "lower": null,
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "value": 123.49214060068735,
+        "upper": null,
+        "middle": null,
+        "lower": null,
+        "isCorrect": false
+      },
+      {
+        "label": "A",
+        "value": 103.49214060068735,
+        "upper": null,
+        "middle": null,
+        "lower": null,
+        "isCorrect": false
+      }
+    ],
+    "choiceDataScale": [
+      0,
+      200
+    ],
+    "priorYAxisTitle": "Value",
+    "postYAxisTitle": "Max of Value"
+  }
+}

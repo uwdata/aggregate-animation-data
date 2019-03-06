@@ -1,0 +1,69 @@
+For "responses-identification.csv"
+--
+id : The order of the question
+animAgg : Aggregate operation in the given transition
+textAgg : Asked aggregate operation in the text (question)
+isError : Whether is incorrect (true) or not  (false)
+playCount : Play count of the transition
+resetCount : Reset count of the transition
+compTime : Completion time (s)
+userID
+treatment : The transition style that the subject saw in Identification Task
+(elaborate : staged elaborate, simple : staged basic, baseline : interpolated, static: static)
+
+
+For "responses-ranking.csv"
+--
+id : The order of the question
+agg : Aggregate operation of the question
+rank-elaborate : Rank of the staged elaborate transition
+play-elaborate : Play count of the staged elaborate transition
+reset-elaborate: Reset count of the staged elaborate transition
+rank-simple : Rank of the staged basic transition
+play-simple : Play count of the staged basic transition
+reset-simple : Reset count of the staged basic transition
+rank-baseline : Rank of the interpolated transition
+play-baseline : Play count of the interpolated transition
+reset-baseline : Reset count of the interpolated transition
+rank-static : Rank of the static transition
+play-static : Play count of the static transition
+reset-static : Reset count of the static transition
+compTime : Completion time (ms)
+rationale
+userID
+treatment : The transition style that the subject saw in Identification Task
+(elaborate : staged elaborate, simple : staged basic, baseline : interpolated, static: static)
+
+
+
+Demographic
+--
+gender
+education
+age
+vision_deficiency
+vision_impairment_description
+
+
+Statistical Background
+--
+familiarity-average : Self reported familiarity of the average (IDK / Know / Know well *)
+familiarity-average-description : Description of the average from the participant
+familiarity-interquartile-range
+familiarity-interquartile-range-description
+familiarity-median
+familiarity-median-description
+familiarity-standard-deviation
+familiarity-standard-deviation-description
+familiarity-agg-score : Quantitized score of the above four by summing each score (Know well : 2, Know : 1, IDK :0)
+familiarity-stat-tool : How often the participant use data tools such as Excel, Tableau, SPSS, R, Jupyter, etc (never, < 1/m, < 1/w, <1/d, >= 1/d **)
+familiarity-view-chart : How often the participant view charts
+familiarity-create-chart : How often the participant create charts
+
+*IDK : "I don't know what that means.", Know : "I have a sense of what that means, but don't ask me to write a mathematical definition.", Know well : "I know what that means, and could give you a mathematical definition."
+**(never : Never, < 1/m: at most once per month, < 1/w : at most once per week, <1/d : multiple times per week, >= 1/d : daily )
+
+
+
+
+

@@ -1,0 +1,153 @@
+{
+  "baselineAnimation" : {
+    "treatType": "animation",
+    "aggregations":[
+      {
+        "name": "count",
+        "opt": {"func": "count"},
+        "fn": "baseline"
+      },
+      {
+        "name": "sum",
+        "opt": {"func": "sum"},
+        "fn": "baseline"
+      },
+      {
+        "name": "max",
+        "opt": {"func": "max"},
+        "fn": "baseline"
+      },
+      {
+        "name": "min",
+        "opt": {"func": "min"},
+        "fn": "baseline"
+      },
+      {
+        "name": "avg",
+        "opt": {"func": "mean"},
+        "fn": "baseline"
+      },
+      {
+        "name": "median",
+        "opt": {"func": "median"},
+        "fn": "baseline"
+      },
+
+      {
+        "name": "stdev",
+        "opt": {"func": "stdev"},
+        "fn": "baseline"
+      },
+      {
+        "name": "iqr",
+        "opt": {"func": "iqr"},
+        "fn": "baseline"
+      }
+    ]
+  },
+  "simpleAnimation" : {
+    "treatType": "animation",
+    "aggregations":[
+      {
+        "name": "count",
+        "opt": {"nPerRow": 1},
+        "fn": "count"
+      },
+      {
+        "name": "sum",
+        "opt": {"mode": "oneByOne"},
+        "fn": "sum5"
+      },
+      {
+        "name": "max",
+        "opt": {"func": "max"},
+        "fn": "extremum"
+      },
+      {
+        "name": "min",
+        "opt": {"func": "min"},
+        "fn": "extremum"
+      },
+      {
+        "name": "avg",
+        "opt": { "atOnce": true},
+        "fn": "avg2"
+      },
+      {
+        "name": "median",
+        "opt": {},
+        "fn": "median"
+      },
+
+      {
+        "name": "stdev",
+        "opt": {"mirroring": "fadeIn"},
+        "fn": "stdev8"
+      },
+      {
+        "name": "iqr",
+        "opt": {},
+        "fn": "IQR"
+      }
+    ]
+  },
+  "elaborateAnimation" : {
+    "treatType": "animation",
+    "aggregations":[
+      {
+        "name": "count",
+        "opt": {"stepN": 3},
+        "fn": "count"
+      },
+      {
+        "name": "sum",
+        "opt": { "mode": "oneByOne"},
+        "fn": "sum4"
+      },
+      {
+        "name": "max",
+        "opt": {"func": "max"},
+        "fn": "extremum"
+      },
+      {
+        "name": "min",
+        "opt": {"func": "min"},
+        "fn": "extremum"
+      },
+      {
+        "name": "avg",
+        "opt": {},
+        "fn": "avg3"
+      },
+      {
+        "name": "median",
+        "opt": {},
+        "fn": "median8"
+      },
+
+      {
+        "name": "stdev",
+        "opt": {"mirroring": "fadeIn"},
+        "fn": "stdev4"
+      },
+      {
+        "name": "iqr",
+        "opt": {},
+        "fn": "IQR9"
+      }
+    ]
+  },
+  "staticVisualization": {
+    "treatType": "static",
+    "aggregations":[
+      { "name": "count" },
+      { "name": "sum" },
+      { "name": "max" },
+      { "name": "min" },
+      { "name": "avg" },
+      { "name": "median" },
+      { "name": "stdev" },
+      { "name": "iqr" }
+    ]
+  }
+}

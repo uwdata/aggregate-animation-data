@@ -1,0 +1,381 @@
+[
+  {
+    "aggFunction": "count",
+    "name": "count-step3",
+    "opt": {"stepN": 3},
+    "N": 25,
+    "fn": "count",
+    "final": true,
+    "row": 1,
+    "description": "Count in 3 steps. The speed is the most comfortable.",
+    "final": true
+  },
+  {
+    "aggFunction": "count",
+    "name": "count-step5",
+    "opt": {"stepN": 5},
+    "N": 25,
+    "fn": "count",
+    "row": 1,
+    "description": "Count in 5 steps."
+  },
+  {
+    "aggFunction": "count",
+    "name": "count-step10",
+    "opt": {"stepN": 10},
+    "N": 25,
+    "fn": "count",
+    "row": 1,
+    "description": "Count in 10 steps. The speed is too fast."
+  },
+  {
+    "aggFunction": "sum",
+    "name": "sum4-oneByOne",
+    "opt": { "mode": "oneByOne"},
+    "N": 25,
+    "fn": "sum4",
+    "final": true,
+    "row": 2,
+    "description": "It looks like stacking up the values with synchronizing the axis change.",
+    "final": true
+  },
+  {
+    "aggFunction": "sum",
+    "name": "sum",
+    "opt": {},
+    "N": 25,
+    "fn": "aggregations_old.sum",
+    "row": 2,
+    "description": "Shifting right and left seem unnecessary/not intuitive."
+  },
+  {
+    "aggFunction": "sum",
+    "name": "sum-oneByOne",
+    "opt": {"oneByOne": true, "instantDisapear": true},
+    "N": 25,
+    "fn": "sum",
+    "row": 2,
+    "description": "Points are too crowded to see individually right after the y-axis changes."
+  },
+  {
+    "aggFunction": "sum",
+    "name": "sum-oneByOne-delayedDisappear",
+    "opt": {"oneByOne": true},
+    "N": 25,
+    "fn": "sum",
+    "row": 2,
+    "description": "Points are too crowded to see individually right after the y-axis changes."
+  },
+  {
+    "aggFunction": "sum",
+    "name": "sum2-oneByOne",
+    "opt": { "mode": "oneByOne"},
+    "N": 25,
+    "fn": "sum2",
+    "row": 2,
+    "description": "When the sum is large, the points are too closed to zero after the axis changes."
+  },
+  {
+    "aggFunction": "sum",
+    "name": "sum2-step",
+    "opt": { "mode": "step"},
+    "N": 25,
+    "fn": "sum2",
+    "row": 2,
+    "description": "When the sum is large, the points are too closed to zero after the axis changes."
+  },
+  {
+    "aggFunction": "sum",
+    "name": "sum2-atOnce",
+    "opt": {},
+    "N": 25,
+    "fn": "sum2",
+    "row": 2,
+    "description": "When the sum is large, the points are too closed to zero after the axis changes."
+  },
+  {
+    "aggFunction": "sum",
+    "name": "sum4-atOnce",
+    "opt": {},
+    "N": 25,
+    "fn": "sum4",
+    "row": 2,
+    "description": "It's not look much like stacking points."
+  },
+  {
+    "aggFunction": "sum",
+    "name": "sum4-step",
+    "opt": { "mode": "step"},
+    "N": 25,
+    "fn": "sum4",
+    "row": 2,
+    "description": "It looks like stacking points but the y-axis is not synced with the stacked up value. Even if it is synced, the speed of the axis change will be too fast."
+  },
+  {
+    "aggFunction": "max",
+    "name": "max",
+    "opt": {"func": "max"},
+    "N": 25,
+    "fn": "extremum",
+    "final": true,
+    "row": 3,
+    "description": "It is strightforward to be recognized."
+  },
+  {
+    "aggFunction": "min",
+    "name": "min",
+    "opt": {"func": "min"},
+    "N": 25,
+    "fn": "extremum",
+    "final": true,
+    "row": 4,
+    "description": "It is strightforward to be recognized."
+  },
+  {
+    "aggFunction": "avg",
+    "name": "avg3",
+    "opt": {},
+    "N": 25,
+    "fn": "avg3",
+    "final": true,
+    "row": 6,
+    "description": "Shows each individual contribution. It seems like the residues are cancelled out."
+  },
+  {
+    "aggFunction": "avg",
+    "name": "avg-gooey",
+    "opt": {},
+    "N": 25,
+    "fn": "avg",
+    "row": 6,
+    "description": "We hope that the gooey metaphor shows the center of the mass of each group, but it seems not strightforward."
+  },
+  {
+    "aggFunction": "avg",
+    "name": "avg4",
+    "opt": {},
+    "N": 25,
+    "fn": "avg4",
+    "row": 6,
+    "description": "It's unclear why the points are moved vertically."
+  },
+  {
+    "aggFunction": "avg",
+    "name": "avg5",
+    "opt": {},
+    "N": 25,
+    "fn": "avg5",
+    "row": 6,
+    "description": "It seems unnecessary to show the gray vertical heights."
+  },
+  {
+    "aggFunction": "median",
+    "name": "median-new9",
+    "opt": {},
+    "N": 25,
+    "fn": "median8",
+    "final": true,
+    "row": 5,
+    "description": "It's more clear that the points are bisected."
+  },
+  {
+    "aggFunction": "median",
+    "name": "median",
+    "opt": {},
+    "N": 25,
+    "fn": "aggregations_old.median",
+    "row": 5,
+    "description": "It's unclear why the points disappear at each end."
+  },
+  {
+    "aggFunction": "median",
+    "name": "median-new4",
+    "opt": {},
+    "N": 25,
+    "fn": "median4",
+    "row": 5,
+    "description": "'50%' can be ambiguous. It's not visual cue."
+  },
+  {
+    "aggFunction": "median",
+    "name": "median-new5",
+    "opt": {},
+    "N": 25,
+    "fn": "median5",
+    "row": 5,
+    "description": "Bisecting lines are not clear what they mean. Different horrizontal offsets per points seems unnecessary."
+  },
+  {
+    "aggFunction": "median",
+    "name": "median-new6",
+    "opt": { "lineDirection": "vertical"},
+    "N": 25,
+    "fn": "median5",
+    "row": 5,
+    "description": "Bisecting lines are not clear what they mean. Different horrizontal offsets per points seems unnecessary."
+  },
+  {
+    "aggFunction": "median",
+    "name": "median-new7",
+    "opt": {},
+    "N": 25,
+    "fn": "median6",
+    "row": 5,
+    "description": "It explains that the points are bisected but seems too verbose."
+  },
+  {
+    "aggFunction": "median",
+    "name": "median-new8",
+    "opt": { "shift": 0 },
+    "N": 25,
+    "fn": "median8",
+    "row": 5,
+    "description": "Unclear that pairs of point at the ends are counted to be bisected."
+  },
+  {
+    "aggFunction": "median",
+    "name": "median-new10",
+    "opt": {},
+    "N": 25,
+    "fn": "median9",
+    "row": 5,
+    "description": "It explains that the points are bisected but seems too verbose."
+  },
+  {
+    "aggFunction": "median",
+    "name": "median-new11",
+    "opt": {},
+    "N": 25,
+    "fn": "median10",
+    "row": 5,
+    "description": "It explains that the points are bisected but seems too verbose."
+  },
+  {
+    "aggFunction": "stdev",
+    "name": "stdev4-mirroring",
+    "opt": {"mirroring": "fadeIn"},
+    "N": 25,
+    "fn": "stdev4",
+    "final": true,
+    "row": 7,
+    "description": "The bottom halves appears later to ensure that they have the same heights."
+  },
+  {
+    "aggFunction": "stdev",
+    "name": "stdev3",
+    "opt": {},
+    "N": 25,
+    "fn": "stdev3",
+    "row": 7,
+    "description": "The horizontal spanning seems unnecessary."
+  },
+  {
+    "aggFunction": "stdev",
+    "name": "stdev4",
+    "opt": {},
+    "N": 25,
+    "fn": "stdev4",
+    "row": 7,
+    "description": "It's simpler than the selected one but less gurantees the halves are the same."
+  },
+  {
+    "aggFunction": "stdev",
+    "name": "stdev5",
+    "opt": {},
+    "N": 25,
+    "fn": "stdev5",
+    "row": 7,
+    "description": "Each residue seems contribute to be stdev error bars, but its calculation is incorrect."
+  },
+  {
+    "aggFunction": "stdev",
+    "name": "stdev6",
+    "opt": {},
+    "N": 25,
+    "fn": "stdev6",
+    "row": 7,
+    "description": "It adds the squares of the residues and get the square of it. However, it exceeds the y-axis range."
+  },
+  {
+    "aggFunction": "stdev",
+    "name": "stdev7",
+    "opt": {"mirroring":"fadeIn"},
+    "N": 25,
+    "fn": "stdev7",
+    "row": 7,
+    "description": "Each residue seems contribute to be stdev error bars, but its calculation is incorrect."
+  },
+  {
+    "aggFunction": "iqr",
+    "name": "iqr9",
+    "opt": {},
+    "N": 25,
+    "fn": "IQR9",
+    "final": true,
+    "row": 8,
+    "description": "It is consistent with the median animation. Looks like counting to ensure that each of four groups have the same number of the points."
+  },
+  {
+    "aggFunction": "iqr",
+    "name": "iqr2",
+    "opt": {},
+    "N": 25,
+    "fn": "IQR2",
+    "row": 8,
+    "description": "Too many labels in a short period."
+  },
+  {
+    "aggFunction": "iqr",
+    "name": "iqr2-noText",
+    "opt": {"noText": true},
+    "N": 25,
+    "fn": "IQR2",
+    "row": 8,
+    "description": "The meaning of colors and the rising lines are insufficiently clear."
+  },
+  {
+    "aggFunction": "iqr",
+    "name": "iqr3",
+    "opt": {},
+    "N": 25,
+    "fn": "IQR3",
+    "row": 8,
+    "description": "It tries to convey that there are the same number of the inner points and the outer points. However, the visual explanation seems verbose."
+  },
+  {
+    "aggFunction": "iqr",
+    "name": "iqr4",
+    "opt": {},
+    "N": 25,
+    "fn": "IQR4",
+    "row": 8,
+    "description": "Counting is unclear as the points can be overlapped."
+  },
+  {
+    "aggFunction": "iqr",
+    "name": "iqr5",
+    "opt": {},
+    "N": 25,
+    "fn": "IQR5",
+    "row": 8,
+    "description": "Different horrizontal offsets seem unnecessary. The meaning of the four groups are not clear."
+  },
+  {
+    "aggFunction": "iqr",
+    "name": "iqr6",
+    "opt": {},
+    "N": 25,
+    "fn": "IQR6",
+    "row": 8,
+    "description": "Too verbose and unclear what it wants to convey."
+  },
+  {
+    "aggFunction": "iqr",
+    "name": "iqr7",
+    "opt": {},
+    "N": 25,
+    "fn": "IQR7",
+    "row": 8,
+    "description": "It nested the median animation but seems too fast."
+  }
+]

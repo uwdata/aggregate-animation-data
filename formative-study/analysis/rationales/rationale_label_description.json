@@ -1,0 +1,824 @@
+[
+  {
+    "key": "good:extra_line",
+    "value": 59,
+    "desc": "Good to have extra lines/ticks"
+  },
+  {
+    "key": "good:explanation",
+    "value": 55,
+    "desc": "Good to explain the operation well."
+  },
+  {
+    "key": "good:separating",
+    "value": 47,
+    "desc": "Good to separate into groups."
+  },
+  {
+    "key": "good:highlight",
+    "value": 38,
+    "desc": "Good to highlight"
+  },
+  {
+    "key": "good:avg_line",
+    "value": 32,
+    "desc": "Good to have lines at averages"
+  },
+  {
+    "key": "bad:hard-to-tell-what-it-is",
+    "value": 28,
+    "desc": "Bad since it's hard to tell what the transition is."
+  },
+  {
+    "key": "bad:too_much",
+    "value": 26,
+    "desc": "Bad since too much things happen."
+  },
+  {
+    "key": "bad:no-animation",
+    "value": 26,
+    "desc": "Bad since there is no animation."
+  },
+  {
+    "key": "bad:abrupt",
+    "value": 25,
+    "desc": "Bad since it is abrupt."
+  },
+  {
+    "key": "good:mark_avg",
+    "value": 24,
+    "desc": "Good to mark the averages."
+  },
+  {
+    "key": "good:simple",
+    "value": 23
+  },
+  {
+    "key": "good:smooth",
+    "value": 23
+  },
+  {
+    "key": "good:seems_like_adding",
+    "value": 22
+  },
+  {
+    "key": "good:colors",
+    "value": 21
+  },
+  {
+    "key": "bad:unnecessary",
+    "value": 20
+  },
+  {
+    "key": "good:bars",
+    "value": 20,
+    "desc": "Good to have bars (usually residual bars in avg and stdev)."
+  },
+  {
+    "key": "good:spread_out_evenly",
+    "value": 17,
+    "desc": "Good to spread out the points evenly"
+  },
+  {
+    "key": "good:counting",
+    "value": 17,
+    "desc": "Good to see that the point is being counted."
+  },
+  {
+    "key": "bad:distracting",
+    "value": 16
+  },
+  {
+    "key": "bad:confusing",
+    "value": 15
+  },
+  {
+    "key": "bad:extra_distracting",
+    "value": 14,
+    "desc": "Bad since the extra elements are distracting."
+  },
+  {
+    "key": "good:fade-out",
+    "value": 13
+  },
+  {
+    "key": "good:color_quartile",
+    "value": 13,
+    "desc": "Good to have colored quartiles."
+  },
+  {
+    "key": "bad:no-meaning",
+    "value": 13
+  },
+  {
+    "key": "good:upper=lower",
+    "value": 11,
+    "desc": "Good to see there are the same amount on the both sides."
+  },
+  {
+    "key": "good:median",
+    "value": 10,
+    "desc": "Good to mark/show median."
+  },
+  {
+    "key": "good:seems-like-counting",
+    "value": 10,
+    "desc": "Good since it looks like counting."
+  },
+  {
+    "key": "bad:only-one-half",
+    "value": 9
+  },
+  {
+    "key": "good:contribution",
+    "value": 9
+  },
+  {
+    "key": "bad:slow",
+    "value": 9
+  },
+  {
+    "key": "good:easier-to-track",
+    "value": 8
+  },
+  {
+    "key": "good:seems_like_summing",
+    "value": 8
+  },
+  {
+    "key": "good:seems_like_merging",
+    "value": 7
+  },
+  {
+    "key": "bad:unclear",
+    "value": 7
+  },
+  {
+    "key": "bad:too-long",
+    "value": 6
+  },
+  {
+    "key": "good:intuitive",
+    "value": 6
+  },
+  {
+    "key": "good:keep-points",
+    "value": 6
+  },
+  {
+    "key": "good:one-by-one",
+    "value": 6
+  },
+  {
+    "key": "good:collapsing",
+    "value": 6
+  },
+  {
+    "key": "bad:no-relation",
+    "value": 5
+  },
+  {
+    "key": "good:axis_change",
+    "value": 5
+  },
+  {
+    "key": "good:seems_like_stacking",
+    "value": 5
+  },
+  {
+    "key": "bad:too_fast",
+    "value": 5
+  },
+  {
+    "key": "good:aligning",
+    "value": 5
+  },
+  {
+    "key": "bad:collapsing-hard-to-understand",
+    "value": 4
+  },
+  {
+    "key": "bad:hard-to-understand",
+    "value": 4
+  },
+  {
+    "key": "bad:jarring",
+    "value": 4
+  },
+  {
+    "key": "good:renew_axis",
+    "value": 4
+  },
+  {
+    "key": "good:deviation_from_mean",
+    "value": 4
+  },
+  {
+    "key": "good:seems_like_sum",
+    "value": 4
+  },
+  {
+    "key": "good:line",
+    "value": 4
+  },
+  {
+    "key": "good:looks-like-maximum",
+    "value": 3
+  },
+  {
+    "key": "bad:hard-to-follow",
+    "value": 3
+  },
+  {
+    "key": "good:going_to_middle",
+    "value": 3
+  },
+  {
+    "key": "good:easier-to-understand",
+    "value": 3
+  },
+  {
+    "key": "bad:concept-is-easy-don’t'wasteoftime",
+    "value": 3
+  },
+  {
+    "key": "good:contribute",
+    "value": 3
+  },
+  {
+    "key": "bad:uninspiring",
+    "value": 2
+  },
+  {
+    "key": "good:clear",
+    "value": 2
+  },
+  {
+    "key": "bad:fade-out",
+    "value": 2
+  },
+  {
+    "key": "bad:need-to-replay-more",
+    "value": 2
+  },
+  {
+    "key": "bad:less-intuitive",
+    "value": 2
+  },
+  {
+    "key": "good:straightforward",
+    "value": 2
+  },
+  {
+    "key": "bad:too-fancy",
+    "value": 2
+  },
+  {
+    "key": "bad:too_long",
+    "value": 2
+  },
+  {
+    "key": "deleting_other_dots",
+    "value": 2
+  },
+  {
+    "key": "I don't know IQR",
+    "value": 2
+  },
+  {
+    "key": "bad:speed_up",
+    "value": 2
+  },
+  {
+    "key": "bad:misleading",
+    "value": 2
+  },
+  {
+    "key": "good:showing-the-both",
+    "value": 2
+  },
+  {
+    "key": "bad:not-looks-like-summing",
+    "value": 2
+  },
+  {
+    "key": "good:form-a-column",
+    "value": 2
+  },
+  {
+    "key": "bad:misleading-error?",
+    "value": 2
+  },
+  {
+    "key": "bad:cluttered",
+    "value": 2
+  },
+  {
+    "key": "good:easier-to-follow",
+    "value": 2
+  },
+  {
+    "key": "bad:unnecessary-line",
+    "value": 2
+  },
+  {
+    "key": "good:scale_up",
+    "value": 2
+  },
+  {
+    "key": "bad:looks_go_down_until_scale",
+    "value": 2
+  },
+  {
+    "key": "good:quick",
+    "value": 2
+  },
+  {
+    "key": "bad:jitter",
+    "value": 2
+  },
+  {
+    "key": "good:emphatic",
+    "value": 2
+  },
+  {
+    "key": "good:smoother",
+    "value": 2
+  },
+  {
+    "key": "good:easy-to-read",
+    "value": 2
+  },
+  {
+    "key": "no-idea",
+    "value": 2
+  },
+  {
+    "key": "bad:delay-between-two-halves",
+    "value": 2
+  },
+  {
+    "key": "good:easy-to-track",
+    "value": 2
+  },
+  {
+    "key": "good:bar",
+    "value": 2
+  },
+  {
+    "key": "none-of-them-makes-sense",
+    "value": 2
+  },
+  {
+    "key": "bad:complicate",
+    "value": 2
+  },
+  {
+    "key": "bad:collapse-points",
+    "value": 2
+  },
+  {
+    "key": "good:canceling_out",
+    "value": 2
+  },
+  {
+    "key": "idk-stdev",
+    "value": 2
+  },
+  {
+    "key": "bad:ambiguous",
+    "value": 2
+  },
+  {
+    "key": "good:emphasize_quarter",
+    "value": 1
+  },
+  {
+    "key": "bad:without_line",
+    "value": 1
+  },
+  {
+    "key": "good:animation",
+    "value": 1
+  },
+  {
+    "key": "bad:hard-to-track-at-once",
+    "value": 1
+  },
+  {
+    "key": "good:discretized",
+    "value": 1
+  },
+  {
+    "key": "bad:fading",
+    "value": 1
+  },
+  {
+    "key": "bad:a_bit_fast",
+    "value": 1
+  },
+  {
+    "key": "bad:no_relation_with_indiv",
+    "value": 1
+  },
+  {
+    "key": "good:style",
+    "value": 1
+  },
+  {
+    "key": "bad:confused_with_avg",
+    "value": 1
+  },
+  {
+    "key": "good:form_range",
+    "value": 1
+  },
+  {
+    "key": "bad:hard_to_track",
+    "value": 1
+  },
+  {
+    "key": "good:complicated",
+    "value": 1
+  },
+  {
+    "key": "bad:only_merge",
+    "value": 1
+  },
+  {
+    "key": "good:avg_linegood:seems_like_summing",
+    "value": 1
+  },
+  {
+    "key": "bad:not-step-by-step",
+    "value": 1
+  },
+  {
+    "key": "bad:cannot_understand",
+    "value": 1
+  },
+  {
+    "key": "good:direct-without-useless-transition",
+    "value": 1
+  },
+  {
+    "key": "Don't know IQR",
+    "value": 1
+  },
+  {
+    "key": "good:average",
+    "value": 1
+  },
+  {
+    "key": "good:grouping",
+    "value": 1
+  },
+  {
+    "key": "bad:none-of-them-intuitive",
+    "value": 1
+  },
+  {
+    "key": "good:simultaneously",
+    "value": 1
+  },
+  {
+    "key": "good:why-converging",
+    "value": 1
+  },
+  {
+    "key": "no-need-animation",
+    "value": 1
+  },
+  {
+    "key": "good:no-need-animation",
+    "value": 1
+  },
+  {
+    "key": "good:visual",
+    "value": 1
+  },
+  {
+    "key": "bad:no-color",
+    "value": 1
+  },
+  {
+    "key": "good:simpler",
+    "value": 1
+  },
+  {
+    "key": "good:able_to_track",
+    "value": 1
+  },
+  {
+    "key": "good:seems-like-adding",
+    "value": 1
+  },
+  {
+    "key": "good:distance_from_middle",
+    "value": 1
+  },
+  {
+    "key": "bad:seem-like-we-using-value",
+    "value": 1
+  },
+  {
+    "key": "bad:looks_like_sum",
+    "value": 1
+  },
+  {
+    "key": "bad:cannot_understand_color",
+    "value": 1
+  },
+  {
+    "key": "good:easy-to-see-their-contribution",
+    "value": 1
+  },
+  {
+    "key": "bad:color",
+    "value": 1
+  },
+  {
+    "key": "good:expanding_one-by-one,",
+    "value": 1
+  },
+  {
+    "key": "bad:counting_oddly",
+    "value": 1
+  },
+  {
+    "key": "bad:cranky",
+    "value": 1
+  },
+  {
+    "key": "good:fade_out",
+    "value": 1
+  },
+  {
+    "key": "bad:direct-is-misleading",
+    "value": 1
+  },
+  {
+    "key": "good:longer_pause",
+    "value": 1
+  },
+  {
+    "key": "good:change_scale",
+    "value": 1
+  },
+  {
+    "key": "bad:distance_from_mean",
+    "value": 1
+  },
+  {
+    "key": "same as median",
+    "value": 1
+  },
+  {
+    "key": "I don’t know IQR",
+    "value": 1
+  },
+  {
+    "key": "good:not-too-fast",
+    "value": 1
+  },
+  {
+    "key": "good:clearly_countable",
+    "value": 1
+  },
+  {
+    "key": "bad:extra_confusing",
+    "value": 1
+  },
+  {
+    "key": "no-diff-because-max-is-easy",
+    "value": 1
+  },
+  {
+    "key": "none-of-them-looks-sum",
+    "value": 1
+  },
+  {
+    "key": "need-to-expalin-easier",
+    "value": 1
+  },
+  {
+    "key": "good:expanding_one-by-one",
+    "value": 1
+  },
+  {
+    "key": "bad:removing-axis",
+    "value": 1
+  },
+  {
+    "key": "bad:fast",
+    "value": 1
+  },
+  {
+    "key": "good:discretization",
+    "value": 1
+  },
+  {
+    "key": "good:tick",
+    "value": 1
+  },
+  {
+    "key": "good:relationship_to_sum",
+    "value": 1
+  },
+  {
+    "key": "bad:counting",
+    "value": 1
+  },
+  {
+    "key": "good:segmenting",
+    "value": 1
+  },
+  {
+    "key": "bad:not-meaningful",
+    "value": 1
+  },
+  {
+    "key": "all hard",
+    "value": 1
+  },
+  {
+    "key": "good:axes-change",
+    "value": 1
+  },
+  {
+    "key": "bad:line-hard-to-see",
+    "value": 1
+  },
+  {
+    "key": "good:reference-line",
+    "value": 1
+  },
+  {
+    "key": "bad:line-not-help",
+    "value": 1
+  },
+  {
+    "key": "good:canceling_each_other",
+    "value": 1
+  },
+  {
+    "key": "bad:lines_less_obvious",
+    "value": 1
+  },
+  {
+    "key": "good:mirroring",
+    "value": 1
+  },
+  {
+    "key": "good:each_connection",
+    "value": 1
+  },
+  {
+    "key": "good:seems_like:sum",
+    "value": 1
+  },
+  {
+    "key": "bad:messy",
+    "value": 1
+  },
+  {
+    "key": "bad:messy-line",
+    "value": 1
+  },
+  {
+    "key": "smooth is good",
+    "value": 1
+  },
+  {
+    "key": "bad:not-intuitive",
+    "value": 1
+  },
+  {
+    "key": "good:middle_line",
+    "value": 1
+  },
+  {
+    "key": "bad:segmenting",
+    "value": 1
+  },
+  {
+    "key": "bad:seems_like_sum",
+    "value": 1
+  },
+  {
+    "key": "bad:not-enough",
+    "value": 1
+  },
+  {
+    "key": "bad:merging",
+    "value": 1
+  },
+  {
+    "key": "good:how-my-brain-works",
+    "value": 1
+  },
+  {
+    "key": "bad:show_the_side_separately",
+    "value": 1
+  },
+  {
+    "key": "good:extra_elements",
+    "value": 1
+  },
+  {
+    "key": "speed",
+    "value": 1
+  },
+  {
+    "key": "good:seems_like_aggregating",
+    "value": 1
+  },
+  {
+    "key": "bad:easy-to-miss",
+    "value": 1
+  },
+  {
+    "key": "bad:not-enough-animation",
+    "value": 1
+  },
+  {
+    "key": "bad:line-misleading-error?",
+    "value": 1
+  },
+  {
+    "key": "good:fast",
+    "value": 1
+  },
+  {
+    "key": "good:scale_change",
+    "value": 1
+  },
+  {
+    "key": "good:combining",
+    "value": 1
+  },
+  {
+    "key": "good:squish",
+    "value": 1
+  },
+  {
+    "key": "good:move_up",
+    "value": 1
+  },
+  {
+    "key": "bad:physically_lower",
+    "value": 1
+  },
+  {
+    "key": "bad:arbitrary",
+    "value": 1
+  },
+  {
+    "key": "what-i-do-mentally",
+    "value": 1
+  },
+  {
+    "key": "good:might-be-enough",
+    "value": 1
+  },
+  {
+    "key": "good:fancy",
+    "value": 1
+  },
+  {
+    "key": "bad:animation",
+    "value": 1
+  },
+  {
+    "key": "good:transition-is-not-happened-randomly",
+    "value": 1
+  },
+  {
+    "key": "good:expalin",
+    "value": 1
+  },
+  {
+    "key": "bad:useless-animation",
+    "value": 1
+  },
+  {
+    "key": "good:stacking",
+    "value": 1
+  },
+  {
+    "key": "bad:what-if-too-many-points?",
+    "value": 1
+  },
+  {
+    "key": "bad:why-line",
+    "value": 1
+  },
+  {
+    "key": "bad:not_happening",
+    "value": 1
+  },
+  {
+    "key": "bad:already-easy",
+    "value": 1
+  }
+]

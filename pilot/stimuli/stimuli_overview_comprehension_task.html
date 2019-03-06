@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery-3.2.1.slim.min.js"></script>
+  <script src="js/d3.v4.min.js"></script>
+  <script src="js/vega@3.1.0.js"></script>
+  <script src="js/vega-lite@2.2.0.js"></script>
+  <script src="js/vega-embed@3.0.0.js"></script>
+  <script src="js/util.js"></script>
+
+  <script src="js/base.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/config.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+
+  <div class="container-fluid" style="max-width: 1024px;">
+    <h2>Stimuli of Comprehension Task (Pilot Study)</h2>
+    <div id="stimuli" class="mt-5">
+    </div>
+  </div>
+  <script>
+const playInterval = 2000;
+const devAction = false;
+let timeStamp;
+
+const datasetURL = "datasets.json";
+const newNames = {
+  "static": "Static",
+  "baseline": "Interpolated",
+  "simple": "Staged Basic",
+  "elaborate": "Staged Elaborate",
+};
+let treatmentName;
+init();
+function init(){
+
+  d3.json(datasetURL, quizSet => {
+    d3.json("treatments.json", treatments => {
+
+      let margin = {top: 11, right: 5, bottom: 40, left: 40};
+
+      initTransitions(treatments, 'label', 'value', {width: 160, height: 250, margin: margin}, quizSet.A);
+
+    });
+  });
+}
+
+
+
+function initTransitions(treatments, xField, yField, plotOpt, quizSet){
+  let simple = treatments.simpleAnimation;
+  let elaborate = treatments.elaborateAnimation;
+  let static = treatments.staticVisualization;
+  let baseline = treatments.baselineAnimation;
+  let treatmentsArray = [
+    {"name":"static", "content": static.aggregations, "treatType": static.treatType},
+    {"name":"baseline", "content": baseline.aggregations, "treatType": baseline.treatType},
+    {"name":"simple", "content": simple.aggregations, "treatType": simple.treatType},
+    {"name":"elaborate", "content": elaborate.aggregations, "treatType":elaborate.treatType }
+  ];
+  let aggs = ["count", "sum", "max", "min", "avg", "median", "stdev", "iqr"];
+
+
+
+  let treatmentN = treatments.simpleAnimation.aggregations.length;
+  let containerDiv = $('#stimuli');
+  quizSet.forEach((qSet, i) => {
+    $('#stimuli').append(`<h3>Set ${i+1}</h3>`);
+    aggs.forEach((aggName, j) => {
+      let setAggName = `set${i}-${aggName}`;
+      let q = qSet.filter(q=> (q.name || q.animAgg) === aggName)[0];
+      containerDiv.append(`<h4>${aggName}</h4><h6>Example Transition</h6><div class="row" id="${setAggName}"></div>`);
+      
+      treatmentsArray.forEach(treatment=>{
+        $(`#${setAggName}`).append(`<div class="col col-3"  id="${setAggName}-${treatment.name}"><h5>${newNames[treatment.name]}</h5></div>`);
+        let agg = treatment.content.filter(agg => agg.name == aggName)[0];
+        agg.treatType = treatment.treatType;
+        setTransition(copy(agg), q, `${setAggName}-${treatment.name}` );
+      });
+
+      let fromElm = $(`#${setAggName}`);
+      fromElm.append(`
+        <div class="form-row question justify-content-center mb-3 mt-5">
+          <div class=" vis-container" style="display: flex;">
+            <div class="mr-3 "><h6>Unaggregate chart</h6>
+              <div id="${setAggName}-problem-vis" ></div>
+            </div>
+            <div><h6>Choices for aggregate values of the left unaggregate chart</h6>
+              <div id="${setAggName}-choice-vis"></div>
+            </div>
+          </div>
+        </div>
+      `);
+
+      let probSpec = copy(problemSpec);
+      probSpec.data = { "values": q.problemData };
+      probSpec.encoding.y.scale  = {"domain": q.problemDataScale}
+
+      let spec;
+      if (["stdev", "iqr"].indexOf(q.name) >= 0) {
+        spec = copy(choiceSpecRange);
+        spec.data[0].values = q.choiceData;
+        spec.scales[1].domain = q.choiceDataScale;
+        if (q.name === "iqr") {
+          spec.axes[1].title = q.postYAxisTitle;
+        } else if (q.name === "stdev") {
+          spec.axes[1].title = q.postYAxisTitle;
+        }
+      } else {
+        spec = copy(choiceSpec);
+        spec.data = { "values": q.choiceData };
+        spec.encoding.y.scale = {"domain": q.choiceDataScale};
+        spec.encoding.y.axis.title = q.postYAxisTitle;
+      }
+      vegaEmbed(`#${setAggName}-choice-vis`, copy(spec), {actions: devAction, renderer: "svg"});
+      vegaEmbed(`#${setAggName}-problem-vis`, copy(probSpec), {actions: devAction, renderer: "svg"});
+
+    });
+  });
+
+
+
+  function setTransition(agg, q, targetId){
+
+    let newpOpt = copy(plotOpt);
+    newpOpt.noTitle = true;
+    if (agg.treatType === "animation") {
+      installAnim(targetId, q, agg, newpOpt, xField, yField);
+    } else if (agg.treatType === "static") {
+      installStatic(targetId, agg.name, q, newpOpt);
+    }
+
+  }
+}
+
+
+
+function installAnim(targetId, q, agg, plotOpt, xField, yField){
+  $(`#${targetId}`).append(`
+    <div class="visDiv"></div>
+    <div class="form-inline justify-content-center anim-control-btn-group">
+      <button class="play form-control btn btn-success btn-sm" data-interval="${playInterval}">Play</button>
+      <button class="reset form-control btn btn-secondary btn-sm d-none" >Reset</button>
+    </div>
+  `);
+  let aggPlotOpt = copy(plotOpt);
+  if (plotOpt.noTitle) {
+    aggPlotOpt.yTitle = "";
+    aggPlotOpt.postYTitle = "";
+  } else {
+    aggPlotOpt.yTitle = q.priorYAxisTitle;
+    aggPlotOpt.postYTitle = q.postYAxisTitle;
+  }
+
+  aggPlotOpt.yDomain = q.referenceDataScale;
+  agg.svg = draw(`#${targetId} .visDiv`, copy(q.referenceData), xField, yField, aggPlotOpt);
+  agg.fn = typeof(agg.fn) === "string" ? (agg.fn.indexOf(".") >= 0 ? aggregations_old[agg.fn.split(".")[1]] : window[agg.fn]) : agg.fn;
+
+  $(`#${targetId} .play`).on("click", function(e){
+    let jqThis = $(this);
+    let interval = Number(jqThis.data("interval"));
+    $(`#${targetId} .play`).addClass("disabled");
+    let playCount = Number($(`#${targetId} .play`).data("playCount")) || 0;
+    playCount += 1;
+    $(`#${targetId} .play`).data("playCount", playCount);
+    console.log(playCount);
+    let start = Date.now();
+    let end = () => {
+      // console.log(Date.now() - start);
+      $(`#${targetId} .play`).removeClass("disabled");
+      $(`#${targetId} .play`).addClass("d-none");
+      $(`#${targetId} .reset`).removeClass("d-none");
+    };
+
+    agg.opt.interval = interval;
+    agg.fn(agg.svg, agg.opt, end);
+
+  });
+
+  $(`#${targetId} .reset`).on("click", function(e){
+
+
+    $(`#${targetId} .play`).removeClass("d-none");
+    $(`#${targetId} .reset`).addClass("d-none");
+    $(`#${targetId} .visDiv`).children("svg").remove();
+    agg.svg = draw(`#${targetId} .visDiv`, copy(q.referenceData), xField, yField, aggPlotOpt);
+
+  });
+}
+
+function installStatic(targetId, aggName, q, opt){
+  const nameMapper = {
+    "count" : "count",
+    "sum" : "sum",
+    "max" : "max",
+    "min" : "min",
+    "median" : "median",
+    "avg" : "mean"
+  }
+  q.name = q.name || q.animAgg;
+  $(`#${targetId}`).append(`
+    <div class="cuts">
+      <div class="cut0"></div>
+      <div class="cut1 d-none"></div>
+    </div>
+    <div class="btn-flips text-center" role="group" aria-label="...">
+      <button class="flip btn btn-success btn-sm flip0" data-current="0" data-target="1">Play</button>
+      <button class="flip btn btn-secondary btn-sm flip1 d-none" data-current="1" data-target="2">Reset</button>
+    </div>
+  `);
+
+  // Draw Raw distribution
+  let rawSpec = copy(problemSpec);
+  rawSpec.data = { "values": q.referenceData };
+  rawSpec.encoding.y.scale  = {"domain": q.referenceDataScale}
+  rawSpec.encoding.x.axis = {"title": null, "labels": true, "labelAngle": 0};
+  rawSpec.width = 150;
+  if (opt && opt.noTitle) {
+    rawSpec.encoding.y.axis.title = null;
+  }
+
+  vegaEmbed(`#${targetId} .cut0`, rawSpec, {actions: false, renderer: "svg"});
+
+
+  // Draw Aggregated distribution
+  let aggSpec;
+  if (["stdev", "iqr"].indexOf((q.name )) >= 0) {
+    aggSpec = copy(choiceSpecRange);
+    let grouped = d3.nest()
+      .key(d => d.label)
+      .rollup(items => {
+      if (q.name === "stdev") {
+        let mean = d3.mean(items, item=>item.value);
+        let stdev = d3.deviation(items, item=>item.value);
+        return {
+          "upper": mean + stdev,
+          "middle":mean,
+          "lower": mean - stdev
+        };
+      } else {
+        return {
+          "upper": d3.quantile(items, 0.75, d => d.value),
+          "middle": d3.quantile(items, 0.5, d => d.value),
+          "lower": d3.quantile(items, 0.25, d => d.value)
+        };
+      }
+    }).entries(q.referenceData);
+    aggSpec.data[0].values = grouped.map(g=> {
+      return {
+        "label": g.key,
+        "upper": g.value.upper,
+        "middle": g.value.middle,
+        "lower": g.value.lower
+      };
+    })
+    // aggSpec.data[0].values = q.referenceData;
+    aggSpec.scales[1].domain = q.choiceDataScale;
+    if (q.name === "iqr") {
+      aggSpec.axes[1].title = q.postYAxisTitle;
+    } else if (q.name === "stdev") {
+      aggSpec.axes[1].title = q.postYAxisTitle;
+    }
+    if (opt && opt.noTitle) {
+      aggSpec.axes[1].title = null;
+    }
+    aggSpec.scales[0].paddingInner = 0.6;
+    aggSpec.scales[0].paddingOuter = 0.3;
+  } else {
+    aggSpec = copy(problemSpec);
+    aggSpec.encoding.x.axis = {"title": null, "labels": true, "labelAngle": 0};
+    aggSpec.data = { "values": q.referenceData };
+    aggSpec.width = 150;
+    aggSpec.encoding.y.aggregate = nameMapper[q.name];
+    aggSpec.encoding.opacity = {"value":0.7};
+    aggSpec.encoding.y.scale = {"domain":  q.choiceDataScale};
+    aggSpec.encoding.y.axis.title = q.postYAxisTitle;
+    aggSpec.encoding.y.axis.tickCount = 5;
+    if (opt && opt.noTitle) {
+      aggSpec.encoding.y.axis.title = null;
+    }
+  }
+
+  vegaEmbed(`#${targetId} .cut1`, aggSpec, {actions: false, renderer: "svg"});
+
+
+  $(`#${targetId} .flip`).on("click", function(event){
+    let next = Number($(this).data("target")) % 2;
+    let current = Number($(this).data("current")) % 2;
+    $(`#${targetId} .cuts .cut${next}`).removeClass("d-none");
+    $(`#${targetId} .cuts .cut${current}`).addClass("d-none");
+    $(`#${targetId} .btn-flips button`).addClass("d-none");
+    $(`#${targetId} .flip${next}`).removeClass("d-none");
+
+  })
+}
+
+
+  </script>
+</body>
