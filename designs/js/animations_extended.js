@@ -5776,3 +5776,117 @@ function IQR9(svg, opt, cb){
 
   play(steps,0);
 }
+
+function extremum(svg, opt, cb){
+  let data = svg.data;
+  let interval = opt.interval || 1000;
+  let xField = svg.xField;
+  let yField = svg.yField;
+  let x = svg.x;
+  let y = svg.y;
+
+  let dotPlots = svg.selectAll(".dotPlot");
+
+  let grouped = d3.nest()
+    .key(d => d[xField]).sortKeys(d3.ascending)
+    .sortValues( (a,b) => a[yField] - b[yField])
+    .entries(data);
+  let map = d3.map(grouped, d=>d.key);
+  grouped.forEach(group => {
+    group.max = d3.max(group.values, d=>d[yField]);
+    group.min = d3.min(group.values, d=>d[yField]);
+  });
+
+  dotPlots = dotPlots.data(grouped, d => d.max ? "agg" + d.key : d.key);
+
+  let newDotPlots = dotPlots.enter()
+   .append("g")
+    .attr("class", "dotPlot")
+    .attr("transform", d => "translate(" + x(d.key) + ",0)");
+  let minOrMax = opt.func || "max";
+  let shift = 30;
+
+  steps = [
+    {
+      tracks: 2,
+      content: (done) => {
+        newDotPlots.append("circle")
+          .attr("cy", (d, i) => y(d[minOrMax]))
+          .attr("cx", 0)
+          .attr("r", radius)
+         .transition()
+          .duration(interval * 0.2)
+          .ease(d3.easeQuad)
+          .on("end", done);
+
+        newDotPlots.append("line")
+          .attr("y1", (d, i) => y(d[minOrMax]))
+          .attr("y2", (d, i) => y(d[minOrMax]))
+          .attr("x1", 0)
+          .attr("x2", 0)
+          .attr("stroke-opacity", 1)
+         .transition()
+          .duration(interval * 0.2)
+          .ease(d3.easeQuad)
+          .attr("x1", -shift/2)
+          .attr("x2", shift/2)
+          .on("end", done);
+      }
+    },
+    {
+      tracks: 2,
+      content: (done) => {
+        dotPlots.exit()
+          .selectAll(".point")
+         .transition()
+          .duration(interval * 0.2)
+          .style("opacity", 0)
+          .on("end", done);
+
+        svg.select(".yAxis .axis-title")
+          .attr("opacity", 1)
+         .transition()
+          .duration(interval * 0.2)
+          .attr("opacity", 0)
+          .on("end", done);
+
+
+      }
+    },
+    {
+      tracks: grouped.length + 1,
+      content: (done) => {
+        newDotPlots.selectAll("circle")
+         .transition()
+          .duration(interval * 0.2)
+          .ease(d3.easeQuad)
+          .attr("cx", 0);
+
+        newDotPlots.selectAll("line")
+         .transition()
+          .delay(interval * 0.4)
+          .duration(interval * 0.2)
+          .attr("stroke-opacity", 0)
+          .on("end", done);
+
+        svg.select(".yAxis .axis-title")
+         .transition()
+          .delay(interval * 0.4)
+          .duration(interval * 0.2)
+          .attr("opacity", 1)
+          .text(svg.postYTitle)
+          .on("end", done);
+
+      }
+    },
+    {
+      tracks: 0,
+      content: cb
+    }
+  ];
+
+
+  play(steps,0);
+
+
+}
