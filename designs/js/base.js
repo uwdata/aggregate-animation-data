@@ -139,6 +139,9 @@ function draw(elm, data, xField, yField, opt={width: 250, height: 250, margin: m
       .attr("cy", function(d) { return y(d[yField]); });
 
 
+
+  // To give the gooey effect, I(YH) referred the code from the visual cinamon.
+  // https://www.visualcinnamon.com/2015/05/gooey-effect
   var blurStable = '1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 5 -7';
   // var blurStable = '1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -11';
   var blurIn =     '1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -11';

@@ -9,7 +9,7 @@ This repository contains the supplement material for "Designing Animated Transit
   - stimuli : Html file that loading experiment stimuli.
   - experiment-ui : Screenshots of the user study interfaces.
 
-- formative_study : Analysis scripts, stimuli, and experiment web page screenshots for the formative study
+- main-exp : Analysis scripts, stimuli, and experiment web page screenshots for the main-exp study
   - stimuli : Html file that loading experiment stimuli.
   - experiment-ui : Screenshots of the user study interfaces.
   - analysis
