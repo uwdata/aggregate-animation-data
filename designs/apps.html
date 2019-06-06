@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery-3.2.1.slim.min.js"></script>
+  <script src="js/d3.v4.min.js"></script>
+  <script src="js/vega@3.1.0.js"></script>
+  <script src="js/vega-lite@2.2.0.js"></script>
+  <script src="js/vega-embed@3.0.0.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/bundle.js"></script>
+  <script src="js/base.js"></script>
+  <script src="js/application.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/exp-juxtaposed.css">
+
+</head>
+
+<body>
+  <div class="container-fluid" style="max-width: 1024px;">
+    <div id="stimuli" class="mt-5 row">
+
+    </div>
+  </div>
+  <script>
+const playInterval = 2000;
+
+const APPS = [
+  {
+    "name": "boxplot",
+    "opt": {},
+    "fn": "boxplot",
+    "data":{
+      "data":[
+        { label: 'set1', value: 11.514722504554678 },
+        { label: 'set1', value: 13.026678772406074 },
+        { label: 'set1', value: 13.594997113972012 },
+        { label: 'set1', value: 17.873997343344076 },
+        { label: 'set1', value: 20.069602749030942 },
+        { label: 'set1', value: 15.125485076268253 },
+        { label: 'set1', value: 11.052214498794886 },
+        { label: 'set1', value: 14.166343969259906 },
+        { label: 'set1', value: 19.537707485150236 },
+        { label: 'set1', value: 11.803371038626823 },
+        { label: 'set1', value: 19.722905458700488 },
+        { label: 'set1', value: 17.919333302482656 },
+        { label: 'set1', value: 18.357279316908897 },
+        { label: 'set1', value: 0.3 }
+      ],
+      "yDomain": [0, 30]
+    },
+    plotOpt: {
+      xField: 'label',
+      yField: 'value',
+      width: 50,
+      height: 250,
+      margin: margin
+    },
+    draw: drawVertically
+  },
+  {
+    "name": "histogram",
+    "opt": {},
+    "fn": "histogram",
+    "data":{
+      "data":[
+          { label: 'set1', value: 8.492720897744881 },
+          { label: 'set1', value: 5.687123715869617 },
+          { label: 'set1', value: 6.885457560127048 },
+          { label: 'set1', value: 7.531312602653815 },
+          { label: 'set1', value: 5.190633616583897 },
+          { label: 'set1', value: 5.995017240095176 },
+          { label: 'set1', value: 4.402644459000056 },
+          { label: 'set1', value: 8.162176601664365 },
+          { label: 'set1', value: 6.990470955818912 },
+          { label: 'set1', value: 4.246788891282231 },
+          { label: 'set1', value: 8.12760458820403 },
+          { label: 'set1', value: 3.673211580435204 },
+          { label: 'set1', value: 3.356058238799317 },
+          { label: 'set1', value: 2.869331575110742 },
+          { label: 'set1', value: 7.810479365082324 },
+          { label: 'set1', value: 4.85317899143948 },
+          { label: 'set1', value: 8.708532889252774 },
+          { label: 'set1', value: 6.308034592801142 },
+          { label: 'set1', value: 4.842629512942298 },
+          { label: 'set1', value: 7.5093162737704215 },
+          { label: 'set1', value: 4.508338560823496 },
+          { label: 'set1', value: 6.783775760495319 },
+          { label: 'set1', value: 7.211501380506959 },
+          { label: 'set1', value: 8.345182194903042 },
+          { label: 'set1', value: 4.143710981073981 },
+          { label: 'set1', value: 5.163512439501052 },
+          { label: 'set1', value: 6.58451532519986 },
+          { label: 'set1', value: 4.443171015665452 },
+          { label: 'set1', value: 7.025330656182335 },
+          { label: 'set1', value: 2.066540930605744 },
+          { label: 'set1', value: 9.082764273296938 },
+          { label: 'set1', value: 5.903313341994438 },
+          { label: 'set1', value: 6.42758774816935 },
+          { label: 'set1', value: 5.586796895769332 },
+          { label: 'set1', value: 5.1864725433348395 },
+          { label: 'set1', value: 4.852721180134341 },
+          { label: 'set1', value: 7.27111882177193 },
+          { label: 'set1', value: 5.921420393373149 },
+          { label: 'set1', value: 7.434845824852089 },
+          { label: 'set1', value: 6.073859379132278 },
+          { label: 'set1', value: 4.827349480583047 },
+          { label: 'set1', value: 7.657164720115951 },
+          { label: 'set1', value: 6.672225249236148 },
+          { label: 'set1', value: 6.208826346204543 },
+          { label: 'set1', value: 5.338421611478585 },
+          { label: 'set1', value: 4.631913782821495 },
+          { label: 'set1', value: 5.894042427310449 },
+          { label: 'set1', value: 7.3359626985450666 },
+          { label: 'set1', value: 2.9590945596909384 },
+          { label: 'set1', value: 10.034654617832139 },
+          { label: 'set1', value: 8.152210101798161 },
+          { label: 'set1', value: 5.680710320797366 },
+          { label: 'set1', value: 9.11636804433327 },
+          { label: 'set1', value: 6.329654251259811 },
+          { label: 'set1', value: 7.721309813661691 },
+          { label: 'set1', value: 7.3137035915189035 },
+          { label: 'set1', value: 5.596645774842933 },
+          { label: 'set1', value: 4.702329409359367 },
+          { label: 'set1', value: 5.267355673124802 },
+          { label: 'set1', value: 8.303619483875538 },
+          { label: 'set1', value: 5.081495939241485 },
+          { label: 'set1', value: 3.9448857069092154 },
+          { label: 'set1', value: 5.764982737998596 },
+          { label: 'set1', value: 2.873713303649281 },
+          { label: 'set1', value: 9.938345841284297 },
+          { label: 'set1', value: 4.219187862741032 },
+          { label: 'set1', value: 6.596838513355275 },
+          { label: 'set1', value: 5.700204533462588 },
+          { label: 'set1', value: 8.124567253708992 },
+          { label: 'set1', value: 1.9313734519122248 },
+          { label: 'set1', value: 4.5525078412558955 },
+          { label: 'set1', value: 2.7440323130591966 },
+          { label: 'set1', value: 4.249357200112702 },
+          { label: 'set1', value: 9.882407362178931 },
+          { label: 'set1', value: 3.9823913227774574 },
+          { label: 'set1', value: 6.903868864525182 },
+          { label: 'set1', value: 5.557206977990956 },
+          { label: 'set1', value: 7.919848962966439 },
+          { label: 'set1', value: 5.994078220389303 },
+          { label: 'set1', value: 10.30209032721272 },
+          { label: 'set1', value: 6.507072383448871 },
+          { label: 'set1', value: 4.771721172356583 },
+          { label: 'set1', value: 4.815501293609556 },
+          { label: 'set1', value: 4.667804222661047 },
+          { label: 'set1', value: 5.766468126814436 },
+          { label: 'set1', value: 5.567072382738059 },
+          { label: 'set1', value: 8.591533434686008 },
+          { label: 'set1', value: 4.7873851471362086 },
+          { label: 'set1', value: 3.8324914018436753 },
+          { label: 'set1', value: 3.3773637004664736 },
+          { label: 'set1', value: 5.558548131247819 },
+          { label: 'set1', value: 5.713358457133731 },
+          { label: 'set1', value: 5.261214594923613 },
+          { label: 'set1', value: 10.009839118899876 },
+          { label: 'set1', value: 5.308639981586782 },
+          { label: 'set1', value: 5.594415074989019 },
+          { label: 'set1', value: 8.43768531996327 },
+          { label: 'set1', value: 5.381740280248663 },
+          { label: 'set1', value: 3.313187036694824 },
+          { label: 'set1', value: 5.179033629122142 }
+        ]
+      ,
+      "xDomain": [0, 12]
+    },
+    plotOpt: {
+      xField: 'value',
+      yField: 'label',
+      width: 250,
+      height: 50,
+      margin: {top: 211, right: 5, bottom: 40, left: 40},
+      marginAfter: {top: 11, right: 5, bottom: 40, left: 40}
+    },
+    draw: drawHorizontally
+  },
+  {
+    "name": "bootstrap",
+    "opt": {},
+    "fn": "bootstrapY",
+    "data":{
+        "data": [
+          {"label":"set1","value":6.719599569312759,"sampled_0":1,"sampled_2":2,"sampled_3":1,"sampled_4":1,"sampled_5":2,"sampled_6":1,"sampled_8":1,"sampled_10":1,"sampled_11":2,"sampled_15":1,"sampled_16":1,"sampled_18":2,"sampled_19":1,"sampled_29":2,"sampled_30":1,"sampled_34":1,"sampled_36":1,"sampled_37":2,"sampled_39":1,"sampled_41":1,"sampled_42":1,"sampled_43":3,"sampled_45":1,"sampled_49":2,"sampled_55":3,"sampled_56":1,"sampled_57":1,"sampled_58":1,"sampled_60":2,"sampled_63":1,"sampled_64":3,"sampled_67":2,"sampled_69":1,"sampled_70":1,"sampled_72":3,"sampled_73":1,"sampled_74":2,"sampled_78":1,"sampled_79":1,"sampled_81":2,"sampled_82":1,"sampled_83":1,"sampled_84":1,"sampled_85":3,"sampled_86":2,"sampled_87":1,"sampled_88":2,"sampled_89":1,"sampled_91":1,"sampled_93":1,"sampled_94":1,"sampled_96":1,"sampled_99":1},{"label":"set1","value":5.946066567520443,"sampled_0":1,"sampled_1":2,"sampled_4":1,"sampled_7":1,"sampled_12":2,"sampled_13":2,"sampled_14":3,"sampled_16":2,"sampled_17":2,"sampled_18":2,"sampled_19":2,"sampled_20":2,"sampled_21":1,"sampled_22":1,"sampled_23":1,"sampled_24":2,"sampled_26":1,"sampled_27":1,"sampled_28":2,"sampled_30":3,"sampled_32":2,"sampled_34":2,"sampled_35":1,"sampled_37":5,"sampled_38":3,"sampled_39":1,"sampled_45":2,"sampled_46":2,"sampled_47":2,"sampled_48":2,"sampled_51":2,"sampled_53":1,"sampled_55":1,"sampled_57":2,"sampled_58":1,"sampled_60":1,"sampled_62":1,"sampled_65":1,"sampled_66":1,"sampled_67":2,"sampled_68":1,"sampled_69":1,"sampled_70":2,"sampled_73":1,"sampled_74":2,"sampled_75":2,"sampled_76":2,"sampled_77":1,"sampled_78":1,"sampled_79":1,"sampled_80":2,"sampled_81":1,"sampled_82":1,"sampled_84":2,"sampled_86":2,"sampled_87":1,"sampled_88":3,"sampled_89":1,"sampled_90":1,"sampled_91":1,"sampled_92":1,"sampled_94":1,"sampled_95":1,"sampled_96":1,"sampled_97":1,"sampled_99":1},{"label":"set1","value":4.750071825920805,"sampled_0":1,"sampled_2":3,"sampled_5":1,"sampled_6":1,"sampled_7":2,"sampled_9":1,"sampled_11":2,"sampled_14":2,"sampled_15":3,"sampled_16":1,"sampled_17":1,"sampled_18":1,"sampled_21":2,"sampled_24":1,"sampled_26":2,"sampled_28":1,"sampled_30":2,"sampled_31":1,"sampled_32":1,"sampled_33":1,"sampled_36":1,"sampled_37":1,"sampled_38":1,"sampled_39":1,"sampled_40":1,"sampled_41":1,"sampled_42":2,"sampled_43":1,"sampled_44":1,"sampled_45":1,"sampled_46":1,"sampled_47":2,"sampled_48":1,"sampled_49":2,"sampled_52":1,"sampled_53":2,"sampled_54":1,"sampled_55":3,"sampled_56":1,"sampled_57":1,"sampled_58":2,"sampled_59":1,"sampled_60":1,"sampled_61":1,"sampled_62":1,"sampled_63":1,"sampled_64":1,"sampled_66":1,"sampled_67":1,"sampled_68":2,"sampled_69":1,"sampled_70":1,"sampled_72":1,"sampled_74":1,"sampled_75":1,"sampled_76":1,"sampled_77":1,"sampled_79":1,"sampled_82":1,"sampled_83":1,"sampled_85":3,"sampled_86":1,"sampled_87":2,"sampled_88":1,"sampled_90":1,"sampled_91":1,"sampled_92":2,"sampled_93":1,"sampled_95":2,"sampled_97":2,"sampled_99":1},{"label":"set1","value":7.808969005320515,"sampled_1":1,"sampled_2":1,"sampled_3":2,"sampled_5":1,"sampled_6":1,"sampled_7":2,"sampled_8":1,"sampled_14":2,"sampled_15":2,"sampled_16":1,"sampled_17":1,"sampled_19":1,"sampled_21":1,"sampled_22":1,"sampled_23":1,"sampled_26":2,"sampled_27":2,"sampled_29":1,"sampled_30":1,"sampled_31":2,"sampled_32":2,"sampled_34":1,"sampled_35":2,"sampled_36":5,"sampled_37":3,"sampled_38":3,"sampled_40":2,"sampled_41":1,"sampled_42":1,"sampled_44":3,"sampled_45":2,"sampled_46":1,"sampled_47":1,"sampled_49":1,"sampled_50":1,"sampled_52":1,"sampled_53":1,"sampled_54":3,"sampled_55":1,"sampled_58":2,"sampled_62":2,"sampled_63":2,"sampled_64":2,"sampled_65":1,"sampled_66":1,"sampled_67":1,"sampled_68":1,"sampled_70":1,"sampled_72":1,"sampled_73":2,"sampled_74":1,"sampled_76":1,"sampled_77":2,"sampled_78":1,"sampled_79":2,"sampled_80":1,"sampled_82":1,"sampled_83":4,"sampled_84":1,"sampled_85":2,"sampled_86":1,"sampled_88":1,"sampled_90":1,"sampled_91":3,"sampled_92":3,"sampled_93":1,"sampled_94":1,"sampled_96":1,"sampled_98":1},{"label":"set1","value":4.4176534139755965,"sampled_0":1,"sampled_1":1,"sampled_2":1,"sampled_3":1,"sampled_4":1,"sampled_6":1,"sampled_7":2,"sampled_8":2,"sampled_9":3,"sampled_10":4,"sampled_11":2,"sampled_13":2,"sampled_15":2,"sampled_19":2,"sampled_20":1,"sampled_21":1,"sampled_22":1,"sampled_23":4,"sampled_24":3,"sampled_25":1,"sampled_26":1,"sampled_27":1,"sampled_28":2,"sampled_29":1,"sampled_32":1,"sampled_34":1,"sampled_35":1,"sampled_36":1,"sampled_39":2,"sampled_41":1,"sampled_42":1,"sampled_43":1,"sampled_45":1,"sampled_46":1,"sampled_47":1,"sampled_49":2,"sampled_51":1,"sampled_53":1,"sampled_55":1,"sampled_56":2,"sampled_57":2,"sampled_58":2,"sampled_59":1,"sampled_60":2,"sampled_61":6,"sampled_62":2,"sampled_65":3,"sampled_66":1,"sampled_67":1,"sampled_68":1,"sampled_69":3,"sampled_70":3,"sampled_71":2,"sampled_73":1,"sampled_74":1,"sampled_78":2,"sampled_80":1,"sampled_83":1,"sampled_84":2,"sampled_85":2,"sampled_87":1,"sampled_89":2,"sampled_91":1,"sampled_92":1,"sampled_93":1,"sampled_94":2,"sampled_95":1,"sampled_96":1,"sampled_97":2},{"label":"set1","value":3.7796066842700067,"sampled_0":2,"sampled_2":1,"sampled_3":2,"sampled_4":3,"sampled_6":1,"sampled_7":2,"sampled_8":1,"sampled_9":2,"sampled_10":1,"sampled_12":3,"sampled_13":1,"sampled_15":1,"sampled_16":2,"sampled_17":1,"sampled_18":1,"sampled_19":2,"sampled_20":3,"sampled_21":1,"sampled_22":1,"sampled_23":1,"sampled_25":1,"sampled_26":1,"sampled_27":2,"sampled_29":1,"sampled_30":1,"sampled_31":1,"sampled_33":1,"sampled_34":1,"sampled_35":1,"sampled_36":1,"sampled_37":2,"sampled_41":2,"sampled_42":4,"sampled_43":1,"sampled_44":2,"sampled_45":1,"sampled_46":1,"sampled_47":1,"sampled_48":1,"sampled_49":3,"sampled_50":2,"sampled_51":1,"sampled_52":1,"sampled_53":1,"sampled_55":1,"sampled_56":2,"sampled_58":1,"sampled_59":2,"sampled_61":1,"sampled_62":1,"sampled_64":2,"sampled_66":1,"sampled_68":1,"sampled_70":2,"sampled_71":1,"sampled_72":1,"sampled_74":3,"sampled_75":1,"sampled_77":2,"sampled_78":2,"sampled_79":1,"sampled_80":3,"sampled_81":2,"sampled_83":1,"sampled_88":1,"sampled_90":1,"sampled_91":1,"sampled_93":1,"sampled_94":1,"sampled_95":2,"sampled_96":1,"sampled_97":2,"sampled_98":2,"sampled_99":4},{"label":"set1","value":2.684281275832579,"sampled_0":1,"sampled_1":1,"sampled_2":3,"sampled_4":1,"sampled_5":4,"sampled_6":1,"sampled_8":2,"sampled_9":3,"sampled_13":2,"sampled_14":1,"sampled_15":2,"sampled_16":1,"sampled_17":2,"sampled_18":4,"sampled_19":2,"sampled_20":2,"sampled_21":1,"sampled_23":1,"sampled_24":1,"sampled_25":1,"sampled_27":2,"sampled_29":1,"sampled_30":1,"sampled_31":1,"sampled_32":1,"sampled_36":2,"sampled_37":1,"sampled_38":1,"sampled_40":2,"sampled_43":2,"sampled_44":1,"sampled_45":2,"sampled_46":2,"sampled_47":1,"sampled_48":1,"sampled_51":1,"sampled_53":2,"sampled_54":2,"sampled_57":1,"sampled_58":1,"sampled_59":2,"sampled_60":1,"sampled_61":1,"sampled_62":1,"sampled_63":3,"sampled_65":2,"sampled_67":3,"sampled_68":1,"sampled_71":1,"sampled_72":3,"sampled_74":1,"sampled_76":2,"sampled_78":2,"sampled_81":1,"sampled_82":1,"sampled_83":1,"sampled_84":1,"sampled_85":1,"sampled_88":2,"sampled_92":1,"sampled_93":2,"sampled_94":3,"sampled_95":1,"sampled_96":2,"sampled_97":2,"sampled_98":1,"sampled_99":1},{"label":"set1","value":4.79258010423362,"sampled_0":3,"sampled_2":1,"sampled_3":1,"sampled_5":2,"sampled_6":1,"sampled_9":1,"sampled_10":2,"sampled_11":1,"sampled_12":1,"sampled_15":1,"sampled_16":1,"sampled_17":1,"sampled_20":2,"sampled_22":3,"sampled_23":1,"sampled_28":3,"sampled_30":3,"sampled_31":1,"sampled_33":2,"sampled_34":2,"sampled_35":1,"sampled_38":2,"sampled_40":2,"sampled_41":1,"sampled_44":2,"sampled_45":1,"sampled_48":2,"sampled_51":1,"sampled_55":1,"sampled_57":1,"sampled_58":3,"sampled_59":1,"sampled_60":1,"sampled_61":3,"sampled_62":1,"sampled_63":1,"sampled_64":4,"sampled_66":1,"sampled_67":1,"sampled_69":2,"sampled_70":1,"sampled_71":1,"sampled_72":3,"sampled_76":1,"sampled_77":2,"sampled_78":1,"sampled_79":2,"sampled_80":1,"sampled_81":1,"sampled_84":1,"sampled_85":1,"sampled_86":2,"sampled_87":1,"sampled_89":5,"sampled_90":4,"sampled_95":2,"sampled_96":1,"sampled_98":2,"sampled_99":1},{"label":"set1","value":6.204637668155414,"sampled_1":2,"sampled_4":2,"sampled_6":1,"sampled_8":3,"sampled_10":2,"sampled_11":1,"sampled_13":1,"sampled_16":4,"sampled_17":1,"sampled_18":2,"sampled_20":1,"sampled_21":2,"sampled_22":1,"sampled_23":2,"sampled_28":1,"sampled_29":1,"sampled_30":1,"sampled_31":3,"sampled_32":1,"sampled_33":3,"sampled_34":3,"sampled_36":1,"sampled_37":1,"sampled_39":2,"sampled_42":1,"sampled_43":2,"sampled_44":1,"sampled_45":1,"sampled_46":2,"sampled_47":1,"sampled_48":1,"sampled_54":1,"sampled_55":1,"sampled_59":1,"sampled_63":3,"sampled_64":2,"sampled_65":1,"sampled_67":2,"sampled_70":1,"sampled_71":1,"sampled_72":3,"sampled_73":3,"sampled_74":2,"sampled_75":1,"sampled_77":1,"sampled_78":1,"sampled_80":2,"sampled_82":1,"sampled_84":1,"sampled_85":2,"sampled_89":1,"sampled_90":1,"sampled_92":1,"sampled_94":1,"sampled_95":1,"sampled_97":3},{"label":"set1","value":5.912403921374724,"sampled_0":2,"sampled_1":1,"sampled_3":3,"sampled_8":1,"sampled_9":1,"sampled_10":1,"sampled_12":1,"sampled_14":2,"sampled_16":1,"sampled_17":1,"sampled_18":1,"sampled_19":1,"sampled_20":2,"sampled_21":2,"sampled_22":1,"sampled_23":1,"sampled_25":2,"sampled_26":1,"sampled_28":2,"sampled_29":2,"sampled_30":3,"sampled_32":1,"sampled_33":1,"sampled_34":2,"sampled_35":1,"sampled_38":4,"sampled_40":2,"sampled_41":2,"sampled_43":2,"sampled_44":1,"sampled_47":2,"sampled_48":1,"sampled_49":3,"sampled_50":2,"sampled_51":3,"sampled_54":1,"sampled_55":2,"sampled_57":2,"sampled_59":2,"sampled_60":3,"sampled_61":1,"sampled_63":1,"sampled_65":1,"sampled_67":1,"sampled_68":2,"sampled_69":1,"sampled_72":1,"sampled_73":1,"sampled_75":4,"sampled_80":2,"sampled_81":1,"sampled_83":2,"sampled_84":2,"sampled_86":3,"sampled_87":3,"sampled_89":1,"sampled_93":1,"sampled_94":1,"sampled_95":2,"sampled_96":2,"sampled_98":1,"sampled_99":1},{"label":"set1","value":5.775510483233332,"sampled_0":1,"sampled_1":2,"sampled_2":1,"sampled_3":1,"sampled_4":2,"sampled_5":1,"sampled_6":1,"sampled_7":1,"sampled_10":1,"sampled_11":1,"sampled_12":1,"sampled_14":4,"sampled_18":1,"sampled_20":5,"sampled_22":1,"sampled_23":1,"sampled_24":4,"sampled_31":1,"sampled_33":3,"sampled_34":3,"sampled_35":2,"sampled_36":1,"sampled_37":1,"sampled_41":2,"sampled_42":2,"sampled_43":1,"sampled_45":1,"sampled_46":1,"sampled_47":3,"sampled_48":2,"sampled_50":4,"sampled_51":2,"sampled_52":4,"sampled_54":1,"sampled_55":5,"sampled_56":1,"sampled_57":1,"sampled_58":2,"sampled_59":1,"sampled_60":1,"sampled_61":1,"sampled_62":1,"sampled_64":3,"sampled_65":1,"sampled_66":2,"sampled_67":1,"sampled_68":3,"sampled_69":2,"sampled_71":1,"sampled_73":1,"sampled_74":2,"sampled_75":3,"sampled_76":3,"sampled_78":2,"sampled_81":1,"sampled_83":2,"sampled_86":1,"sampled_91":1,"sampled_92":1,"sampled_96":1,"sampled_97":1,"sampled_99":1},{"label":"set1","value":5.228709421303295,"sampled_1":2,"sampled_2":3,"sampled_3":2,"sampled_5":2,"sampled_6":2,"sampled_9":2,"sampled_11":2,"sampled_12":1,"sampled_13":1,"sampled_14":1,"sampled_17":1,"sampled_19":1,"sampled_20":2,"sampled_21":2,"sampled_22":1,"sampled_23":1,"sampled_24":1,"sampled_25":2,"sampled_26":1,"sampled_27":1,"sampled_28":2,"sampled_29":1,"sampled_30":2,"sampled_32":2,"sampled_33":1,"sampled_34":1,"sampled_35":1,"sampled_36":2,"sampled_40":1,"sampled_41":3,"sampled_42":3,"sampled_43":1,"sampled_44":1,"sampled_46":1,"sampled_47":2,"sampled_48":2,"sampled_49":1,"sampled_50":2,"sampled_52":2,"sampled_54":2,"sampled_56":3,"sampled_57":1,"sampled_58":1,"sampled_60":3,"sampled_63":1,"sampled_66":2,"sampled_67":1,"sampled_68":2,"sampled_69":1,"sampled_71":3,"sampled_73":1,"sampled_74":2,"sampled_75":1,"sampled_76":1,"sampled_77":1,"sampled_78":3,"sampled_79":1,"sampled_80":1,"sampled_81":2,"sampled_82":1,"sampled_83":1,"sampled_85":1,"sampled_88":1,"sampled_89":2,"sampled_90":2,"sampled_91":1,"sampled_92":2,"sampled_94":1,"sampled_95":1,"sampled_96":1,"sampled_98":1,"sampled_99":1},{"label":"set1","value":9.75900725900667,"sampled_1":1,"sampled_2":1,"sampled_3":2,"sampled_4":1,"sampled_5":1,"sampled_6":1,"sampled_7":1,"sampled_8":1,"sampled_9":1,"sampled_10":1,"sampled_13":2,"sampled_14":2,"sampled_15":1,"sampled_16":3,"sampled_17":2,"sampled_18":1,"sampled_19":1,"sampled_22":4,"sampled_25":2,"sampled_26":1,"sampled_27":1,"sampled_28":3,"sampled_29":1,"sampled_30":2,"sampled_32":2,"sampled_33":2,"sampled_35":1,"sampled_37":1,"sampled_38":2,"sampled_40":1,"sampled_42":1,"sampled_43":2,"sampled_44":1,"sampled_47":2,"sampled_48":2,"sampled_50":2,"sampled_51":2,"sampled_53":2,"sampled_54":1,"sampled_55":1,"sampled_56":1,"sampled_57":2,"sampled_61":1,"sampled_62":2,"sampled_64":1,"sampled_65":1,"sampled_67":1,"sampled_70":1,"sampled_71":2,"sampled_74":2,"sampled_75":2,"sampled_76":2,"sampled_80":5,"sampled_82":1,"sampled_84":2,"sampled_86":1,"sampled_87":2,"sampled_89":1,"sampled_91":1,"sampled_93":2,"sampled_94":2,"sampled_96":2,"sampled_98":1,"sampled_99":2},{"label":"set1","value":5.359327681528971,"sampled_0":1,"sampled_1":2,"sampled_2":3,"sampled_3":3,"sampled_4":3,"sampled_5":2,"sampled_8":3,"sampled_9":1,"sampled_10":1,"sampled_12":2,"sampled_13":2,"sampled_15":1,"sampled_17":2,"sampled_22":2,"sampled_24":3,"sampled_25":3,"sampled_26":1,"sampled_27":1,"sampled_29":1,"sampled_30":4,"sampled_34":2,"sampled_35":3,"sampled_36":2,"sampled_37":1,"sampled_38":1,"sampled_39":2,"sampled_41":1,"sampled_45":1,"sampled_46":2,"sampled_47":1,"sampled_51":2,"sampled_55":1,"sampled_56":1,"sampled_61":1,"sampled_63":1,"sampled_65":2,"sampled_66":1,"sampled_67":1,"sampled_69":1,"sampled_70":2,"sampled_71":3,"sampled_72":1,"sampled_74":1,"sampled_76":1,"sampled_81":2,"sampled_82":3,"sampled_84":1,"sampled_86":1,"sampled_87":1,"sampled_89":2,"sampled_91":2,"sampled_93":1,"sampled_94":1,"sampled_97":1,"sampled_98":1},{"label":"set1","value":7.036304283306909,"sampled_0":2,"sampled_2":1,"sampled_4":1,"sampled_5":1,"sampled_6":2,"sampled_7":1,"sampled_8":2,"sampled_9":1,"sampled_10":1,"sampled_11":4,"sampled_12":1,"sampled_13":1,"sampled_15":2,"sampled_16":2,"sampled_19":2,"sampled_20":2,"sampled_21":3,"sampled_23":1,"sampled_25":1,"sampled_26":1,"sampled_27":2,"sampled_28":2,"sampled_30":3,"sampled_31":2,"sampled_32":1,"sampled_33":4,"sampled_36":2,"sampled_39":2,"sampled_43":2,"sampled_44":1,"sampled_45":1,"sampled_46":2,"sampled_47":1,"sampled_48":2,"sampled_49":1,"sampled_50":2,"sampled_51":1,"sampled_52":1,"sampled_54":1,"sampled_57":3,"sampled_58":2,"sampled_60":2,"sampled_62":1,"sampled_63":2,"sampled_64":1,"sampled_68":1,"sampled_73":2,"sampled_74":1,"sampled_75":3,"sampled_76":4,"sampled_77":1,"sampled_78":2,"sampled_80":2,"sampled_81":1,"sampled_82":1,"sampled_85":1,"sampled_86":2,"sampled_87":1,"sampled_89":1,"sampled_90":3,"sampled_92":2,"sampled_93":1,"sampled_94":1,"sampled_95":1,"sampled_96":1,"sampled_97":1,"sampled_98":2,"sampled_99":2},{"label":"set1","value":8.132477915855421,"sampled_0":2,"sampled_2":1,"sampled_3":2,"sampled_4":1,"sampled_6":2,"sampled_7":2,"sampled_8":1,"sampled_9":1,"sampled_10":1,"sampled_12":3,"sampled_13":2,"sampled_14":2,"sampled_15":1,"sampled_16":1,"sampled_18":2,"sampled_19":1,"sampled_20":2,"sampled_22":3,"sampled_24":4,"sampled_28":1,"sampled_29":3,"sampled_30":2,"sampled_31":3,"sampled_32":2,"sampled_34":1,"sampled_35":2,"sampled_37":1,"sampled_38":1,"sampled_39":1,"sampled_42":3,"sampled_45":2,"sampled_46":3,"sampled_47":1,"sampled_48":1,"sampled_49":1,"sampled_51":3,"sampled_52":2,"sampled_53":1,"sampled_54":1,"sampled_55":2,"sampled_59":1,"sampled_60":1,"sampled_61":1,"sampled_62":1,"sampled_64":1,"sampled_65":1,"sampled_66":3,"sampled_69":1,"sampled_70":2,"sampled_71":1,"sampled_72":2,"sampled_73":2,"sampled_76":2,"sampled_77":2,"sampled_78":1,"sampled_79":1,"sampled_80":1,"sampled_82":3,"sampled_83":1,"sampled_84":1,"sampled_85":2,"sampled_86":2,"sampled_87":2,"sampled_88":3,"sampled_89":1,"sampled_90":1,"sampled_92":1,"sampled_93":2,"sampled_95":3,"sampled_96":3,"sampled_97":2,"sampled_99":2},{"label":"set1","value":5.464800008363471,"sampled_0":1,"sampled_1":2,"sampled_3":1,"sampled_4":2,"sampled_6":2,"sampled_8":1,"sampled_9":1,"sampled_10":3,"sampled_11":2,"sampled_12":3,"sampled_13":3,"sampled_14":1,"sampled_16":1,"sampled_17":2,"sampled_18":1,"sampled_19":1,"sampled_21":2,"sampled_22":1,"sampled_23":1,"sampled_27":1,"sampled_34":1,"sampled_36":1,"sampled_37":1,"sampled_38":1,"sampled_39":1,"sampled_40":1,"sampled_41":1,"sampled_43":1,"sampled_44":1,"sampled_45":2,"sampled_47":2,"sampled_48":4,"sampled_51":1,"sampled_52":1,"sampled_53":2,"sampled_54":3,"sampled_55":2,"sampled_58":1,"sampled_59":1,"sampled_60":2,"sampled_63":1,"sampled_65":3,"sampled_66":3,"sampled_67":1,"sampled_68":1,"sampled_69":2,"sampled_70":1,"sampled_71":1,"sampled_72":2,"sampled_73":1,"sampled_74":1,"sampled_75":3,"sampled_76":2,"sampled_78":2,"sampled_81":1,"sampled_83":2,"sampled_84":2,"sampled_85":1,"sampled_87":2,"sampled_88":1,"sampled_89":1,"sampled_90":1,"sampled_91":1,"sampled_93":1,"sampled_94":1,"sampled_95":2,"sampled_96":2,"sampled_97":2,"sampled_98":2},{"label":"set1","value":7.867212011459602,"sampled_0":2,"sampled_1":3,"sampled_2":2,"sampled_3":1,"sampled_4":1,"sampled_7":1,"sampled_8":1,"sampled_9":1,"sampled_10":1,"sampled_12":1,"sampled_13":3,"sampled_14":1,"sampled_16":2,"sampled_18":1,"sampled_19":2,"sampled_21":1,"sampled_22":1,"sampled_23":3,"sampled_25":2,"sampled_26":2,"sampled_32":2,"sampled_34":1,"sampled_35":2,"sampled_37":2,"sampled_38":2,"sampled_39":2,"sampled_40":2,"sampled_44":1,"sampled_49":2,"sampled_50":2,"sampled_51":2,"sampled_52":1,"sampled_54":3,"sampled_55":1,"sampled_58":1,"sampled_60":2,"sampled_62":1,"sampled_63":2,"sampled_64":1,"sampled_65":1,"sampled_66":1,"sampled_67":1,"sampled_68":2,"sampled_71":2,"sampled_72":1,"sampled_76":1,"sampled_77":1,"sampled_79":2,"sampled_80":2,"sampled_84":1,"sampled_85":1,"sampled_86":3,"sampled_87":3,"sampled_90":4,"sampled_91":3,"sampled_93":3,"sampled_95":1,"sampled_96":2,"sampled_97":2,"sampled_98":1},{"label":"set1","value":7.10184861559158,"sampled_3":2,"sampled_4":1,"sampled_5":1,"sampled_7":1,"sampled_9":1,"sampled_11":1,"sampled_12":2,"sampled_14":1,"sampled_15":2,"sampled_16":1,"sampled_17":3,"sampled_21":1,"sampled_22":1,"sampled_23":1,"sampled_24":2,"sampled_25":1,"sampled_26":2,"sampled_28":1,"sampled_29":1,"sampled_30":1,"sampled_31":2,"sampled_33":2,"sampled_34":1,"sampled_35":3,"sampled_40":2,"sampled_41":2,"sampled_42":1,"sampled_44":2,"sampled_46":2,"sampled_49":2,"sampled_51":1,"sampled_52":2,"sampled_53":2,"sampled_56":1,"sampled_58":1,"sampled_59":1,"sampled_60":1,"sampled_62":1,"sampled_64":1,"sampled_66":1,"sampled_67":1,"sampled_68":3,"sampled_69":1,"sampled_71":1,"sampled_72":1,"sampled_73":2,"sampled_75":1,"sampled_76":2,"sampled_79":2,"sampled_80":1,"sampled_82":2,"sampled_83":1,"sampled_86":1,"sampled_87":1,"sampled_91":2,"sampled_95":2,"sampled_98":1},{"label":"set1","value":4.913601800739472,"sampled_0":2,"sampled_1":2,"sampled_2":2,"sampled_5":1,"sampled_7":1,"sampled_8":1,"sampled_9":1,"sampled_10":1,"sampled_13":1,"sampled_14":2,"sampled_17":1,"sampled_18":1,"sampled_19":3,"sampled_23":2,"sampled_24":2,"sampled_26":1,"sampled_33":1,"sampled_34":2,"sampled_35":3,"sampled_36":2,"sampled_37":2,"sampled_38":3,"sampled_39":3,"sampled_40":1,"sampled_42":1,"sampled_43":2,"sampled_44":1,"sampled_45":3,"sampled_46":1,"sampled_47":1,"sampled_51":1,"sampled_52":2,"sampled_54":1,"sampled_55":1,"sampled_56":1,"sampled_58":1,"sampled_59":1,"sampled_61":1,"sampled_62":1,"sampled_63":3,"sampled_64":1,"sampled_67":2,"sampled_68":2,"sampled_69":2,"sampled_73":2,"sampled_75":1,"sampled_76":1,"sampled_77":1,"sampled_78":1,"sampled_79":1,"sampled_80":1,"sampled_81":2,"sampled_82":5,"sampled_84":1,"sampled_85":1,"sampled_86":1,"sampled_87":1,"sampled_88":1,"sampled_89":2,"sampled_91":1,"sampled_92":1,"sampled_95":1,"sampled_97":1,"sampled_98":2,"sampled_99":1},{"label":"set1","value":4.313262130215531,"sampled_0":2,"sampled_1":1,"sampled_2":1,"sampled_3":1,"sampled_4":2,"sampled_5":3,"sampled_6":3,"sampled_7":2,"sampled_8":3,"sampled_9":1,"sampled_11":2,"sampled_12":2,"sampled_16":1,"sampled_18":2,"sampled_21":1,"sampled_22":1,"sampled_23":2,"sampled_25":1,"sampled_27":2,"sampled_28":2,"sampled_29":5,"sampled_32":1,"sampled_33":2,"sampled_34":1,"sampled_35":1,"sampled_36":1,"sampled_37":3,"sampled_39":3,"sampled_40":2,"sampled_41":1,"sampled_42":2,"sampled_44":1,"sampled_46":1,"sampled_47":2,"sampled_48":2,"sampled_49":2,"sampled_51":1,"sampled_52":2,"sampled_53":1,"sampled_54":1,"sampled_55":1,"sampled_56":1,"sampled_57":1,"sampled_58":2,"sampled_59":1,"sampled_60":1,"sampled_61":3,"sampled_62":3,"sampled_63":2,"sampled_64":1,"sampled_65":2,"sampled_66":1,"sampled_68":1,"sampled_69":2,"sampled_70":1,"sampled_75":2,"sampled_76":1,"sampled_77":1,"sampled_78":4,"sampled_79":1,"sampled_83":1,"sampled_84":3,"sampled_85":1,"sampled_86":2,"sampled_87":2,"sampled_88":2,"sampled_89":1,"sampled_90":1,"sampled_91":1,"sampled_92":2,"sampled_94":2,"sampled_95":1,"sampled_96":2,"sampled_97":2,"sampled_98":4},{"label":"set1","value":6.517561621638714,"sampled_1":1,"sampled_2":2,"sampled_4":2,"sampled_5":2,"sampled_6":1,"sampled_7":1,"sampled_8":1,"sampled_9":2,"sampled_10":1,"sampled_11":2,"sampled_13":1,"sampled_14":1,"sampled_16":2,"sampled_21":2,"sampled_24":1,"sampled_26":2,"sampled_27":1,"sampled_28":3,"sampled_29":1,"sampled_31":1,"sampled_32":1,"sampled_34":1,"sampled_36":2,"sampled_37":1,"sampled_38":2,"sampled_39":1,"sampled_41":2,"sampled_42":2,"sampled_43":1,"sampled_44":3,"sampled_45":1,"sampled_46":1,"sampled_48":1,"sampled_49":1,"sampled_50":2,"sampled_51":1,"sampled_52":3,"sampled_53":3,"sampled_56":1,"sampled_57":2,"sampled_58":2,"sampled_59":2,"sampled_60":1,"sampled_62":2,"sampled_65":1,"sampled_67":3,"sampled_69":3,"sampled_70":2,"sampled_72":1,"sampled_73":1,"sampled_74":2,"sampled_75":1,"sampled_76":1,"sampled_79":1,"sampled_81":2,"sampled_83":3,"sampled_85":1,"sampled_87":1,"sampled_88":2,"sampled_89":3,"sampled_90":1,"sampled_91":3,"sampled_92":2,"sampled_93":2,"sampled_94":1,"sampled_97":2,"sampled_99":1},{"label":"set1","value":3.4678075119665053,"sampled_0":1,"sampled_1":2,"sampled_2":1,"sampled_3":1,"sampled_5":2,"sampled_8":2,"sampled_10":2,"sampled_12":2,"sampled_14":3,"sampled_16":1,"sampled_17":2,"sampled_18":1,"sampled_20":1,"sampled_21":1,"sampled_23":3,"sampled_24":2,"sampled_25":1,"sampled_26":1,"sampled_27":1,"sampled_28":1,"sampled_29":2,"sampled_31":1,"sampled_32":1,"sampled_33":1,"sampled_35":1,"sampled_38":1,"sampled_40":1,"sampled_43":3,"sampled_46":1,"sampled_47":1,"sampled_48":1,"sampled_50":1,"sampled_53":3,"sampled_54":1,"sampled_56":5,"sampled_57":2,"sampled_60":1,"sampled_61":1,"sampled_62":3,"sampled_63":3,"sampled_64":2,"sampled_65":1,"sampled_66":1,"sampled_67":1,"sampled_68":1,"sampled_70":2,"sampled_73":1,"sampled_74":2,"sampled_75":1,"sampled_76":1,"sampled_78":3,"sampled_80":2,"sampled_82":3,"sampled_83":1,"sampled_85":1,"sampled_87":2,"sampled_90":1,"sampled_92":1,"sampled_93":1,"sampled_94":3,"sampled_95":1,"sampled_96":1,"sampled_98":2,"sampled_99":2},{"label":"set1","value":3.879485965370173,"sampled_2":1,"sampled_3":1,"sampled_6":1,"sampled_7":1,"sampled_9":1,"sampled_11":1,"sampled_12":2,"sampled_14":3,"sampled_15":2,"sampled_16":1,"sampled_17":1,"sampled_19":3,"sampled_20":2,"sampled_23":1,"sampled_24":2,"sampled_25":3,"sampled_26":3,"sampled_27":6,"sampled_30":1,"sampled_31":2,"sampled_36":1,"sampled_39":2,"sampled_40":2,"sampled_42":1,"sampled_43":1,"sampled_44":1,"sampled_45":1,"sampled_47":1,"sampled_48":1,"sampled_49":2,"sampled_50":2,"sampled_52":1,"sampled_54":1,"sampled_56":2,"sampled_60":2,"sampled_61":3,"sampled_62":2,"sampled_63":1,"sampled_64":1,"sampled_65":1,"sampled_66":2,"sampled_67":1,"sampled_69":3,"sampled_70":1,"sampled_72":1,"sampled_73":2,"sampled_74":2,"sampled_76":2,"sampled_77":2,"sampled_79":2,"sampled_80":1,"sampled_82":1,"sampled_83":1,"sampled_84":2,"sampled_85":1,"sampled_88":1,"sampled_89":3,"sampled_90":1,"sampled_92":2,"sampled_93":1,"sampled_96":1,"sampled_97":1,"sampled_98":2,"sampled_99":1},{"label":"set1","value":7.475800863412588,"sampled_1":2,"sampled_3":2,"sampled_4":2,"sampled_5":1,"sampled_7":1,"sampled_9":3,"sampled_11":4,"sampled_15":1,"sampled_16":1,"sampled_18":1,"sampled_19":1,"sampled_20":1,"sampled_21":1,"sampled_23":1,"sampled_25":2,"sampled_26":1,"sampled_27":1,"sampled_31":1,"sampled_32":2,"sampled_34":1,"sampled_35":1,"sampled_38":1,"sampled_43":2,"sampled_46":2,"sampled_48":1,"sampled_49":1,"sampled_50":1,"sampled_52":1,"sampled_54":1,"sampled_56":1,"sampled_58":2,"sampled_60":1,"sampled_64":1,"sampled_65":2,"sampled_66":2,"sampled_68":1,"sampled_69":1,"sampled_70":1,"sampled_71":2,"sampled_72":1,"sampled_73":1,"sampled_74":1,"sampled_75":1,"sampled_76":1,"sampled_78":1,"sampled_79":1,"sampled_80":1,"sampled_81":4,"sampled_82":3,"sampled_83":2,"sampled_84":2,"sampled_85":2,"sampled_86":1,"sampled_87":1,"sampled_88":2,"sampled_90":3,"sampled_91":1,"sampled_92":1,"sampled_94":1,"sampled_97":2,"sampled_99":3},{"label":"set1","value":6.336105539785149,"sampled_0":1,"sampled_3":1,"sampled_4":2,"sampled_9":1,"sampled_10":1,"sampled_11":2,"sampled_13":2,"sampled_18":1,"sampled_19":3,"sampled_20":1,"sampled_21":1,"sampled_22":1,"sampled_24":2,"sampled_25":1,"sampled_26":1,"sampled_27":2,"sampled_29":1,"sampled_30":2,"sampled_31":1,"sampled_32":1,"sampled_33":2,"sampled_35":1,"sampled_36":1,"sampled_37":1,"sampled_38":1,"sampled_39":1,"sampled_40":1,"sampled_43":1,"sampled_45":1,"sampled_48":2,"sampled_49":1,"sampled_50":1,"sampled_51":1,"sampled_52":2,"sampled_53":1,"sampled_56":2,"sampled_57":1,"sampled_59":3,"sampled_60":2,"sampled_61":2,"sampled_62":2,"sampled_64":1,"sampled_66":2,"sampled_67":1,"sampled_69":1,"sampled_71":1,"sampled_72":1,"sampled_77":2,"sampled_78":2,"sampled_79":2,"sampled_81":2,"sampled_83":1,"sampled_84":1,"sampled_85":2,"sampled_87":2,"sampled_88":2,"sampled_89":2,"sampled_90":2,"sampled_91":1,"sampled_92":2,"sampled_94":1,"sampled_95":4,"sampled_96":2,"sampled_99":3},{"label":"set1","value":7.357365925097484,"sampled_0":1,"sampled_2":1,"sampled_3":1,"sampled_4":1,"sampled_5":4,"sampled_6":1,"sampled_7":1,"sampled_8":1,"sampled_10":1,"sampled_11":1,"sampled_13":1,"sampled_14":1,"sampled_18":2,"sampled_19":2,"sampled_20":2,"sampled_21":2,"sampled_22":2,"sampled_26":2,"sampled_27":1,"sampled_28":2,"sampled_29":1,"sampled_30":1,"sampled_31":1,"sampled_34":1,"sampled_35":1,"sampled_36":1,"sampled_37":1,"sampled_39":1,"sampled_40":1,"sampled_41":2,"sampled_44":1,"sampled_45":2,"sampled_46":1,"sampled_48":2,"sampled_49":2,"sampled_50":1,"sampled_52":1,"sampled_53":2,"sampled_54":1,"sampled_55":1,"sampled_56":2,"sampled_57":1,"sampled_59":1,"sampled_62":1,"sampled_63":1,"sampled_64":1,"sampled_65":2,"sampled_66":1,"sampled_67":1,"sampled_68":3,"sampled_69":1,"sampled_71":5,"sampled_72":1,"sampled_75":1,"sampled_77":3,"sampled_80":2,"sampled_82":1,"sampled_84":1,"sampled_85":1,"sampled_87":1,"sampled_89":1,"sampled_91":1,"sampled_92":4,"sampled_95":2,"sampled_96":1,"sampled_97":1,"sampled_99":3},{"label":"set1","value":7.455584245552634,"sampled_0":1,"sampled_2":1,"sampled_3":2,"sampled_7":2,"sampled_8":1,"sampled_9":1,"sampled_10":1,"sampled_12":3,"sampled_13":4,"sampled_14":1,"sampled_15":1,"sampled_17":3,"sampled_18":1,"sampled_19":1,"sampled_22":1,"sampled_23":1,"sampled_24":1,"sampled_25":3,"sampled_27":2,"sampled_28":1,"sampled_29":2,"sampled_32":2,"sampled_35":2,"sampled_38":1,"sampled_40":4,"sampled_43":2,"sampled_44":1,"sampled_46":1,"sampled_47":1,"sampled_49":2,"sampled_51":1,"sampled_52":3,"sampled_53":2,"sampled_56":1,"sampled_57":1,"sampled_58":1,"sampled_59":2,"sampled_61":1,"sampled_62":1,"sampled_63":1,"sampled_66":1,"sampled_67":1,"sampled_70":2,"sampled_71":2,"sampled_73":1,"sampled_75":1,"sampled_78":1,"sampled_79":1,"sampled_83":1,"sampled_84":2,"sampled_85":1,"sampled_87":1,"sampled_88":1,"sampled_89":1,"sampled_91":2,"sampled_93":1,"sampled_94":2,"sampled_95":1},{"label":"set1","value":6.146812032723832,"sampled_0":2,"sampled_1":2,"sampled_4":2,"sampled_5":2,"sampled_6":2,"sampled_7":2,"sampled_8":2,"sampled_9":1,"sampled_10":1,"sampled_15":3,"sampled_16":2,"sampled_17":3,"sampled_18":1,"sampled_21":1,"sampled_23":1,"sampled_24":1,"sampled_25":3,"sampled_26":1,"sampled_27":1,"sampled_28":1,"sampled_29":1,"sampled_30":3,"sampled_31":1,"sampled_33":1,"sampled_35":1,"sampled_36":1,"sampled_39":1,"sampled_40":1,"sampled_41":2,"sampled_42":1,"sampled_43":1,"sampled_44":2,"sampled_45":1,"sampled_46":1,"sampled_47":3,"sampled_48":1,"sampled_50":3,"sampled_51":2,"sampled_53":1,"sampled_55":1,"sampled_56":4,"sampled_57":3,"sampled_59":1,"sampled_60":2,"sampled_61":2,"sampled_64":1,"sampled_65":1,"sampled_66":1,"sampled_68":1,"sampled_69":1,"sampled_75":2,"sampled_77":1,"sampled_79":1,"sampled_80":2,"sampled_84":1,"sampled_85":3,"sampled_86":1,"sampled_88":2,"sampled_90":1,"sampled_92":3,"sampled_93":1,"sampled_94":2,"sampled_95":1,"sampled_96":1,"sampled_97":1,"sampled_98":3,"sampled_99":1},{"label":"set1","value":4.5091187030264726,"sampled_0":2,"sampled_2":1,"sampled_3":1,"sampled_4":1,"sampled_5":1,"sampled_7":3,"sampled_8":2,"sampled_10":1,"sampled_11":1,"sampled_12":1,"sampled_13":1,"sampled_14":1,"sampled_15":3,"sampled_16":2,"sampled_17":3,"sampled_18":3,"sampled_21":1,"sampled_23":1,"sampled_24":1,"sampled_25":3,"sampled_26":2,"sampled_28":2,"sampled_29":1,"sampled_31":1,"sampled_32":2,"sampled_33":3,"sampled_34":2,"sampled_35":2,"sampled_36":1,"sampled_37":1,"sampled_39":1,"sampled_41":1,"sampled_42":2,"sampled_43":2,"sampled_44":1,"sampled_46":1,"sampled_47":2,"sampled_49":2,"sampled_50":1,"sampled_51":1,"sampled_53":1,"sampled_55":1,"sampled_57":1,"sampled_58":1,"sampled_59":2,"sampled_65":1,"sampled_66":1,"sampled_67":2,"sampled_68":1,"sampled_69":1,"sampled_71":1,"sampled_72":1,"sampled_73":1,"sampled_75":1,"sampled_77":1,"sampled_78":1,"sampled_79":1,"sampled_80":1,"sampled_82":3,"sampled_84":1,"sampled_85":1,"sampled_86":1,"sampled_88":2,"sampled_89":1,"sampled_91":1,"sampled_92":1,"sampled_93":1,"sampled_97":1,"sampled_98":1,"sampled_99":2},{"label":"set1","value":8.398779313115778,"sampled_1":1,"sampled_2":1,"sampled_3":1,"sampled_6":2,"sampled_7":1,"sampled_8":2,"sampled_9":1,"sampled_10":1,"sampled_13":1,"sampled_15":1,"sampled_16":1,"sampled_17":2,"sampled_19":1,"sampled_22":1,"sampled_29":1,"sampled_30":1,"sampled_32":1,"sampled_33":1,"sampled_35":1,"sampled_36":1,"sampled_37":3,"sampled_39":1,"sampled_44":1,"sampled_46":2,"sampled_48":1,"sampled_51":2,"sampled_52":1,"sampled_53":1,"sampled_54":4,"sampled_55":1,"sampled_56":2,"sampled_57":2,"sampled_59":2,"sampled_60":2,"sampled_61":1,"sampled_62":1,"sampled_63":2,"sampled_64":1,"sampled_65":1,"sampled_67":1,"sampled_68":2,"sampled_69":1,"sampled_71":1,"sampled_72":1,"sampled_73":5,"sampled_74":1,"sampled_75":2,"sampled_78":2,"sampled_79":2,"sampled_81":1,"sampled_82":1,"sampled_83":1,"sampled_84":1,"sampled_86":1,"sampled_87":1,"sampled_92":3,"sampled_93":1,"sampled_94":1,"sampled_96":1,"sampled_97":2,"sampled_98":2},{"label":"set1","value":6.150245448346309,"sampled_0":2,"sampled_1":2,"sampled_3":1,"sampled_4":2,"sampled_5":1,"sampled_6":2,"sampled_7":1,"sampled_8":1,"sampled_9":1,"sampled_10":4,"sampled_11":2,"sampled_12":2,"sampled_13":1,"sampled_14":1,"sampled_15":1,"sampled_17":1,"sampled_20":1,"sampled_21":1,"sampled_22":3,"sampled_26":1,"sampled_27":1,"sampled_28":1,"sampled_29":1,"sampled_31":3,"sampled_32":2,"sampled_35":1,"sampled_36":1,"sampled_38":1,"sampled_39":1,"sampled_41":1,"sampled_42":1,"sampled_44":1,"sampled_45":1,"sampled_46":1,"sampled_49":2,"sampled_51":1,"sampled_52":1,"sampled_53":1,"sampled_54":1,"sampled_57":1,"sampled_58":2,"sampled_59":1,"sampled_61":1,"sampled_63":1,"sampled_65":4,"sampled_68":1,"sampled_69":3,"sampled_70":1,"sampled_72":2,"sampled_73":1,"sampled_74":3,"sampled_76":2,"sampled_77":2,"sampled_78":1,"sampled_79":1,"sampled_80":2,"sampled_81":3,"sampled_82":2,"sampled_83":1,"sampled_85":1,"sampled_86":2,"sampled_87":2,"sampled_88":2,"sampled_90":1,"sampled_91":1,"sampled_93":1,"sampled_94":2,"sampled_95":2,"sampled_96":1,"sampled_97":1,"sampled_98":1},{"label":"set1","value":3.1421711463601087,"sampled_0":1,"sampled_1":1,"sampled_2":1,"sampled_3":1,"sampled_4":1,"sampled_5":1,"sampled_6":2,"sampled_7":2,"sampled_9":2,"sampled_15":2,"sampled_16":1,"sampled_17":2,"sampled_18":1,"sampled_20":2,"sampled_22":2,"sampled_23":2,"sampled_25":3,"sampled_26":1,"sampled_27":3,"sampled_28":1,"sampled_29":1,"sampled_32":1,"sampled_33":1,"sampled_34":1,"sampled_36":2,"sampled_38":1,"sampled_40":3,"sampled_41":2,"sampled_42":1,"sampled_43":2,"sampled_45":3,"sampled_46":1,"sampled_47":3,"sampled_48":1,"sampled_50":2,"sampled_52":1,"sampled_53":3,"sampled_56":1,"sampled_57":1,"sampled_58":1,"sampled_59":1,"sampled_60":1,"sampled_61":1,"sampled_63":1,"sampled_65":1,"sampled_66":1,"sampled_67":1,"sampled_72":2,"sampled_73":1,"sampled_74":1,"sampled_75":1,"sampled_76":1,"sampled_83":2,"sampled_84":2,"sampled_89":1,"sampled_90":1,"sampled_91":1,"sampled_93":2,"sampled_94":1,"sampled_96":2,"sampled_97":1,"sampled_98":1,"sampled_99":2},{"label":"set1","value":5.1344259015068285,"sampled_5":1,"sampled_6":1,"sampled_7":2,"sampled_8":1,"sampled_10":2,"sampled_12":2,"sampled_16":1,"sampled_18":3,"sampled_20":2,"sampled_22":1,"sampled_23":1,"sampled_25":1,"sampled_26":1,"sampled_28":1,"sampled_29":1,"sampled_31":3,"sampled_32":1,"sampled_33":1,"sampled_34":2,"sampled_36":1,"sampled_38":2,"sampled_39":1,"sampled_40":1,"sampled_41":1,"sampled_42":1,"sampled_44":2,"sampled_45":3,"sampled_48":1,"sampled_51":1,"sampled_53":2,"sampled_54":1,"sampled_55":1,"sampled_57":2,"sampled_60":1,"sampled_62":1,"sampled_63":1,"sampled_64":1,"sampled_65":1,"sampled_66":3,"sampled_69":1,"sampled_70":1,"sampled_71":1,"sampled_72":2,"sampled_73":2,"sampled_76":1,"sampled_79":3,"sampled_80":2,"sampled_81":1,"sampled_83":3,"sampled_86":4,"sampled_87":1,"sampled_89":2,"sampled_90":2,"sampled_91":4,"sampled_92":2,"sampled_95":1,"sampled_96":2,"sampled_97":1,"sampled_98":1},{"label":"set1","value":7.788063979735831,"sampled_0":1,"sampled_4":1,"sampled_6":1,"sampled_8":2,"sampled_9":1,"sampled_13":1,"sampled_14":2,"sampled_15":1,"sampled_19":4,"sampled_20":2,"sampled_21":3,"sampled_22":1,"sampled_23":2,"sampled_24":1,"sampled_25":1,"sampled_26":2,"sampled_28":1,"sampled_29":2,"sampled_31":1,"sampled_32":2,"sampled_34":1,"sampled_35":1,"sampled_38":1,"sampled_40":1,"sampled_41":1,"sampled_42":1,"sampled_49":2,"sampled_50":2,"sampled_51":1,"sampled_52":1,"sampled_54":1,"sampled_55":1,"sampled_57":2,"sampled_58":2,"sampled_59":2,"sampled_60":1,"sampled_61":1,"sampled_62":2,"sampled_63":2,"sampled_64":2,"sampled_65":1,"sampled_66":2,"sampled_71":2,"sampled_73":1,"sampled_74":1,"sampled_76":1,"sampled_77":1,"sampled_79":2,"sampled_81":5,"sampled_82":1,"sampled_84":1,"sampled_86":2,"sampled_87":2,"sampled_88":1,"sampled_90":2,"sampled_94":1},{"label":"set1","value":7.814851707398728,"sampled_1":3,"sampled_2":1,"sampled_6":2,"sampled_7":3,"sampled_9":1,"sampled_12":1,"sampled_13":2,"sampled_14":1,"sampled_15":1,"sampled_16":1,"sampled_18":2,"sampled_20":1,"sampled_21":1,"sampled_25":1,"sampled_27":1,"sampled_31":2,"sampled_32":1,"sampled_33":2,"sampled_34":1,"sampled_36":2,"sampled_37":1,"sampled_39":4,"sampled_40":1,"sampled_41":2,"sampled_42":1,"sampled_45":1,"sampled_47":1,"sampled_50":2,"sampled_51":1,"sampled_53":2,"sampled_54":1,"sampled_58":1,"sampled_59":1,"sampled_61":3,"sampled_62":2,"sampled_63":1,"sampled_64":4,"sampled_66":2,"sampled_67":2,"sampled_68":1,"sampled_69":1,"sampled_74":1,"sampled_75":1,"sampled_76":1,"sampled_77":4,"sampled_78":2,"sampled_79":1,"sampled_81":1,"sampled_83":2,"sampled_84":2,"sampled_85":1,"sampled_86":1,"sampled_88":3,"sampled_93":1,"sampled_94":3,"sampled_99":1},{"label":"set1","value":4.060967390488172,"sampled_0":2,"sampled_1":1,"sampled_2":1,"sampled_3":1,"sampled_4":1,"sampled_7":1,"sampled_10":1,"sampled_11":3,"sampled_13":1,"sampled_14":1,"sampled_15":1,"sampled_16":1,"sampled_17":2,"sampled_19":1,"sampled_24":1,"sampled_26":2,"sampled_28":1,"sampled_29":1,"sampled_30":1,"sampled_31":1,"sampled_32":1,"sampled_33":2,"sampled_34":2,"sampled_35":1,"sampled_36":1,"sampled_37":2,"sampled_38":2,"sampled_39":3,"sampled_40":1,"sampled_41":1,"sampled_42":1,"sampled_44":2,"sampled_45":2,"sampled_46":1,"sampled_49":2,"sampled_50":1,"sampled_51":1,"sampled_54":1,"sampled_55":2,"sampled_59":3,"sampled_60":1,"sampled_65":2,"sampled_68":1,"sampled_69":1,"sampled_70":2,"sampled_71":2,"sampled_72":1,"sampled_73":1,"sampled_74":1,"sampled_75":1,"sampled_77":1,"sampled_79":1,"sampled_80":1,"sampled_82":1,"sampled_89":1,"sampled_90":1,"sampled_91":1,"sampled_93":4,"sampled_95":1,"sampled_96":2,"sampled_97":1,"sampled_98":1},{"label":"set1","value":3.4136450127193694,"sampled_6":3,"sampled_8":1,"sampled_10":2,"sampled_11":1,"sampled_12":2,"sampled_19":1,"sampled_21":1,"sampled_24":2,"sampled_26":1,"sampled_28":1,"sampled_33":1,"sampled_35":1,"sampled_36":2,"sampled_37":1,"sampled_38":1,"sampled_40":2,"sampled_41":1,"sampled_42":3,"sampled_44":1,"sampled_45":2,"sampled_47":1,"sampled_48":2,"sampled_50":1,"sampled_51":1,"sampled_54":2,"sampled_55":3,"sampled_56":3,"sampled_57":1,"sampled_58":2,"sampled_59":1,"sampled_60":1,"sampled_62":2,"sampled_63":1,"sampled_64":1,"sampled_66":1,"sampled_67":2,"sampled_68":3,"sampled_70":3,"sampled_71":1,"sampled_72":3,"sampled_76":1,"sampled_77":2,"sampled_79":2,"sampled_82":1,"sampled_83":1,"sampled_87":1,"sampled_88":1,"sampled_90":1,"sampled_91":1,"sampled_93":1,"sampled_94":1,"sampled_95":1,"sampled_97":2,"sampled_98":1},{"label":"set1","value":6.3795650518797755,"sampled_1":1,"sampled_2":1,"sampled_3":1,"sampled_4":1,"sampled_5":2,"sampled_6":1,"sampled_11":2,"sampled_13":1,"sampled_14":1,"sampled_15":2,"sampled_16":1,"sampled_18":2,"sampled_20":1,"sampled_22":3,"sampled_23":2,"sampled_24":2,"sampled_25":1,"sampled_26":2,"sampled_27":2,"sampled_29":2,"sampled_30":1,"sampled_31":1,"sampled_32":1,"sampled_33":2,"sampled_34":1,"sampled_37":1,"sampled_39":2,"sampled_41":2,"sampled_43":3,"sampled_44":2,"sampled_46":3,"sampled_48":1,"sampled_49":1,"sampled_50":2,"sampled_51":1,"sampled_54":3,"sampled_57":1,"sampled_58":1,"sampled_61":1,"sampled_62":1,"sampled_63":1,"sampled_68":1,"sampled_69":1,"sampled_70":3,"sampled_73":2,"sampled_74":2,"sampled_77":3,"sampled_78":1,"sampled_79":1,"sampled_80":1,"sampled_81":2,"sampled_82":1,"sampled_84":2,"sampled_85":2,"sampled_86":2,"sampled_87":1,"sampled_88":2,"sampled_89":1,"sampled_90":1,"sampled_91":1,"sampled_92":1,"sampled_93":2,"sampled_94":1,"sampled_95":1,"sampled_96":1,"sampled_98":3,"sampled_99":1},{"label":"set1","value":5.956784646318797,"sampled_0":1,"sampled_1":1,"sampled_2":1,"sampled_3":1,"sampled_4":1,"sampled_5":1,"sampled_9":3,"sampled_10":1,"sampled_11":1,"sampled_12":2,"sampled_13":1,"sampled_15":2,"sampled_19":1,"sampled_21":4,"sampled_22":1,"sampled_23":1,"sampled_24":1,"sampled_27":2,"sampled_28":2,"sampled_29":1,"sampled_31":3,"sampled_32":2,"sampled_34":1,"sampled_35":1,"sampled_37":1,"sampled_38":2,"sampled_40":2,"sampled_41":3,"sampled_42":2,"sampled_43":1,"sampled_44":2,"sampled_46":1,"sampled_47":1,"sampled_48":1,"sampled_50":1,"sampled_52":5,"sampled_53":2,"sampled_55":1,"sampled_56":1,"sampled_57":1,"sampled_58":1,"sampled_59":2,"sampled_61":2,"sampled_65":1,"sampled_67":1,"sampled_70":3,"sampled_71":2,"sampled_74":1,"sampled_75":2,"sampled_76":1,"sampled_77":2,"sampled_79":2,"sampled_81":2,"sampled_83":2,"sampled_85":1,"sampled_88":1,"sampled_89":2,"sampled_90":1,"sampled_91":1,"sampled_93":3,"sampled_94":1,"sampled_95":1,"sampled_96":1,"sampled_99":1}
+        ],
+      "yDomain": [0, 12]
+    },
+    plotOpt: {
+      yField: 'value',
+      xField: 'label',
+      width: 50,
+      height: 250,
+      margin: {top: 11, right: 5, bottom: 40, left: 40},
+    },
+    draw: drawVertically
+  }
+];
+init();
+function init(){
+  let margin = {top: 11, right: 5, bottom: 40, left: 40};
+  let containerDiv = $('#stimuli');
+
+  APPS.forEach(app => {
+
+    containerDiv.append(`
+        <div class="col col-4"  id="${app.name}"></div>
+    `);
+    setTransition(
+      app.name,
+      app,
+      app.plotOpt,
+      app.draw
+    );
+  });
+
+  return;
+}
+let playCountLimit = -1;
+
+function setTransition(targetId, app, plotOpt, draw){
+
+  let newpOpt = copy(plotOpt);
+  newpOpt.noTitle = true;
+  installAnim(targetId,  app, newpOpt, draw);
+}
+
+
+
+function installAnim(targetId,  app, plotOpt, draw){
+  let [xField, yField] = [plotOpt.xField, plotOpt.yField];
+  $(`#${targetId}`).append(`
+    <div class="visDiv"></div>
+    <div class="form-inline justify-content-center anim-control-btn-group">
+      <button class="play form-control btn btn-success btn-sm" data-interval="${playInterval}">Play</button>
+      <button class="reset form-control btn btn-secondary btn-sm d-none" >Reset</button>
+    </div>
+  `);
+  let aggPlotOpt = copy(plotOpt);
+
+  aggPlotOpt.yTitle = "";
+  aggPlotOpt.postYTitle = "";
+
+  let data = app.data.data;
+
+  aggPlotOpt.yDomain = app.data.yDomain;
+  aggPlotOpt.xDomain = app.data.xDomain;
+  app.svg = draw(`#${targetId} .visDiv`, copy(data), xField, yField, aggPlotOpt);
+  app.fn = typeof(app.fn) === "string" ?
+    (
+      app.fn.indexOf(".") >= 0 ?
+      aggregations_old[app.fn.split(".")[1]] :
+      window[app.fn]
+    ) : app.fn;
+
+  $(`#${targetId} .play`).on("click", function(e){
+    let jqThis = $(this);
+    let interval = Number(jqThis.data("interval"));
+    $(`#${targetId} .play`).addClass("disabled");
+    let playCount = Number($(`#${targetId} .play`).data("playCount")) || 0;
+    playCount += 1;
+    $(`#${targetId} .play`).data("playCount", playCount);
+    console.log(playCount);
+    let start = Date.now();
+    let end = () => {
+      // console.log(Date.now() - start);
+      $(`#${targetId} .play`).removeClass("disabled");
+      $(`#${targetId} .play`).addClass("d-none");
+      $(`#${targetId} .reset`).removeClass("d-none");
+    };
+
+    app.opt.interval = interval;
+    app.opt.margin = aggPlotOpt.marginAfter;
+    app.fn(app.svg, app.opt, end);
+
+  });
+
+  $(`#${targetId} .reset`).on("click", function(e){
+
+
+    $(`#${targetId} .play`).removeClass("d-none");
+    $(`#${targetId} .reset`).addClass("d-none");
+    $(`#${targetId} .visDiv`).children("svg").remove();
+    app.svg = draw(`#${targetId} .visDiv`, copy(data), xField, yField, aggPlotOpt);
+
+  });
+}
+
+
+
+  </script>
+</body>
